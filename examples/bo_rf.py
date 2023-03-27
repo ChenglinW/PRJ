@@ -5,20 +5,20 @@ import random
 import math
 import numpy as np
 from base_autotuning_structure import BaseAlgorithm
+import wandb
 
 class BOCA(BaseAlgorithm):
     """
         the bayesian optimisation with random forest
     """
-    def __init__(self, cmd2, cmd3, cmd4, cmd5, flags,
-                 model = 1,
+    def __init__(self, model = 1,
                  fnum = 8,
-                 rnum = 8,
                  decay = 0.5,
                  scale = 10.0,
                  offset = 20.0,
-                 init_sample_size = 2):
-        super().__init__(cmd2, cmd3, cmd4, cmd5, flags)
+                 init_sample_size = 2,
+                 rnum = 8,
+                 *args, **kwargs):
         self.md = model
         self.fnum = fnum # number of features
         self.decay = decay
@@ -26,6 +26,8 @@ class BOCA(BaseAlgorithm):
         self.offset = offset
         self.init_sample_size = init_sample_size
         self.rnum = rnum
+        super().__init__(*args, **kwargs)
+
 
     def get_EI(self, prediction, eta):
         """
@@ -173,9 +175,21 @@ class BOCA(BaseAlgorithm):
         return best_estimated_flag_sequence_and_ei
 
     def tuning_flags(self):
+        wandb.login()
+        wandb.init(
+            project='Compiler Autotuning',
+            name= f'BOCA {self.time_cmd} Iterations: {self.total_iters} Number of flags: {len(self.flags)}',
+            config={
+                'Program_name': self.time_cmd,
+                'Iterations': self.total_iters,
+                'Number of Flags': len(self.flags),
+                'Speed up': True,
+            },
+        )
         binary_flag_sequences = []
         cumulative_iteration_time = []
         evaluation_scores = []
+        actual_flag_sequences = []
         init_rnum = 2 ** self.rnum
         start_time = time.time()
         sigma = -self.scale ** 2 / (2 * math.log(self.decay))
@@ -200,17 +214,22 @@ class BOCA(BaseAlgorithm):
             current_step += 1
             rnum = init_rnum * math.exp(-max(0, len(binary_flag_sequences) - self.offset) ** 2 / (2 * sigma ** 2))
             best_solution, return_nd_independent = self.get_best_estimated_non_repetitive_flag_sequence_and_ei(binary_flag_sequences, evaluation_scores, result, rnum)
-            print('current best_solution')
-            print(best_solution)
             binary_flag_sequences.append(best_solution)
             cumulative_iteration_time.append(time.time() - start_time)
-            best_result = self.get_evaluation_score(best_solution)
+            actual_flag_sequence = self.get_selected_flags(best_solution)
+            actual_flag_sequences.append(actual_flag_sequence)
+            best_result = self.get_evaluation_score(actual_flag_sequence)
             evaluation_scores.append(best_result)
-
+            wandb.log({"evaluation score": best_result})
             if best_result < result:
                 result = best_result
 
-        return binary_flag_sequences, cumulative_iteration_time
+            # print('current best_solution')
+            # print(best_solution)
+        mapped_flags_scores = {tuple(actual_flag_sequences[index]): evaluation_scores[index] for index in
+                               range(len(actual_flag_sequences))}
+        print(f'Total running time {time.time() - start_time}')
+        return mapped_flags_scores, cumulative_iteration_time
 
 
 
