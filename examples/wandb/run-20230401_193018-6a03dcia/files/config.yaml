@@ -1,0 +1,40 @@
+wandb_version: 1
+
+Iterations:
+  desc: null
+  value: 120
+Number of Flags:
+  desc: null
+  value: 101
+Program_name:
+  desc: null
+  value: ./2mm_time
+Speed up:
+  desc: null
+  value: true
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.14.0
+    framework: sklearn
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.10.9
+    start_time: 1680373818.866972
+    t:
+      1:
+      - 5
+      - 53
+      - 55
+      2:
+      - 5
+      - 53
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.10.9
+      5: 0.14.0
+      8:
+      - 5

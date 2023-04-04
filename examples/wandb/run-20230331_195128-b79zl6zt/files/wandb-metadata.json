@@ -1,0 +1,138 @@
+{
+    "os": "Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.27",
+    "python": "3.10.9",
+    "heartbeatAt": "2023-03-31T18:51:28.994703",
+    "startedAt": "2023-03-31T18:51:28.442858",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--total-iters",
+        "60",
+        "--autotuning-method",
+        "boca",
+        "--file-cmd",
+        " -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/lu/lu.c -lm -DPOLYBENCH_TIME -o lu_time",
+        "--time-cmd",
+        "./lu_time",
+        "--evaluate-times",
+        "1",
+        "--baseline-cmd",
+        "gcc -O2 -funswitch-loops -ftree-vectorize -fpredictive-commoning -fipa-cp-clone -finline-functions -fgcse-after-reload -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/lu/lu.c -lm -DPOLYBENCH_TIME -o lu_time"
+    ],
+    "state": "running",
+    "program": "/home/wcl/PRJ/src/PRJ/examples/main.py",
+    "codePath": "examples/main.py",
+    "git": {
+        "remote": "git@github.com:ChenglinW/PRJ.git",
+        "commit": "a8778a5d235cb0f9c28a150bd4bde083473a716b"
+    },
+    "email": "chenglin.weng@kcl.ac.uk",
+    "root": "/home/wcl/PRJ/src/PRJ",
+    "host": "DESKTOP-2DLKKAJ",
+    "username": "wcl",
+    "executable": "/home/wcl/anaconda3/envs/prj/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2303.998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2303.998,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 250.98248672485352,
+        "used": 141.69956970214844
+    },
+    "gpu": "NVIDIA GeForce RTX 3080 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3080 Laptop GPU",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 15.50711441040039
+    }
+}

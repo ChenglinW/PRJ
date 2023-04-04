@@ -1,0 +1,17 @@
+2023-03-31 14:24:35,364 INFO    StreamThr :8568 [internal.py:wandb_internal():87] W&B internal server running at pid: 8568, started at: 2023-03-31 14:24:35.363632
+2023-03-31 14:24:35,365 DEBUG   HandlerThread:8568 [handler.py:handle_request():144] handle_request: status
+2023-03-31 14:24:35,367 INFO    WriterThread:8568 [datastore.py:open_for_write():85] open: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230331_142435-gpy06kcf/run-gpy06kcf.wandb
+2023-03-31 14:24:35,367 DEBUG   SenderThread:8568 [sender.py:send():336] send: header
+2023-03-31 14:24:35,367 DEBUG   SenderThread:8568 [sender.py:send():336] send: run
+2023-03-31 14:24:35,794 DEBUG   HandlerThread:8568 [handler.py:handle_request():144] handle_request: shutdown
+2023-03-31 14:24:35,794 INFO    HandlerThread:8568 [handler.py:finish():842] shutting down handler
+2023-03-31 14:24:35,852 INFO    SenderThread:8568 [dir_watcher.py:__init__():219] watching files in: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230331_142435-gpy06kcf/files
+2023-03-31 14:24:35,852 INFO    SenderThread:8568 [sender.py:_start_run_threads():1078] run started: gpy06kcf with start time 1680269075.362289
+2023-03-31 14:24:35,852 INFO    SenderThread:8568 [sender.py:finish():1504] shutting down sender
+2023-03-31 14:24:35,852 INFO    SenderThread:8568 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-03-31 14:24:36,524 INFO    WriterThread:8568 [datastore.py:close():298] close: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230331_142435-gpy06kcf/run-gpy06kcf.wandb
+2023-03-31 14:24:36,885 INFO    SenderThread:8568 [dir_watcher.py:finish():395] scan: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230331_142435-gpy06kcf/files
+2023-03-31 14:24:36,885 INFO    SenderThread:8568 [dir_watcher.py:finish():409] scan save: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230331_142435-gpy06kcf/files/config.yaml config.yaml
+2023-03-31 14:24:36,886 INFO    SenderThread:8568 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-31 14:24:36,886 INFO    SenderThread:8568 [file_pusher.py:join():169] waiting for file pusher
+2023-03-31 14:24:37,531 INFO    wandb-upload_0:8568 [upload_job.py:push():138] Uploaded file /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230331_142435-gpy06kcf/files/config.yaml

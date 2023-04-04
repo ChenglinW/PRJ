@@ -1,0 +1,292 @@
+2023-03-27 21:02:53,271 INFO    StreamThr :20989 [internal.py:wandb_internal():87] W&B internal server running at pid: 20989, started at: 2023-03-27 21:02:53.271128
+2023-03-27 21:02:53,272 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status
+2023-03-27 21:02:53,274 INFO    WriterThread:20989 [datastore.py:open_for_write():85] open: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/run-dp7xwedz.wandb
+2023-03-27 21:02:53,275 DEBUG   SenderThread:20989 [sender.py:send():336] send: header
+2023-03-27 21:02:53,275 DEBUG   SenderThread:20989 [sender.py:send():336] send: run
+2023-03-27 21:02:53,744 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: check_version
+2023-03-27 21:02:53,748 INFO    SenderThread:20989 [dir_watcher.py:__init__():219] watching files in: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files
+2023-03-27 21:02:53,748 INFO    SenderThread:20989 [sender.py:_start_run_threads():1078] run started: dp7xwedz with start time 1679947373.265911
+2023-03-27 21:02:53,748 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 21:02:53,748 INFO    SenderThread:20989 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 21:02:53,748 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: check_version
+2023-03-27 21:02:53,874 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: run_start
+2023-03-27 21:02:53,925 DEBUG   HandlerThread:20989 [system_info.py:__init__():31] System info init
+2023-03-27 21:02:53,925 DEBUG   HandlerThread:20989 [system_info.py:__init__():46] System info init done
+2023-03-27 21:02:53,925 INFO    HandlerThread:20989 [system_monitor.py:start():183] Starting system monitor
+2023-03-27 21:02:53,925 INFO    SystemMonitor:20989 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-03-27 21:02:53,925 INFO    HandlerThread:20989 [system_monitor.py:probe():204] Collecting system info
+2023-03-27 21:02:53,926 INFO    SystemMonitor:20989 [interfaces.py:start():187] Started cpu monitoring
+2023-03-27 21:02:53,927 INFO    SystemMonitor:20989 [interfaces.py:start():187] Started disk monitoring
+2023-03-27 21:02:53,927 INFO    SystemMonitor:20989 [interfaces.py:start():187] Started gpu monitoring
+2023-03-27 21:02:53,928 INFO    SystemMonitor:20989 [interfaces.py:start():187] Started memory monitoring
+2023-03-27 21:02:53,929 INFO    SystemMonitor:20989 [interfaces.py:start():187] Started network monitoring
+2023-03-27 21:02:53,954 DEBUG   HandlerThread:20989 [system_info.py:probe():195] Probing system
+2023-03-27 21:02:53,959 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:02:53,972 DEBUG   HandlerThread:20989 [system_info.py:_probe_git():180] Probing git
+2023-03-27 21:02:53,975 DEBUG   HandlerThread:20989 [system_info.py:_probe_git():188] Probing git done
+2023-03-27 21:02:53,975 DEBUG   HandlerThread:20989 [system_info.py:probe():240] Probing system done
+2023-03-27 21:02:53,975 DEBUG   HandlerThread:20989 [system_monitor.py:probe():213] {'os': 'Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.27', 'python': '3.10.9', 'heartbeatAt': '2023-03-27T20:02:53.954917', 'startedAt': '2023-03-27T20:02:53.262412', 'docker': None, 'cuda': None, 'args': ('--total-iters', '3', '--autotuning-method', 'rio'), 'state': 'running', 'program': '/home/wcl/PRJ/src/PRJ/examples/main.py', 'codePath': 'examples/main.py', 'git': {'remote': 'git@github.com:ChenglinW/PRJ.git', 'commit': 'e4f8c9c1c9eb0f8991b0b8c78fc975503339e514'}, 'email': 'chenglin.weng@kcl.ac.uk', 'root': '/home/wcl/PRJ/src/PRJ', 'host': 'DESKTOP-2DLKKAJ', 'username': 'wcl', 'executable': '/home/wcl/anaconda3/envs/prj/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2303.998, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2303.998, 'min': 0.0, 'max': 0.0}, {'current': 2303.998, 'min': 0.0, 'max': 0.0}, {'current': 2303.998, 'min': 0.0, 'max': 0.0}, {'current': 2303.998, 'min': 0.0, 'max': 0.0}, {'current': 2303.998, 'min': 0.0, 'max': 0.0}, {'current': 2303.998, 'min': 0.0, 'max': 0.0}, {'current': 2303.998, 'min': 0.0, 'max': 0.0}, {'current': 2303.998, 'min': 0.0, 'max': 0.0}, {'current': 2303.998, 'min': 0.0, 'max': 0.0}, {'current': 2303.998, 'min': 0.0, 'max': 0.0}, {'current': 2303.998, 'min': 0.0, 'max': 0.0}, {'current': 2303.998, 'min': 0.0, 'max': 0.0}, {'current': 2303.998, 'min': 0.0, 'max': 0.0}, {'current': 2303.998, 'min': 0.0, 'max': 0.0}, {'current': 2303.998, 'min': 0.0, 'max': 0.0}, {'current': 2303.998, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 250.98248672485352, 'used': 141.58847045898438}, 'gpu': 'NVIDIA GeForce RTX 3080 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3080 Laptop GPU', 'memory_total': 8589934592}], 'memory': {'total': 15.50711441040039}}
+2023-03-27 21:02:53,975 INFO    HandlerThread:20989 [system_monitor.py:probe():214] Finished collecting system info
+2023-03-27 21:02:53,975 INFO    HandlerThread:20989 [system_monitor.py:probe():217] Publishing system info
+2023-03-27 21:02:53,975 DEBUG   HandlerThread:20989 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-27 21:02:53,975 DEBUG   HandlerThread:20989 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-27 21:02:53,975 DEBUG   HandlerThread:20989 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-27 21:02:54,755 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_created():278] file/dir created: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/wandb-summary.json
+2023-03-27 21:02:54,756 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_created():278] file/dir created: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/conda-environment.yaml
+2023-03-27 21:02:54,756 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_created():278] file/dir created: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/requirements.txt
+2023-03-27 21:02:54,854 DEBUG   HandlerThread:20989 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-27 21:02:54,854 INFO    HandlerThread:20989 [system_monitor.py:probe():219] Finished publishing system info
+2023-03-27 21:02:54,855 DEBUG   SenderThread:20989 [sender.py:send():336] send: files
+2023-03-27 21:02:54,856 INFO    SenderThread:20989 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-03-27 21:02:54,860 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 21:02:54,860 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 21:02:55,057 DEBUG   SenderThread:20989 [sender.py:send():336] send: telemetry
+2023-03-27 21:02:55,465 INFO    wandb-upload_0:20989 [upload_job.py:push():138] Uploaded file /tmp/tmpwhjy9t9hwandb/r5udvsuk-wandb-metadata.json
+2023-03-27 21:02:55,823 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/conda-environment.yaml
+2023-03-27 21:02:55,824 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_created():278] file/dir created: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/wandb-metadata.json
+2023-03-27 21:02:55,824 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_created():278] file/dir created: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:02:56,029 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:02:57,961 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:02:58,093 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:02:58,438 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:03:00,022 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:00,171 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:02,160 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:02,211 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:03,773 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:03:04,224 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:04,273 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:05,341 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:06,305 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:07,416 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:08,424 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:09,336 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:03:09,482 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:09,903 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 21:03:09,903 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 21:03:10,490 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:11,620 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:12,543 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:13,753 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:14,611 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:14,887 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:03:15,882 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:16,659 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:17,912 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 21:03:17,913 DEBUG   SenderThread:20989 [sender.py:send():336] send: history
+2023-03-27 21:03:17,913 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 21:03:17,913 INFO    SenderThread:20989 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 21:03:18,003 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/wandb-summary.json
+2023-03-27 21:03:18,003 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:18,732 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:20,083 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:03:20,083 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:20,817 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:22,897 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:24,272 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:24,957 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:24,962 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 21:03:24,963 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 21:03:25,197 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:03:26,342 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/config.yaml
+2023-03-27 21:03:26,343 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:27,034 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:29,092 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:30,532 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:31,166 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:31,228 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:03:32,642 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:33,243 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:35,298 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:36,265 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:03:36,852 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:37,332 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:38,933 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:39,400 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:40,002 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 21:03:40,002 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 21:03:41,409 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:41,945 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:03:43,113 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:43,469 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:45,489 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:47,277 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:03:47,303 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:47,530 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:49,392 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:49,549 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:51,600 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:52,584 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:03:52,584 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 21:03:52,585 DEBUG   SenderThread:20989 [sender.py:send():336] send: history
+2023-03-27 21:03:52,585 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 21:03:52,586 INFO    SenderThread:20989 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 21:03:53,582 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/wandb-summary.json
+2023-03-27 21:03:53,582 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:53,651 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:53,942 DEBUG   SystemMonitor:20989 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-03-27 21:03:53,943 DEBUG   SenderThread:20989 [sender.py:send():336] send: stats
+2023-03-27 21:03:55,070 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 21:03:55,071 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 21:03:55,673 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:55,701 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:56,724 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:57,733 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:03:57,989 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:03:58,861 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:03:59,772 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:04:00,941 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:04:01,830 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:04:03,071 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:04:03,509 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:04:03,866 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:04:05,191 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:04:05,941 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:04:07,302 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:04:07,980 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:04:08,896 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:04:09,393 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:04:10,050 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:04:10,072 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 21:04:10,073 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 21:04:11,513 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:04:12,121 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:04:13,650 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:04:14,141 ERROR   gpu       :20989 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-27 21:04:14,327 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 21:04:14,328 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:04:14,329 DEBUG   SenderThread:20989 [sender.py:send():336] send: history
+2023-03-27 21:04:14,329 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 21:04:14,330 INFO    SenderThread:20989 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 21:04:14,333 DEBUG   SenderThread:20989 [sender.py:send():336] send: exit
+2023-03-27 21:04:14,333 INFO    SenderThread:20989 [sender.py:send_exit():559] handling exit code: 0
+2023-03-27 21:04:14,333 INFO    SenderThread:20989 [sender.py:send_exit():561] handling runtime: 80
+2023-03-27 21:04:14,334 INFO    SenderThread:20989 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 21:04:14,334 INFO    SenderThread:20989 [sender.py:send_exit():567] send defer
+2023-03-27 21:04:14,334 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 21:04:14,334 INFO    HandlerThread:20989 [handler.py:handle_request_defer():170] handle defer: 0
+2023-03-27 21:04:14,334 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: defer
+2023-03-27 21:04:14,334 INFO    SenderThread:20989 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-03-27 21:04:14,334 INFO    SenderThread:20989 [sender.py:transition_state():587] send defer: 1
+2023-03-27 21:04:14,334 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 21:04:14,334 INFO    HandlerThread:20989 [handler.py:handle_request_defer():170] handle defer: 1
+2023-03-27 21:04:14,334 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: defer
+2023-03-27 21:04:14,334 INFO    SenderThread:20989 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-03-27 21:04:14,334 INFO    SenderThread:20989 [sender.py:transition_state():587] send defer: 2
+2023-03-27 21:04:14,334 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 21:04:14,334 INFO    HandlerThread:20989 [handler.py:handle_request_defer():170] handle defer: 2
+2023-03-27 21:04:14,334 INFO    HandlerThread:20989 [system_monitor.py:finish():193] Stopping system monitor
+2023-03-27 21:04:14,335 DEBUG   SystemMonitor:20989 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2023-03-27 21:04:14,335 DEBUG   SystemMonitor:20989 [system_monitor.py:_start():172] Publishing last batch of metrics
+2023-03-27 21:04:14,336 INFO    HandlerThread:20989 [interfaces.py:finish():199] Joined cpu monitor
+2023-03-27 21:04:14,336 INFO    HandlerThread:20989 [interfaces.py:finish():199] Joined disk monitor
+2023-03-27 21:04:14,341 INFO    HandlerThread:20989 [interfaces.py:finish():199] Joined gpu monitor
+2023-03-27 21:04:14,341 INFO    HandlerThread:20989 [interfaces.py:finish():199] Joined memory monitor
+2023-03-27 21:04:14,341 INFO    HandlerThread:20989 [interfaces.py:finish():199] Joined network monitor
+2023-03-27 21:04:14,341 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: defer
+2023-03-27 21:04:14,341 INFO    SenderThread:20989 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-03-27 21:04:14,341 INFO    SenderThread:20989 [sender.py:transition_state():587] send defer: 3
+2023-03-27 21:04:14,342 DEBUG   SenderThread:20989 [sender.py:send():336] send: stats
+2023-03-27 21:04:14,342 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 21:04:14,342 INFO    HandlerThread:20989 [handler.py:handle_request_defer():170] handle defer: 3
+2023-03-27 21:04:14,349 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: defer
+2023-03-27 21:04:14,349 INFO    SenderThread:20989 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-03-27 21:04:14,349 INFO    SenderThread:20989 [sender.py:transition_state():587] send defer: 4
+2023-03-27 21:04:14,350 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 21:04:14,350 INFO    HandlerThread:20989 [handler.py:handle_request_defer():170] handle defer: 4
+2023-03-27 21:04:14,350 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: defer
+2023-03-27 21:04:14,350 INFO    SenderThread:20989 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-03-27 21:04:14,350 INFO    SenderThread:20989 [sender.py:transition_state():587] send defer: 5
+2023-03-27 21:04:14,350 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 21:04:14,350 INFO    HandlerThread:20989 [handler.py:handle_request_defer():170] handle defer: 5
+2023-03-27 21:04:14,350 DEBUG   SenderThread:20989 [sender.py:send():336] send: summary
+2023-03-27 21:04:14,350 INFO    SenderThread:20989 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 21:04:14,350 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: defer
+2023-03-27 21:04:14,350 INFO    SenderThread:20989 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-03-27 21:04:14,350 INFO    SenderThread:20989 [sender.py:transition_state():587] send defer: 6
+2023-03-27 21:04:14,351 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 21:04:14,351 INFO    HandlerThread:20989 [handler.py:handle_request_defer():170] handle defer: 6
+2023-03-27 21:04:14,351 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: defer
+2023-03-27 21:04:14,351 INFO    SenderThread:20989 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-03-27 21:04:14,351 INFO    SenderThread:20989 [sender.py:transition_state():587] send defer: 7
+2023-03-27 21:04:14,351 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:04:14,351 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 21:04:14,351 INFO    HandlerThread:20989 [handler.py:handle_request_defer():170] handle defer: 7
+2023-03-27 21:04:14,351 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: defer
+2023-03-27 21:04:14,351 INFO    SenderThread:20989 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-03-27 21:04:14,719 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/wandb-summary.json
+2023-03-27 21:04:15,079 INFO    SenderThread:20989 [sender.py:transition_state():587] send defer: 8
+2023-03-27 21:04:15,079 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 21:04:15,079 INFO    HandlerThread:20989 [handler.py:handle_request_defer():170] handle defer: 8
+2023-03-27 21:04:15,080 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: defer
+2023-03-27 21:04:15,080 INFO    SenderThread:20989 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-03-27 21:04:15,086 INFO    SenderThread:20989 [sender.py:transition_state():587] send defer: 9
+2023-03-27 21:04:15,086 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 21:04:15,086 INFO    HandlerThread:20989 [handler.py:handle_request_defer():170] handle defer: 9
+2023-03-27 21:04:15,086 DEBUG   SenderThread:20989 [sender.py:send():336] send: artifact
+2023-03-27 21:04:15,392 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-27 21:04:15,788 INFO    Thread-13 :20989 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:04:16,672 INFO    wandb-upload_0:20989 [upload_job.py:push():96] Uploaded file /home/wcl/.local/share/wandb/artifacts/staging/tmp5j3y8h5v
+2023-03-27 21:04:16,682 INFO    wandb-upload_1:20989 [upload_job.py:push():96] Uploaded file /home/wcl/.local/share/wandb/artifacts/staging/tmpw7g39a08
+2023-03-27 21:04:18,038 INFO    SenderThread:20989 [sender.py:send_artifact():1428] sent artifact job-git_github.com_ChenglinW_PRJ.git_examples_main.py - {'id': 'QXJ0aWZhY3Q6NDA3OTcxODk2', 'digest': 'cd5917c8d84ef149b58c0273891ffa31', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU5MDYyMjkw', 'latestArtifact': None}, 'version': 'latest'}
+2023-03-27 21:04:18,038 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: defer
+2023-03-27 21:04:18,038 INFO    SenderThread:20989 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-03-27 21:04:18,038 INFO    SenderThread:20989 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-03-27 21:04:18,960 INFO    SenderThread:20989 [dir_watcher.py:finish():395] scan: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files
+2023-03-27 21:04:18,960 INFO    SenderThread:20989 [dir_watcher.py:finish():409] scan save: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log output.log
+2023-03-27 21:04:18,960 INFO    SenderThread:20989 [dir_watcher.py:finish():409] scan save: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/conda-environment.yaml conda-environment.yaml
+2023-03-27 21:04:18,960 INFO    SenderThread:20989 [dir_watcher.py:finish():409] scan save: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/config.yaml config.yaml
+2023-03-27 21:04:18,960 INFO    SenderThread:20989 [dir_watcher.py:finish():409] scan save: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/wandb-metadata.json wandb-metadata.json
+2023-03-27 21:04:18,960 INFO    SenderThread:20989 [dir_watcher.py:finish():409] scan save: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/requirements.txt requirements.txt
+2023-03-27 21:04:18,960 INFO    SenderThread:20989 [dir_watcher.py:finish():409] scan save: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/wandb-summary.json wandb-summary.json
+2023-03-27 21:04:18,961 INFO    SenderThread:20989 [sender.py:transition_state():587] send defer: 10
+2023-03-27 21:04:18,961 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: poll_exit
+2023-03-27 21:04:18,961 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 21:04:18,961 INFO    HandlerThread:20989 [handler.py:handle_request_defer():170] handle defer: 10
+2023-03-27 21:04:18,965 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: defer
+2023-03-27 21:04:18,965 INFO    SenderThread:20989 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-03-27 21:04:18,965 INFO    SenderThread:20989 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-27 21:04:19,452 INFO    wandb-upload_1:20989 [upload_job.py:push():138] Uploaded file /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/conda-environment.yaml
+2023-03-27 21:04:19,518 INFO    wandb-upload_4:20989 [upload_job.py:push():138] Uploaded file /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/wandb-summary.json
+2023-03-27 21:04:19,524 INFO    wandb-upload_2:20989 [upload_job.py:push():138] Uploaded file /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/config.yaml
+2023-03-27 21:04:19,551 INFO    wandb-upload_3:20989 [upload_job.py:push():138] Uploaded file /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/requirements.txt
+2023-03-27 21:04:19,577 INFO    wandb-upload_0:20989 [upload_job.py:push():138] Uploaded file /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/files/output.log
+2023-03-27 21:04:19,846 INFO    Thread-12 (_thread_body):20989 [sender.py:transition_state():587] send defer: 11
+2023-03-27 21:04:19,846 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 21:04:19,846 INFO    HandlerThread:20989 [handler.py:handle_request_defer():170] handle defer: 11
+2023-03-27 21:04:19,847 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: defer
+2023-03-27 21:04:19,847 INFO    SenderThread:20989 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-03-27 21:04:19,847 INFO    SenderThread:20989 [file_pusher.py:join():169] waiting for file pusher
+2023-03-27 21:04:19,847 INFO    SenderThread:20989 [sender.py:transition_state():587] send defer: 12
+2023-03-27 21:04:19,847 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 21:04:19,847 INFO    HandlerThread:20989 [handler.py:handle_request_defer():170] handle defer: 12
+2023-03-27 21:04:19,847 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 21:04:19,847 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: defer
+2023-03-27 21:04:19,847 INFO    SenderThread:20989 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-03-27 21:04:20,299 INFO    SenderThread:20989 [sender.py:transition_state():587] send defer: 13
+2023-03-27 21:04:20,299 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 21:04:20,299 INFO    HandlerThread:20989 [handler.py:handle_request_defer():170] handle defer: 13
+2023-03-27 21:04:20,300 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: defer
+2023-03-27 21:04:20,300 INFO    SenderThread:20989 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-03-27 21:04:20,300 INFO    SenderThread:20989 [sender.py:transition_state():587] send defer: 14
+2023-03-27 21:04:20,300 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 21:04:20,300 INFO    HandlerThread:20989 [handler.py:handle_request_defer():170] handle defer: 14
+2023-03-27 21:04:20,301 DEBUG   SenderThread:20989 [sender.py:send():336] send: final
+2023-03-27 21:04:20,301 DEBUG   SenderThread:20989 [sender.py:send():336] send: footer
+2023-03-27 21:04:20,301 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: defer
+2023-03-27 21:04:20,301 INFO    SenderThread:20989 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-03-27 21:04:20,301 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-27 21:04:20,301 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: poll_exit
+2023-03-27 21:04:20,302 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: server_info
+2023-03-27 21:04:20,302 DEBUG   SenderThread:20989 [sender.py:send_request():363] send_request: server_info
+2023-03-27 21:04:20,303 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: get_summary
+2023-03-27 21:04:20,304 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: sampled_history
+2023-03-27 21:04:20,505 INFO    MainThread:20989 [wandb_run.py:_footer_history_summary_info():3422] rendering history
+2023-03-27 21:04:20,506 INFO    MainThread:20989 [wandb_run.py:_footer_history_summary_info():3454] rendering summary
+2023-03-27 21:04:20,506 INFO    MainThread:20989 [wandb_run.py:_footer_sync_info():3380] logging synced files
+2023-03-27 21:04:20,506 DEBUG   HandlerThread:20989 [handler.py:handle_request():144] handle_request: shutdown
+2023-03-27 21:04:20,506 INFO    HandlerThread:20989 [handler.py:finish():842] shutting down handler
+2023-03-27 21:04:21,335 INFO    WriterThread:20989 [datastore.py:close():298] close: /home/wcl/PRJ/src/PRJ/examples/wandb/run-20230327_210253-dp7xwedz/run-dp7xwedz.wandb
+2023-03-27 21:04:21,574 INFO    SenderThread:20989 [sender.py:finish():1504] shutting down sender
+2023-03-27 21:04:21,574 INFO    SenderThread:20989 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-27 21:04:21,574 INFO    SenderThread:20989 [file_pusher.py:join():169] waiting for file pusher

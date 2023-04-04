@@ -5,7 +5,7 @@ import random
 import numpy as np
 import pdb
 
-iters = 10
+iters = 3
 begin2end = 5
 
 random.seed(123)
