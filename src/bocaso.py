@@ -30,7 +30,7 @@ class BOCASO(EvaluationComponent, OrderingSelectionEncoder):
         super().__init__(*args, **kwargs)
         OrderingSelectionEncoder.__init__(self, *args, **kwargs)
 
-
+#  use the same function from https://github.com/BOCA313/BOCA
     def get_EI(self, prediction, eta):
         """
         compute and return the expected improvement
@@ -128,7 +128,7 @@ class BOCASO(EvaluationComponent, OrderingSelectionEncoder):
 
         return flag_choice_mappings
 
-    def random_search(self, model, eta, rnum):
+    def predict_optimisation_sequences(self, model, eta, rnum):
         features = self.get_important_features(model)
         print("features")
         print(features)
@@ -189,7 +189,7 @@ class BOCASO(EvaluationComponent, OrderingSelectionEncoder):
 
         model = self.train_random_forest(flag_sequences, evaluation_scores)
 
-        sequence_ei_mappings = self.random_search(model, eta, rnum)
+        sequence_ei_mappings = self.predict_optimisation_sequences(model, eta, rnum)
         sorted_sequence_ei_mappings = sorted(sequence_ei_mappings, key=lambda x: x[1], reverse=True)
 
         best_estimated_flag_sequence_and_ei = ()
