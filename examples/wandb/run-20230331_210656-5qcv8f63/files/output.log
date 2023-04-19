@@ -1,0 +1,1749 @@
+gcc -O2 -fipa-cp-clone -flra-remat -fcompare-elim -fipa-cp -fcprop-registers -fstrict-overflow -finline-functions-called-once -fcrossjumping -fdce -foptimize-sibling-calls -fdefer-pop -fcse-skip-blocks -freorder-blocks-and-partition -ftree-slp-vectorize -fdelayed-branch -fif-conversion2 -fguess-branch-probability -fipa-pure-const -foptimize-strlen -freorder-blocks -fshrink-wrap -ftree-switch-conversion -ftree-coalesce-vars -fssa-backprop -ftree-dse -fstrict-aliasing -fipa-sra -ftree-ccp -ftree-ch -fdevirtualize -fstore-merging -ftree-copy-prop -fipa-ra -ftree-dominator-opts -ftree-phiprop -ftree-sink -fschedule-insns2 -falign-functions -funswitch-loops -falign-jumps -falign-labels -fgcse-after-reload -fdevirtualize-speculatively -fgcse-lm -findirect-inlining -fpeephole2 -fipa-bit-cp -fipa-vrp -ftree-loop-distribute-patterns -fvect-cost-model -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:18.09443211555481selected flags:17.083835124969482 val:1.0591551594353807
+[1.0591551594353807]
+gcc -O2 -fipa-cp-clone -fauto-inc-dec -fipa-profile -ftree-slp-vectorize -fbranch-count-reg -fipa-bit-cp -fsched-interblock -fcprop-registers -ftree-builtin-call-dce -ftree-loop-vectorize -fdelayed-branch -ftree-copy-prop -fif-conversion2 -freorder-blocks-and-partition -fvect-cost-model -fssa-phiopt -ftree-bit-ccp -ftree-dce -ftree-forwprop -fpeephole2 -ftree-ter -frerun-cse-after-loop -ftree-dominator-opts -ftree-fre -fexpensive-optimizations -ftree-phiprop -ftree-switch-conversion -ftree-sra -falign-functions -finline-small-functions -finline-functions -fstrict-aliasing -fpredictive-commoning -falign-loops -fcrossjumping -fpeel-loops -fcse-follow-jumps -foptimize-strlen -fdelete-null-pointer-checks -foptimize-sibling-calls -ftree-vrp -freorder-blocks-algorithm=stc -fsched-spec -fschedule-insns -funswitch-loops -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:19.356832027435303selected flags:20.134387493133545 val:0.9613817174243113
+[0.9613817174243113]
+features
+[0.         0.02040816 0.02040816 0.         0.         0.
+ 0.02040816 0.         0.06122449 0.         0.         0.
+ 0.06122449 0.         0.         0.02040816 0.         0.
+ 0.         0.         0.04081633 0.         0.         0.
+ 0.02040816 0.         0.         0.         0.         0.
+ 0.02040816 0.         0.         0.02040816 0.         0.02040816
+ 0.02040816 0.         0.         0.         0.         0.04081633
+ 0.         0.         0.         0.         0.02040816 0.
+ 0.         0.         0.02040816 0.04081633 0.         0.02040816
+ 0.         0.02040816 0.         0.02040816 0.         0.
+ 0.         0.         0.         0.         0.04081633 0.
+ 0.         0.02040816 0.         0.         0.         0.
+ 0.02040816 0.         0.         0.06122449 0.         0.04081633
+ 0.04081633 0.         0.02040816 0.02040816 0.         0.
+ 0.         0.         0.         0.         0.06122449 0.02040816
+ 0.         0.         0.02040816 0.04081633 0.02040816 0.
+ 0.         0.02040816 0.02040816 0.         0.        ]
+[[8, 0.061224489795918366], [12, 0.061224489795918366], [75, 0.061224489795918366], [88, 0.061224489795918366], [20, 0.04081632653061224], [41, 0.04081632653061224], [51, 0.04081632653061224], [64, 0.04081632653061224]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 32.73961162567139
+Time for finding non-repetitive 2.384185791015625e-06
+gcc -O2 -fbranch-count-reg -fcprop-registers -fmerge-constants -fssa-backprop -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-sink -fthread-jumps -falign-jumps -falign-loops -fcrossjumping -fcse-follow-jumps -fdevirtualize -fgcse-lm -findirect-inlining -fisolate-erroneous-paths-dereference -flra-remat -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fsched-interblock -fstore-merging -fstrict-aliasing -fcode-hoisting -ftree-pre -finline-functions -ftree-slp-vectorize -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:24.10671830177307selected flags:20.228333711624146 val:1.1917303049000139
+[1.1917303049000139]
+features
+[0.00196489 0.02197802 0.03296703 0.         0.0129539  0.02197802
+ 0.01098901 0.         0.00902412 0.         0.         0.
+ 0.0129539  0.         0.01098901 0.01098901 0.02197802 0.
+ 0.         0.         0.         0.03493192 0.         0.
+ 0.03100215 0.01098901 0.03296703 0.03100215 0.03493192 0.00902412
+ 0.01098901 0.0129539  0.02903726 0.         0.01098901 0.01098901
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.02197802 0.03100215 0.         0.         0.01098901
+ 0.         0.         0.         0.         0.         0.
+ 0.01098901 0.01098901 0.         0.00902412 0.         0.01098901
+ 0.02197802 0.         0.00196489 0.         0.0129539  0.
+ 0.01098901 0.01098901 0.01098901 0.02197802 0.         0.03296703
+ 0.         0.01098901 0.         0.         0.01098901 0.
+ 0.04395604 0.0129539  0.01804825 0.00196489 0.         0.01098901
+ 0.         0.         0.         0.         0.0129539  0.04592093
+ 0.01098901 0.00196489 0.         0.02197802 0.01098901 0.02197802
+ 0.         0.05101528 0.02197802 0.         0.03100215]
+[[97, 0.05101528243625998], [89, 0.04592093021044144], [78, 0.04395604395604396], [21, 0.03493191922143045], [28, 0.03493191922143045], [2, 0.03296703296703297], [26, 0.03296703296703297], [71, 0.03296703296703297]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 33.32915210723877
+Time for finding non-repetitive 3.0994415283203125e-06
+gcc -O2 -fauto-inc-dec -fbranch-count-reg -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdce -fdelayed-branch -fdse -fguess-branch-probability -finline-functions-called-once -fipa-pure-const -fipa-profile -fipa-reference -fmerge-constants -freorder-blocks -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-slsr -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -fthread-jumps -falign-functions -falign-jumps -falign-loops -falign-labels -fcaller-saves -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns2 -fstore-merging -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -ftree-pre -ftree-vrp -finline-functions -funswitch-loops -fpredictive-commoning -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:19.79566788673401selected flags:22.568761587142944 val:0.8771268999541064
+[0.8771268999541064]
+features
+[0.0124188  0.01762491 0.01176045 0.00129421 0.00875256 0.
+ 0.012966   0.01023609 0.01049287 0.         0.         0.01864727
+ 0.         0.         0.01157509 0.00124744 0.00875256 0.00875256
+ 0.         0.         0.01237883 0.00233886 0.         0.
+ 0.03457235 0.         0.03539704 0.00237509 0.00237883 0.01715125
+ 0.00176045 0.         0.01789724 0.01       0.01       0.01851647
+ 0.02719731 0.02281251 0.         0.         0.03356184 0.01
+ 0.00284875 0.         0.01878268 0.00471395 0.01237509 0.01
+ 0.         0.01136089 0.00124744 0.00126758 0.00071379 0.02164235
+ 0.012498   0.         0.00875256 0.01237883 0.         0.01356995
+ 0.01127132 0.0006471  0.00280269 0.01237883 0.01613678 0.01
+ 0.01247424 0.10675637 0.00176045 0.01003624 0.01       0.01086324
+ 0.01172648 0.00762491 0.         0.01053753 0.02       0.00960044
+ 0.         0.01290651 0.02873242 0.02349186 0.00263848 0.01888665
+ 0.01445772 0.00823955 0.01394813 0.01       0.00823955 0.
+ 0.         0.00364268 0.         0.00789724 0.         0.
+ 0.         0.01697407 0.02265664 0.01766114 0.        ]
+[[67, 0.1067563742589773], [26, 0.03539703739878463], [24, 0.03457234839776385], [40, 0.03356183652594331], [80, 0.028732419227216505], [36, 0.027197307444958577], [81, 0.023491864564870304], [37, 0.02281251262240729]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 33.28336811065674
+Time for finding non-repetitive 3.337860107421875e-06
+gcc -O2 -fdse -fforward-propagate -fif-conversion -fipa-pure-const -fipa-reference -fmerge-constants -freorder-blocks -fsplit-wide-types -fssa-backprop -ftree-bit-ccp -ftree-dce -ftree-dominator-opts -ftree-phiprop -ftree-sink -ftree-ter -funit-at-a-time -falign-jumps -fcse-follow-jumps -fcse-skip-blocks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse-lm -fhoist-adjacent-loads -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -fpartial-inlining -freorder-blocks-algorithm=stc -frerun-cse-after-loop -fsched-spec -fschedule-insns2 -fstrict-aliasing -fstrict-overflow -ftree-switch-conversion -fcode-hoisting -ftree-pre -finline-functions -funswitch-loops -fgcse-after-reload -ftree-loop-vectorize -ftree-slp-vectorize -fvect-cost-model -fpeel-loops -fdelayed-branch -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:20.79197072982788selected flags:17.9078106880188 val:1.161055982333939
+[1.161055982333939]
+features
+[9.90723559e-03 0.00000000e+00 1.99162482e-02 0.00000000e+00
+ 3.57197485e-03 0.00000000e+00 1.08184355e-02 5.56962802e-03
+ 2.46801355e-02 1.02621192e-02 0.00000000e+00 1.07490609e-02
+ 9.98084383e-03 1.61359620e-02 1.36246744e-03 1.65489797e-02
+ 9.43347051e-03 4.09357297e-04 1.02093811e-02 0.00000000e+00
+ 6.18062371e-05 3.49910759e-03 0.00000000e+00 0.00000000e+00
+ 3.08333546e-03 1.19564241e-03 6.57685575e-02 8.73355088e-05
+ 1.71730486e-04 1.13218486e-02 2.11533514e-02 1.93949617e-04
+ 8.17526399e-03 0.00000000e+00 7.99469980e-03 1.28005400e-02
+ 2.28335425e-03 2.50436915e-03 1.71394100e-02 8.49259661e-03
+ 6.59845015e-04 1.00000000e-02 8.39768034e-03 7.23438721e-05
+ 2.97292684e-02 3.83137916e-04 1.15286354e-02 1.61055180e-02
+ 5.05308337e-04 1.42930435e-02 8.53695629e-03 0.00000000e+00
+ 2.26971811e-03 1.64548394e-02 5.02121709e-04 0.00000000e+00
+ 0.00000000e+00 1.03042499e-02 2.01058434e-04 1.11452001e-02
+ 1.49920234e-02 8.41915442e-03 2.16898924e-02 1.82866555e-02
+ 0.00000000e+00 4.85069875e-04 0.00000000e+00 8.31138176e-02
+ 2.17660386e-02 1.00000000e-02 2.32547409e-04 1.47172047e-02
+ 9.79894157e-03 2.41851491e-02 7.37295728e-03 1.36246744e-03
+ 2.68485612e-03 5.43308598e-04 0.00000000e+00 1.79644997e-03
+ 9.25542394e-03 7.28106897e-02 1.44997475e-04 8.49259661e-03
+ 1.61079602e-02 8.34950245e-03 2.69703925e-02 1.19213936e-03
+ 1.88057087e-02 4.38120955e-03 9.44766456e-03 7.48183106e-03
+ 8.49259661e-03 2.34057188e-03 1.65746742e-03 1.00747504e-02
+ 0.00000000e+00 4.59458580e-02 1.15819697e-02 1.84490127e-02
+ 1.00000000e-02]
+[[67, 0.0831138176215682], [81, 0.07281068974763448], [26, 0.06576855751209626], [97, 0.04594585801743295], [44, 0.02972926843639272], [86, 0.02697039253876995], [8, 0.02468013548097057], [73, 0.024185149096212742]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 33.58978462219238
+Time for finding non-repetitive 4.0531158447265625e-06
+gcc -O2 -fbranch-count-reg -fdce -fdefer-pop -fdse -fforward-propagate -fguess-branch-probability -fif-conversion2 -fipa-pure-const -fipa-reference -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-coalesce-vars -ftree-copy-prop -ftree-dce -ftree-fre -ftree-phiprop -ftree-sink -ftree-slsr -ftree-pta -funit-at-a-time -fthread-jumps -falign-loops -falign-labels -fcaller-saves -fcrossjumping -fcse-follow-jumps -fdelete-null-pointer-checks -fdevirtualize -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-bit-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-strlen -fpeephole2 -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fschedule-insns -fstore-merging -fstrict-aliasing -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -fcode-hoisting -ftree-pre -ftree-vrp -fipa-ra -finline-functions -funswitch-loops -fpredictive-commoning -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -ftree-slp-vectorize -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:17.955059051513672selected flags:16.812044620513916 val:1.067987829963588
+[1.067987829963588]
+features
+[9.47729255e-03 6.67220877e-05 8.94065911e-04 1.28747407e-02
+ 0.00000000e+00 1.07377735e-02 1.09221965e-02 1.93758723e-03
+ 2.54296469e-02 8.47993388e-03 5.66479110e-04 9.43352089e-03
+ 4.15188440e-03 1.36422636e-02 1.23685116e-02 1.65344509e-04
+ 5.59664352e-03 1.28977878e-03 5.05834018e-05 0.00000000e+00
+ 3.04844980e-03 1.71008144e-03 1.97747152e-03 3.53912699e-03
+ 1.85488838e-03 1.26244032e-02 4.16103823e-02 1.80116711e-03
+ 1.55469747e-02 5.96314844e-04 4.96808628e-03 7.79184235e-05
+ 1.19692697e-02 3.56261279e-02 1.82528159e-02 1.11383703e-03
+ 1.89507216e-03 0.00000000e+00 1.11111636e-03 7.60943342e-03
+ 7.67821097e-03 3.21166845e-02 1.48352236e-04 9.08008800e-03
+ 9.56312219e-03 5.26377790e-02 8.77881179e-03 1.09540059e-02
+ 9.60179347e-03 1.12895440e-02 7.76796801e-06 1.18047272e-02
+ 1.99201467e-03 0.00000000e+00 6.12569233e-05 6.79016603e-04
+ 1.52018172e-03 0.00000000e+00 0.00000000e+00 1.43032278e-02
+ 4.22408662e-04 1.57948440e-02 1.91797122e-03 1.91946309e-03
+ 1.15598709e-03 1.81312752e-04 9.66766319e-06 8.14338482e-02
+ 3.47081698e-02 2.11701221e-03 1.17820397e-02 1.01187503e-02
+ 4.99957173e-02 2.49202338e-03 1.60624837e-02 5.24140711e-04
+ 4.10278269e-03 3.88458202e-03 1.73947967e-02 1.06033135e-02
+ 3.17433955e-03 4.18830875e-02 4.06862998e-03 4.41457759e-04
+ 2.82280943e-03 4.18895768e-03 6.20329068e-02 1.08278868e-04
+ 1.04320207e-02 0.00000000e+00 6.50261358e-03 2.17296134e-05
+ 4.51698853e-03 4.59446631e-03 8.40056871e-03 9.10420287e-03
+ 0.00000000e+00 6.40976117e-02 1.22824733e-02 9.35977674e-03
+ 8.11127417e-03]
+[[67, 0.08143384819966785], [97, 0.06409761171013975], [86, 0.06203290683591787], [45, 0.052637778990850155], [72, 0.04999571728445435], [81, 0.04188308749109298], [26, 0.04161038234792256], [33, 0.035626127943377196]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 32.94813013076782
+Time for finding non-repetitive 5.4836273193359375e-06
+gcc -O2 -fdelayed-branch -fif-conversion -finline-functions-called-once -fmerge-constants -freorder-blocks -ftree-bit-ccp -ftree-ch -ftree-coalesce-vars -ftree-dse -ftree-sink -ftree-pta -ftree-ter -fthread-jumps -falign-functions -falign-jumps -fcrossjumping -fdevirtualize-speculatively -fexpensive-optimizations -finline-small-functions -fipa-vrp -flra-remat -foptimize-sibling-calls -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fsched-interblock -fsched-spec -fstrict-aliasing -fcode-hoisting -fipa-ra -ftree-loop-distribute-patterns -ftree-slp-vectorize -fauto-inc-dec -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:19.750819206237793selected flags:17.49142336845398 val:1.1291716397339433
+[1.1291716397339433]
+features
+[2.49383194e-03 5.34765226e-04 9.61300097e-04 8.05087360e-03
+ 9.89650950e-03 8.14123807e-03 7.28067015e-04 0.00000000e+00
+ 1.04191383e-02 7.01463398e-04 8.56171001e-03 2.15055626e-03
+ 2.78756128e-03 1.12297887e-02 1.44557204e-02 1.41630303e-04
+ 2.75818806e-02 9.70822304e-03 2.78226196e-05 8.83956049e-04
+ 3.53952486e-03 2.22660088e-03 1.62828594e-03 3.01104442e-04
+ 6.26254786e-05 6.42673465e-03 6.63309189e-02 2.27362808e-02
+ 1.22732301e-02 0.00000000e+00 6.18411362e-03 2.25073716e-04
+ 4.49267350e-04 6.51157867e-04 2.10669683e-02 1.19748265e-03
+ 3.57471326e-03 8.38453984e-03 2.23587572e-03 1.04156561e-02
+ 6.99065673e-04 1.49093957e-02 6.75716992e-04 1.03844143e-02
+ 7.58449018e-04 5.05852732e-02 2.78000920e-03 1.52779705e-03
+ 1.35452417e-03 2.10679095e-04 1.85464034e-02 8.15857233e-03
+ 8.37791540e-03 4.15600156e-04 3.78609035e-04 1.77781576e-04
+ 2.34203523e-03 2.13556734e-03 8.54196809e-06 0.00000000e+00
+ 4.04360974e-03 8.65574085e-03 2.47857493e-03 2.94025172e-03
+ 1.51992610e-03 2.51873017e-03 1.49479674e-03 3.37662423e-02
+ 6.30009780e-03 1.12760951e-02 8.20540433e-03 2.06362629e-03
+ 7.95731746e-02 3.36946108e-03 2.58035316e-02 1.18304482e-04
+ 3.82424075e-03 1.91918811e-02 4.35937377e-03 3.17802751e-03
+ 4.99654190e-03 8.76543565e-02 1.64691848e-03 1.60841382e-03
+ 1.96950874e-03 0.00000000e+00 8.80146545e-02 2.92791160e-03
+ 2.54236156e-03 8.45363292e-03 1.25673682e-03 8.22016759e-04
+ 2.32163715e-03 3.36171577e-04 7.59257570e-04 0.00000000e+00
+ 0.00000000e+00 1.01786698e-01 2.47447221e-02 2.67800731e-02
+ 2.90475475e-03]
+[[97, 0.10178669754795795], [86, 0.08801465445922398], [81, 0.08765435646416954], [72, 0.07957317458814131], [26, 0.06633091891588577], [45, 0.050585273224515157], [67, 0.03376624234268288], [16, 0.02758188061997681]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 33.37402296066284
+Time for finding non-repetitive 4.5299530029296875e-06
+gcc -O2 -fdelayed-branch -fipa-profile -ftree-bit-ccp -ftree-ccp -ftree-coalesce-vars -ftree-dominator-opts -ftree-forwprop -ftree-ter -fthread-jumps -falign-jumps -fdevirtualize-speculatively -fexpensive-optimizations -fgcse-lm -findirect-inlining -fpartial-inlining -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -fschedule-insns2 -fstore-merging -fstrict-aliasing -fcode-hoisting -ftree-pre -ftree-vrp -fgcse-after-reload -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fcprop-registers -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:21.02311086654663selected flags:19.830318450927734 val:1.0601499375096064
+[1.0601499375096064]
+features
+[9.14418766e-03 3.56254707e-03 7.84474691e-03 1.88871172e-02
+ 2.24212889e-02 5.45476388e-04 0.00000000e+00 9.56630790e-03
+ 2.97342999e-03 2.45172747e-05 5.91939989e-04 8.39105802e-03
+ 2.55555221e-03 1.46105573e-02 1.42585069e-02 1.07334577e-02
+ 1.52197331e-02 2.40816589e-03 2.77375430e-02 0.00000000e+00
+ 9.09051757e-03 8.73403679e-04 4.23271773e-05 1.15312648e-03
+ 8.79182247e-03 2.54559330e-02 7.30199638e-02 2.45132765e-04
+ 3.30002080e-02 4.79155039e-05 1.10797130e-05 9.76332886e-04
+ 8.36593187e-03 6.32952735e-04 1.25107880e-02 2.35349818e-02
+ 4.02710435e-03 7.18145757e-03 5.06516340e-04 1.45959886e-02
+ 6.59998799e-05 1.75055805e-03 6.34564370e-04 1.23861969e-03
+ 1.75809493e-02 1.65787739e-02 0.00000000e+00 2.33364712e-02
+ 1.94900104e-05 1.32197230e-03 3.79891279e-04 6.08668256e-03
+ 0.00000000e+00 5.04718437e-04 2.59981122e-03 2.70757910e-03
+ 0.00000000e+00 3.36094701e-03 2.09259549e-04 9.31756006e-03
+ 4.80545673e-04 2.35660812e-02 1.02225627e-03 5.74355566e-03
+ 1.04123554e-03 1.11497277e-04 1.88025462e-03 2.69101775e-02
+ 1.05814844e-02 1.96977090e-03 1.36972758e-04 3.86275627e-03
+ 3.15067856e-02 2.42773874e-04 3.79459289e-03 4.37174240e-03
+ 1.25831259e-02 2.09731284e-02 1.03611180e-02 1.08069612e-04
+ 6.12576162e-03 7.55348398e-02 1.92257810e-02 1.51488921e-03
+ 1.25079750e-04 9.48106580e-04 6.86366886e-02 1.18710992e-03
+ 2.04908507e-02 0.00000000e+00 1.72038015e-02 2.16601596e-03
+ 2.73817652e-03 1.96239681e-03 7.44138496e-03 4.01770794e-03
+ 7.56245011e-08 6.28888419e-02 8.04056682e-03 2.98848250e-02
+ 2.53857094e-02]
+[[81, 0.07553483977638882], [26, 0.07301996375405553], [86, 0.06863668864239227], [97, 0.06288884185682649], [28, 0.033000208012246304], [72, 0.03150678563185841], [99, 0.029884824980372482], [18, 0.027737543046120024]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 33.49731969833374
+Time for finding non-repetitive 5.0067901611328125e-06
+gcc -O2 -fcprop-registers -fdelayed-branch -fguess-branch-probability -fif-conversion -fipa-profile -fipa-reference -fmerge-constants -fmove-loop-invariants -fssa-backprop -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-dominator-opts -ftree-forwprop -ftree-phiprop -ftree-sink -funit-at-a-time -falign-jumps -falign-labels -fcrossjumping -fcse-follow-jumps -fdelete-null-pointer-checks -fdevirtualize-speculatively -fhoist-adjacent-loads -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-vrp -flra-remat -foptimize-strlen -fpartial-inlining -freorder-blocks-algorithm=stc -freorder-functions -fsched-interblock -fsched-spec -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -fcode-hoisting -finline-functions -fpredictive-commoning -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fbranch-count-reg -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:20.05631971359253selected flags:19.356083393096924 val:1.0361765500940823
+[1.0361765500940823]
+features
+[1.39578570e-02 1.91548448e-02 2.67989915e-03 2.56726668e-02
+ 6.13461513e-02 1.63105354e-03 1.21237228e-03 2.50659580e-04
+ 1.01058515e-02 9.76945676e-03 1.15539176e-02 7.13554204e-03
+ 4.84973561e-03 6.09541254e-04 9.16180255e-03 1.05661999e-02
+ 1.73173445e-02 2.40865282e-04 9.25710575e-03 3.44898516e-03
+ 2.18012080e-02 2.39415863e-03 4.30432598e-04 4.69781900e-03
+ 5.87467152e-04 3.91962450e-03 2.03647980e-02 3.60713562e-03
+ 1.21843909e-02 9.64534447e-03 8.00587392e-03 2.30702659e-03
+ 2.22033270e-03 6.86562504e-03 1.52174665e-02 7.62180293e-03
+ 2.36417164e-03 7.11873373e-03 9.73059522e-03 2.51873448e-02
+ 6.00153160e-03 3.55356749e-02 2.61069430e-04 6.32515453e-03
+ 2.23075653e-02 4.53888141e-03 8.14932379e-03 1.78376410e-03
+ 9.15794348e-03 7.44110434e-03 2.97275769e-03 3.61740950e-02
+ 1.23555223e-02 6.03774366e-02 8.27147854e-03 1.21027961e-02
+ 0.00000000e+00 2.00080959e-02 5.65598838e-04 1.90799667e-03
+ 3.46674230e-03 1.99314853e-03 8.12641000e-03 9.19915285e-03
+ 8.30215684e-08 4.69740910e-04 2.99046670e-02 4.84516863e-02
+ 1.53105847e-03 6.45269132e-03 4.27872980e-03 1.21362091e-03
+ 1.90628557e-02 7.32297807e-03 2.01356439e-03 1.95407786e-03
+ 5.68313498e-03 7.41658980e-03 2.75917962e-03 8.73254869e-03
+ 2.85658585e-03 3.67283362e-02 3.13743530e-03 2.67254640e-03
+ 1.52519435e-03 5.53534127e-06 4.44355331e-02 2.68830049e-03
+ 1.58493686e-02 3.17451769e-03 5.92228531e-03 6.66802393e-03
+ 1.74691149e-02 4.53106827e-03 1.90005854e-03 4.60374586e-03
+ 9.70159494e-04 3.00796657e-02 6.69123117e-04 6.41285125e-04
+ 1.00846136e-03]
+[[4, 0.06134615131856054], [53, 0.060377436596711645], [67, 0.04845168628192518], [86, 0.04443553308278956], [81, 0.03672833615753737], [51, 0.03617409496207418], [41, 0.03553567489052779], [97, 0.03007966566849379]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 33.3863263130188
+Time for finding non-repetitive 5.9604644775390625e-06
+gcc -O2 -fdelayed-branch -fforward-propagate -fipa-pure-const -fmerge-constants -fshrink-wrap-separate -fsplit-wide-types -ftree-bit-ccp -ftree-ccp -ftree-coalesce-vars -ftree-forwprop -ftree-phiprop -ftree-sink -ftree-pta -ftree-ter -falign-loops -falign-labels -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fexpensive-optimizations -fgcse -fgcse-lm -finline-small-functions -findirect-inlining -fipa-cp -fipa-sra -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fsched-interblock -fsched-spec -fschedule-insns2 -fstrict-aliasing -ftree-pre -funswitch-loops -fgcse-after-reload -ftree-loop-distribute-patterns -ftree-slp-vectorize -ftree-partial-pre -fpeel-loops -fcompare-elim -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:20.73696255683899selected flags:16.05258083343506 val:1.2918148659091055
+[1.2918148659091055]
+features
+[1.48374566e-02 1.72129280e-03 3.69560088e-04 2.12978976e-02
+ 3.60946083e-02 1.34618130e-02 4.49426142e-03 0.00000000e+00
+ 2.28090548e-03 1.51984755e-03 3.56696987e-02 5.18675367e-03
+ 7.70312592e-03 2.51866043e-03 9.75921574e-03 7.54252057e-03
+ 4.87700320e-04 1.89087753e-03 6.62576454e-05 0.00000000e+00
+ 1.80899300e-02 7.98883577e-07 2.12151599e-02 1.82770663e-03
+ 2.18398241e-03 1.07372003e-02 3.85811176e-02 4.13264934e-03
+ 2.09468108e-02 1.09238340e-04 6.02166878e-05 6.91997129e-03
+ 1.43369771e-03 7.74546944e-03 1.11796405e-02 1.60822127e-03
+ 1.29608116e-03 4.70942563e-04 2.32688601e-03 3.04790709e-02
+ 5.71084918e-03 1.33968023e-02 3.95629010e-03 2.08391653e-03
+ 2.11428920e-03 1.42581153e-03 5.33619102e-03 0.00000000e+00
+ 8.70954016e-03 4.24334618e-03 3.27759809e-03 4.00335265e-02
+ 8.84568017e-03 2.86601367e-02 3.41795028e-03 5.29734841e-03
+ 6.27857260e-04 2.50716199e-03 2.35638606e-04 1.30832503e-02
+ 3.08308030e-03 8.84026674e-03 2.30913746e-03 1.85988216e-02
+ 6.21309326e-03 0.00000000e+00 3.40500345e-02 8.92633968e-02
+ 5.98987523e-03 5.76494844e-04 3.81138157e-04 3.43174612e-03
+ 2.99578648e-02 6.38003562e-04 1.66942361e-02 9.90629141e-03
+ 2.18235847e-03 9.84463381e-03 0.00000000e+00 9.11798599e-03
+ 2.52883258e-05 6.20901049e-02 8.82867512e-04 9.38240752e-03
+ 2.07638954e-03 7.42290741e-03 4.37292877e-02 6.85593564e-03
+ 1.42016863e-02 7.74396518e-04 3.78998495e-03 1.85625826e-02
+ 1.17385854e-02 9.21958290e-04 8.70139962e-03 1.57076990e-03
+ 1.94131669e-03 3.02726201e-02 1.77593794e-03 1.24572606e-02
+ 8.53742375e-03]
+[[67, 0.08926339677866892], [81, 0.06209010487915864], [86, 0.04372928772920678], [51, 0.040033526513016955], [26, 0.038581117615898795], [4, 0.036094608318515624], [10, 0.03566969869476469], [66, 0.03405003445188497]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 33.41408944129944
+Time for finding non-repetitive 4.5299530029296875e-06
+gcc -O2 -fcompare-elim -fcprop-registers -fdce -fdefer-pop -fdse -fforward-propagate -fguess-branch-probability -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-profile -fipa-reference -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -ftree-ccp -ftree-coalesce-vars -ftree-copy-prop -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-slsr -ftree-sra -ftree-pta -ftree-ter -fthread-jumps -falign-functions -falign-loops -falign-labels -fcaller-saves -fcrossjumping -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse-lm -fhoist-adjacent-loads -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-sra -fisolate-erroneous-paths-dereference -flra-remat -fpartial-inlining -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fsched-interblock -fsched-spec -fschedule-insns -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -ftree-pre -fipa-ra -funswitch-loops -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -ftree-partial-pre -fcombine-stack-adjustments -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:16.41803789138794selected flags:19.27259135246277 val:0.8518853324459631
+[0.8518853324459631]
+features
+[0.00000000e+00 9.47459212e-03 2.81396206e-03 3.63499155e-02
+ 7.32670564e-02 2.88206465e-03 1.52473576e-02 1.30141455e-03
+ 5.59355288e-03 4.53053380e-03 1.57043022e-02 2.13736472e-02
+ 1.80222570e-03 4.82829142e-03 1.49939207e-02 3.85442561e-03
+ 1.31808939e-02 3.72507077e-03 1.41909336e-02 7.37444693e-05
+ 2.39572268e-03 5.32492041e-04 8.57720984e-03 4.46478808e-04
+ 3.94843551e-04 2.88605780e-03 2.12906315e-01 2.62295343e-03
+ 5.19494969e-03 4.07808404e-04 4.91958422e-05 4.59214662e-03
+ 2.51282227e-05 5.54108256e-03 3.99348859e-03 1.46802956e-02
+ 2.45630436e-03 4.72881530e-03 4.27227870e-04 2.09632928e-02
+ 2.63404362e-03 1.06974666e-02 6.03183379e-04 1.57717004e-03
+ 1.21370676e-02 6.41601739e-03 5.26963717e-03 4.17779596e-03
+ 1.36466388e-02 8.62289576e-03 4.49176258e-03 3.21383393e-02
+ 6.70203905e-03 2.29967006e-02 2.09081673e-03 1.02485035e-03
+ 1.08637364e-02 4.66785688e-03 2.57664856e-03 2.66283914e-03
+ 2.14265336e-03 1.23554456e-02 3.19092346e-03 3.82468820e-03
+ 1.81214411e-03 1.69710256e-03 1.84206368e-02 1.48976054e-02
+ 2.48455906e-02 2.37074779e-03 1.70754530e-04 7.00926303e-04
+ 9.90116376e-03 9.18428817e-04 1.46132472e-02 2.18414845e-03
+ 8.57610401e-04 3.74350544e-03 6.55334197e-04 2.28533073e-02
+ 1.30325405e-05 2.25394482e-02 1.17252752e-03 1.71345590e-02
+ 1.06284692e-04 3.44606471e-03 3.95095727e-02 2.95226170e-03
+ 1.02900835e-02 3.18614159e-04 1.86823629e-03 8.10015067e-04
+ 5.00120776e-03 1.50194642e-03 8.94970238e-03 3.10674085e-03
+ 1.63506551e-02 1.87889496e-05 6.29505102e-04 1.42848717e-02
+ 1.28326977e-02]
+[[26, 0.2129063146258757], [4, 0.07326705644701936], [86, 0.03950957270546418], [3, 0.03634991547788387], [51, 0.032138339256643354], [68, 0.024845590579070594], [53, 0.022996700606109862], [79, 0.0228533073104708]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 33.24999952316284
+Time for finding non-repetitive 5.4836273193359375e-06
+gcc -O2 -fbranch-count-reg -fcompare-elim -fdce -fdelayed-branch -fdse -fif-conversion2 -finline-functions-called-once -fipa-reference -fmerge-constants -fmove-loop-invariants -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -falign-functions -falign-labels -fcse-skip-blocks -fexpensive-optimizations -fgcse -fgcse-lm -finline-small-functions -fipa-cp -fipa-bit-cp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fsched-spec -fschedule-insns -fschedule-insns2 -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -ftree-pre -ftree-vrp -fipa-ra -finline-functions -funswitch-loops -fgcse-after-reload -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:23.501441717147827selected flags:22.06511402130127 val:1.0650949591495404
+[1.0650949591495404]
+features
+[1.74344858e-02 5.30134622e-03 2.73457022e-03 1.19237059e-01
+ 1.38318541e-02 4.18565556e-03 1.88230432e-03 2.05150244e-02
+ 3.77470947e-03 3.62439787e-06 2.99379122e-02 3.07683124e-03
+ 6.18304305e-03 2.65073265e-03 1.62306623e-02 6.07174768e-03
+ 8.99977665e-03 1.44656065e-03 1.84260984e-03 6.82002679e-03
+ 2.33464841e-02 1.40255972e-03 2.99934372e-03 1.11457935e-03
+ 1.78844043e-03 4.30297791e-04 1.78230748e-01 6.23367507e-03
+ 1.04794712e-04 9.65138791e-05 2.61642402e-03 3.96079782e-04
+ 9.48455698e-03 7.49845994e-03 9.55154680e-03 7.83409414e-03
+ 1.28439271e-03 1.52439623e-06 2.24615298e-02 4.28117539e-02
+ 1.42175148e-03 1.87816000e-02 1.40935326e-03 3.16814379e-03
+ 1.19248167e-02 1.15959337e-02 2.75816274e-02 3.07370349e-03
+ 8.49344957e-03 4.54705754e-03 4.02744182e-03 1.43905035e-02
+ 5.67787786e-03 6.82023784e-02 6.03917452e-04 6.62164263e-04
+ 1.99393915e-03 1.31648731e-03 8.79878190e-03 9.26163592e-04
+ 1.13085915e-03 4.00696425e-03 1.86322874e-03 3.25438854e-03
+ 2.42895304e-03 1.61432795e-04 5.17022389e-03 1.60391036e-02
+ 2.27164995e-02 1.07588585e-02 2.88027158e-05 1.29889978e-03
+ 5.07362147e-03 4.14249829e-05 3.16847316e-03 4.02191617e-03
+ 1.27109682e-03 3.59550391e-03 3.04555792e-04 4.49897773e-03
+ 6.61933615e-04 3.08449262e-02 6.88607382e-05 2.14801927e-03
+ 3.40982957e-03 2.16681378e-03 2.13858536e-02 1.57805892e-03
+ 1.54193115e-02 1.65872574e-03 4.41461512e-03 2.00421546e-03
+ 2.25124067e-03 1.65979624e-03 2.67236217e-03 3.41982437e-03
+ 9.88101160e-04 1.19669234e-02 2.21023809e-05 6.37221748e-04
+ 9.34205154e-03]
+[[26, 0.1782307479835006], [3, 0.11923705928826264], [53, 0.06820237841130648], [39, 0.042811753863210116], [81, 0.030844926219184266], [10, 0.02993791222372498], [46, 0.02758162736714608], [20, 0.023346484146659168]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 32.9821994304657
+Time for finding non-repetitive 7.62939453125e-06
+gcc -O2 -fauto-inc-dec -fbranch-count-reg -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdefer-pop -fdse -fforward-propagate -fguess-branch-probability -fif-conversion2 -fif-conversion -fmerge-constants -freorder-blocks -fshrink-wrap-separate -fsplit-wide-types -ftree-bit-ccp -ftree-coalesce-vars -ftree-copy-prop -ftree-dominator-opts -ftree-forwprop -ftree-fre -ftree-sink -ftree-pta -funit-at-a-time -falign-functions -falign-loops -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -flra-remat -foptimize-sibling-calls -fpartial-inlining -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstrict-aliasing -ftree-builtin-call-dce -ftree-tail-merge -ftree-pre -fipa-ra -funswitch-loops -ftree-loop-vectorize -ftree-loop-distribute-patterns -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:17.150012493133545selected flags:19.411705255508423 val:0.8834881978370714
+[0.8834881978370714]
+features
+[3.82791944e-02 1.82930991e-03 2.29878599e-03 2.90172362e-01
+ 3.91209095e-02 8.10860477e-03 6.05846096e-03 8.64478680e-03
+ 8.41228860e-03 2.82579567e-03 4.21668151e-03 5.26947099e-05
+ 2.27292017e-03 5.59184412e-03 4.86926220e-04 1.44261367e-02
+ 1.64088620e-03 1.97171423e-06 1.07011115e-03 3.72443432e-03
+ 2.15182153e-02 1.72765152e-04 2.91647458e-04 2.75449745e-03
+ 1.52032190e-03 4.74206157e-03 6.59457868e-02 5.59534485e-03
+ 2.29250846e-03 4.63860601e-04 1.52600656e-04 4.80868371e-04
+ 2.66828309e-03 9.32692202e-03 9.55743404e-03 1.30410457e-02
+ 2.79011948e-04 4.96854732e-04 3.56427672e-02 1.07262828e-02
+ 2.48957115e-03 8.41643490e-03 2.83466029e-03 2.58843643e-03
+ 8.66100161e-04 1.73529870e-02 3.59625127e-02 4.05413508e-03
+ 9.69479713e-03 1.07622935e-03 3.04637480e-03 4.41648467e-03
+ 1.57251756e-03 3.88102458e-02 8.00101776e-04 2.81408268e-03
+ 3.13103806e-03 4.84554307e-04 1.53323438e-03 3.08114704e-04
+ 1.02648008e-02 2.85776746e-04 3.47083921e-04 3.75295072e-03
+ 5.74141071e-03 1.60039917e-03 8.80853853e-03 1.53750407e-02
+ 8.94667401e-03 2.75432814e-03 5.09865923e-03 4.77104157e-06
+ 1.26411964e-03 6.61229592e-04 0.00000000e+00 1.83290416e-03
+ 4.94630634e-03 4.60798325e-03 3.47865514e-03 1.04492640e-03
+ 1.07069692e-03 8.60554544e-03 5.40577262e-04 5.60180475e-03
+ 2.39738321e-03 8.36643019e-03 3.22936257e-02 1.20204792e-03
+ 7.23139911e-03 2.40180185e-03 1.48500600e-02 1.83464314e-06
+ 5.76815694e-03 1.19444147e-07 9.66826695e-03 2.93018939e-03
+ 3.07899965e-04 5.58025321e-03 5.35219749e-03 6.12507507e-03
+ 2.97312778e-02]
+[[3, 0.2901723620508574], [26, 0.06594578684287096], [4, 0.03912090948378818], [53, 0.03881024579733888], [0, 0.03827919440198163], [46, 0.03596251271002204], [38, 0.035642767156428876], [86, 0.032293625714189055]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 32.818381786346436
+Time for finding non-repetitive 6.198883056640625e-06
+gcc -O2 -fbranch-count-reg -fcompare-elim -fcprop-registers -fdefer-pop -fdelayed-branch -fforward-propagate -fguess-branch-probability -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-reference -fmerge-constants -fmove-loop-invariants -fsplit-wide-types -ftree-bit-ccp -ftree-ccp -ftree-copy-prop -ftree-dominator-opts -ftree-fre -ftree-phiprop -ftree-sink -ftree-pta -ftree-ter -falign-functions -falign-jumps -falign-loops -fcaller-saves -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdevirtualize -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstrict-overflow -ftree-pre -ftree-vrp -fipa-ra -funswitch-loops -fpredictive-commoning -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:19.834219455718994selected flags:19.39991331100464 val:1.022387014712483
+[1.022387014712483]
+features
+[2.75163808e-02 8.36141216e-03 8.14904383e-03 3.24251687e-01
+ 1.50070838e-02 6.78462105e-03 2.98199882e-03 2.18352782e-03
+ 1.61518348e-02 9.98692336e-03 1.52567281e-03 4.28144691e-02
+ 4.00802309e-03 1.69221906e-03 3.60985992e-03 5.30468222e-05
+ 4.26172462e-04 3.52587378e-03 1.02123610e-03 1.67656238e-02
+ 1.21428189e-02 4.07930614e-04 1.06394717e-03 4.41151621e-05
+ 5.97918205e-03 3.36990594e-03 6.04260681e-02 1.20787675e-03
+ 7.43600559e-03 1.78384787e-02 9.32743101e-05 3.31187927e-04
+ 1.77653038e-02 5.29070625e-05 4.00849426e-03 2.73033009e-03
+ 1.18692695e-04 6.54155708e-07 7.08727949e-05 8.12848524e-03
+ 6.71473758e-04 5.86079160e-03 1.19965994e-04 1.04589995e-02
+ 2.19038296e-03 6.15580497e-03 1.07425413e-02 4.25526427e-03
+ 1.00802984e-02 1.48380404e-03 1.06393323e-02 2.27387070e-03
+ 2.12921923e-02 3.34092615e-02 5.89468298e-04 6.21262729e-03
+ 1.81881321e-03 9.19122415e-04 1.19655211e-04 1.12218683e-02
+ 4.08540687e-03 4.24805046e-03 3.19865336e-03 3.95046709e-04
+ 7.87936463e-03 1.46286224e-04 8.25837241e-03 3.61803183e-04
+ 1.02788931e-03 1.11472780e-03 1.80008326e-04 7.90646718e-04
+ 9.18748315e-03 5.44545767e-05 5.09640906e-03 3.22974081e-04
+ 3.06281320e-03 5.54603661e-03 2.29455057e-03 2.14570344e-03
+ 1.15066843e-03 2.05361152e-02 2.55108445e-03 3.30665397e-03
+ 1.22080248e-03 5.50409940e-03 5.84801678e-02 1.27403111e-04
+ 1.18464071e-02 1.05620680e-02 5.26192655e-03 8.64867226e-04
+ 1.94527613e-03 1.89117410e-03 9.22948911e-03 1.57673101e-03
+ 2.84472545e-04 4.36250076e-03 5.55800451e-04 3.08046360e-03
+ 1.57163677e-02]
+[[3, 0.32425168709491087], [26, 0.060426068091058036], [86, 0.058480167847996166], [11, 0.04281446913432761], [53, 0.03340926151350853], [0, 0.02751638084862002], [52, 0.021292192308214], [81, 0.02053611522882339]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 34.00483179092407
+Time for finding non-repetitive 8.821487426757812e-06
+gcc -O2 -fcompare-elim -fdelayed-branch -fdse -fforward-propagate -fipa-profile -fshrink-wrap-separate -fssa-backprop -ftree-bit-ccp -ftree-ch -ftree-coalesce-vars -ftree-sink -ftree-slsr -ftree-ter -falign-functions -falign-loops -falign-labels -fcrossjumping -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -foptimize-strlen -fpartial-inlining -frerun-cse-after-loop -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-pre -fpredictive-commoning -ftree-loop-distribute-patterns -ftree-slp-vectorize -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:18.82215404510498selected flags:19.300689220428467 val:0.9752063167352081
+[0.9752063167352081]
+features
+[5.50410691e-02 9.96193186e-04 1.69278764e-03 2.04795380e-01
+ 2.76081998e-02 1.40630026e-02 1.10200887e-02 1.71651108e-02
+ 4.49590147e-03 9.58353063e-03 3.19006094e-03 2.01946313e-03
+ 2.14129279e-03 4.26928175e-03 9.67324947e-04 1.37034627e-02
+ 2.45073404e-02 7.02106820e-03 2.26861229e-03 2.86070180e-03
+ 1.27117765e-02 1.55671298e-03 8.92014368e-03 6.13760863e-04
+ 8.30983342e-05 3.16427071e-03 7.21622083e-02 3.00276525e-03
+ 1.45171388e-03 1.20386025e-02 6.57893590e-03 3.38261208e-07
+ 4.42754215e-03 1.71109196e-03 8.93214832e-03 9.88414547e-03
+ 4.09243224e-04 7.07589965e-04 1.12718250e-02 7.07093206e-03
+ 2.34927104e-03 1.31367520e-03 7.11505777e-05 3.07353861e-03
+ 2.93817272e-02 6.57669091e-03 1.61403216e-02 5.68936854e-03
+ 4.55090907e-05 1.32631913e-03 2.95507191e-03 1.48322205e-03
+ 3.75518292e-03 1.64586199e-02 7.64214351e-04 6.08930307e-04
+ 8.11487640e-04 3.64049559e-04 1.08023676e-02 6.04619718e-03
+ 1.81124393e-03 1.42830920e-03 5.33410781e-03 4.09532639e-04
+ 1.52484471e-02 2.22524215e-03 2.20779706e-02 2.03111450e-02
+ 4.21439879e-03 5.71381033e-03 1.86531598e-02 4.10077269e-03
+ 2.02028391e-02 2.07352748e-03 3.55434635e-03 4.36151008e-03
+ 2.91692764e-03 5.86449964e-04 2.77775791e-03 5.58312993e-03
+ 4.73760809e-03 4.58703859e-03 4.16600491e-03 1.29685946e-03
+ 3.68090583e-03 2.40630240e-03 5.27434303e-02 2.64804206e-03
+ 2.58745344e-02 1.09825544e-02 1.27472101e-02 3.00618583e-04
+ 8.00413530e-03 8.31820295e-03 6.37985521e-03 1.25602012e-03
+ 3.34630441e-04 7.83555407e-03 5.19247874e-04 4.99173649e-03
+ 6.47924691e-03]
+[[3, 0.20479537950247195], [26, 0.07216220833091165], [0, 0.055041069134141446], [86, 0.05274343031788327], [44, 0.029381727156247473], [4, 0.027608199836554964], [88, 0.025874534362161822], [16, 0.02450734040994326]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 32.88950538635254
+Time for finding non-repetitive 1.0728836059570312e-05
+gcc -O2 -fauto-inc-dec -fcompare-elim -fcprop-registers -fdce -fdefer-pop -fdelayed-branch -fforward-propagate -fguess-branch-probability -fif-conversion2 -finline-functions-called-once -fipa-pure-const -fipa-reference -fmove-loop-invariants -freorder-blocks -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -fthread-jumps -falign-jumps -falign-loops -falign-labels -fcaller-saves -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -findirect-inlining -fipa-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -fpartial-inlining -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fschedule-insns -fschedule-insns2 -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-pre -finline-functions -funswitch-loops -fgcse-after-reload -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:22.61788249015808selected flags:18.00098490715027 val:1.2564802763194312
+[1.2564802763194312]
+features
+[3.84040562e-02 6.64281637e-03 6.47075733e-03 2.81084263e-01
+ 5.35120193e-03 3.06011027e-03 2.09133099e-04 4.75995792e-04
+ 5.09733664e-03 1.40303992e-02 6.14380116e-03 9.39278718e-03
+ 7.09929727e-04 1.95863163e-03 1.19925523e-04 1.19034167e-02
+ 8.10021807e-03 9.37394224e-04 3.16058519e-03 5.36721983e-03
+ 1.48914351e-02 3.46366696e-04 3.57394761e-03 5.27678266e-05
+ 6.87782684e-03 1.12519640e-03 3.39669386e-02 3.43231046e-03
+ 2.06760659e-04 1.42791836e-02 5.16339434e-03 1.41832207e-03
+ 9.09315858e-03 2.32115405e-03 3.83006841e-03 5.64854885e-03
+ 3.76471477e-04 3.19975252e-04 3.75309614e-02 3.75636256e-04
+ 1.31891304e-03 4.05745980e-03 9.23476031e-04 9.68211552e-03
+ 3.48359415e-02 1.04394754e-02 9.76817156e-03 1.07950540e-03
+ 9.65852859e-04 1.11814413e-03 1.40118063e-03 1.03411270e-02
+ 6.56298994e-03 2.24387146e-02 6.06502266e-03 5.88160222e-04
+ 2.00608179e-03 6.00636036e-04 4.16668950e-04 4.99403947e-03
+ 1.04706523e-03 2.72842206e-03 1.16886369e-02 3.88505578e-03
+ 1.29763438e-02 5.44126760e-04 3.36357102e-02 1.75517541e-02
+ 2.31618177e-02 1.58678116e-02 7.76514659e-03 3.11556747e-03
+ 2.55051952e-02 5.07671912e-03 7.97160058e-03 1.03478737e-03
+ 1.12245979e-02 1.93560139e-03 6.31331373e-04 2.84195346e-03
+ 1.29011896e-02 5.96750047e-03 9.38536676e-04 2.87993527e-03
+ 7.41349681e-05 2.27233973e-02 7.36719407e-03 1.59437624e-03
+ 1.65137972e-02 7.55713363e-03 8.19174305e-03 2.81701935e-03
+ 1.01057028e-02 4.28363297e-05 2.81867363e-03 3.62608170e-03
+ 7.19258009e-03 0.00000000e+00 1.03987579e-03 2.21628707e-03
+ 1.01886798e-02]
+[[3, 0.2810842633715083], [0, 0.03840405616235215], [38, 0.03753096140585581], [44, 0.034835941475111626], [26, 0.0339669385941163], [66, 0.03363571020159842], [72, 0.025505195181957728], [68, 0.02316181769662939]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 33.60514831542969
+Time for finding non-repetitive 8.58306884765625e-06
+gcc -O2 -fauto-inc-dec -fcompare-elim -fcprop-registers -fdefer-pop -fdelayed-branch -fdse -fforward-propagate -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-profile -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fssa-backprop -fssa-phiopt -ftree-coalesce-vars -ftree-copy-prop -ftree-dce -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-slsr -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -fthread-jumps -falign-functions -falign-jumps -falign-loops -falign-labels -fcaller-saves -fcrossjumping -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -fipa-cp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns2 -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -ftree-pre -finline-functions -funswitch-loops -fgcse-after-reload -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:21.12954831123352selected flags:19.23316478729248 val:1.0985996607897832
+[1.0985996607897832]
+features
+[2.58032950e-02 9.22248732e-04 2.94099225e-03 2.92197910e-01
+ 6.29460484e-03 2.16165339e-03 1.15119505e-02 4.37635526e-04
+ 2.56853834e-02 5.79089895e-03 2.04333190e-03 6.06277631e-04
+ 3.53290424e-03 8.73032588e-03 6.33698023e-04 9.54431775e-03
+ 2.32952490e-02 8.26018677e-04 3.23761618e-03 9.17793081e-03
+ 1.78700938e-02 3.47596244e-03 9.09791032e-03 7.85346009e-03
+ 4.61097948e-03 1.69370602e-04 1.75877533e-02 1.63738529e-02
+ 9.23179943e-04 5.13897468e-03 1.37017760e-02 1.33309814e-03
+ 1.39925120e-02 5.93359953e-03 1.27494207e-02 2.92151600e-03
+ 4.98971951e-04 1.12934476e-04 7.68549551e-03 1.89881390e-03
+ 6.50629318e-04 1.30769323e-03 2.06740758e-03 4.35742274e-03
+ 2.75809170e-02 1.00229776e-02 8.74119424e-03 5.40167061e-03
+ 3.38944587e-03 5.28685954e-03 7.37695260e-03 5.56742282e-04
+ 1.54145121e-02 1.96629327e-02 3.07259596e-03 1.20819837e-03
+ 7.63469694e-03 1.02542926e-04 2.76554992e-04 4.85666514e-03
+ 5.32651741e-03 2.80729694e-03 2.97856547e-04 4.75728130e-03
+ 2.14660194e-02 3.05866074e-04 1.84247162e-02 2.36624145e-02
+ 1.03592028e-02 2.18745164e-02 3.62128013e-03 9.08575358e-03
+ 2.53382753e-02 5.70482961e-03 8.57719492e-03 1.33943877e-03
+ 3.60647532e-03 8.59153755e-04 2.97060620e-03 1.37878625e-03
+ 7.83261368e-03 1.74672052e-02 1.79888870e-04 1.55531501e-03
+ 4.94942510e-03 2.10300180e-03 5.48173045e-03 5.41664932e-04
+ 6.02197316e-03 6.47735443e-03 9.94539818e-03 1.25868641e-04
+ 2.62014927e-02 8.88808989e-04 1.45289745e-02 1.06507804e-03
+ 1.85371217e-03 2.23748857e-04 3.81411162e-03 2.50325845e-03
+ 6.20336351e-03]
+[[3, 0.2921979100290562], [44, 0.027580916970063783], [92, 0.026201492748026654], [0, 0.02580329495895618], [8, 0.025685383421072284], [72, 0.02533827528520654], [67, 0.023662414520626358], [16, 0.023295248967615024]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 33.19868731498718
+Time for finding non-repetitive 7.3909759521484375e-06
+gcc -O2 -fauto-inc-dec -fbranch-count-reg -fcompare-elim -fcprop-registers -fdefer-pop -fdse -fforward-propagate -fif-conversion2 -finline-functions-called-once -fipa-pure-const -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap-separate -fsplit-wide-types -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-slsr -ftree-sra -ftree-pta -falign-jumps -falign-loops -falign-labels -fcaller-saves -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-bit-cp -fipa-vrp -fipa-sra -flra-remat -foptimize-sibling-calls -fpartial-inlining -fpeephole2 -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -ftree-pre -fipa-ra -funswitch-loops -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -ftree-slp-vectorize -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:18.217042207717896selected flags:20.14956283569336 val:0.9040911882935665
+[0.9040911882935665]
+features
+[5.74759713e-03 6.92563072e-03 1.62667362e-02 1.97960558e-01
+ 2.77952362e-03 1.27983568e-03 1.15607775e-03 8.34238192e-04
+ 2.19459563e-02 2.10309929e-02 1.10058113e-03 1.46867973e-03
+ 4.95610284e-04 2.91834109e-03 3.69812353e-04 2.60046165e-03
+ 6.45777129e-03 2.58626063e-03 6.02890036e-03 1.82123836e-03
+ 1.77986156e-02 6.30333803e-03 2.53714799e-02 9.40686748e-03
+ 3.54817340e-03 1.16300245e-03 7.53307349e-04 6.88990011e-03
+ 6.88374453e-03 4.92843652e-03 1.07121008e-02 6.16755800e-03
+ 1.54844606e-03 8.41374616e-03 1.64392598e-02 1.00599042e-02
+ 2.22353969e-03 6.43950476e-03 5.18316579e-02 1.06118428e-03
+ 1.15012882e-03 6.62774295e-04 2.23641718e-03 1.61996517e-02
+ 2.97745216e-03 6.32789206e-03 1.09477362e-02 5.51900801e-03
+ 5.32436341e-04 1.14250309e-03 2.68316951e-03 2.19549837e-03
+ 4.99969543e-03 1.33692234e-02 1.35206536e-02 2.15043709e-04
+ 1.40980546e-02 1.84945899e-03 7.17384693e-03 7.07332448e-03
+ 1.76821192e-02 2.90209065e-03 1.29603655e-03 4.06888088e-04
+ 1.88755815e-02 6.43918391e-03 7.55973419e-03 1.52720307e-02
+ 1.20264080e-03 1.68326172e-02 2.32511156e-03 5.48593188e-03
+ 3.91703066e-02 6.57581196e-03 1.65380688e-02 1.48959689e-03
+ 1.13267450e-02 2.53409800e-03 1.02837505e-03 3.22179493e-03
+ 5.45026381e-03 6.09269904e-03 3.56434507e-03 3.93015512e-03
+ 2.29081596e-03 3.84327101e-02 3.26013875e-02 6.49955993e-04
+ 9.45814435e-03 5.93406293e-03 1.48165700e-02 1.27253495e-03
+ 1.84210508e-02 5.78295716e-04 4.83272862e-02 1.57665010e-03
+ 1.54368532e-03 1.88755274e-08 1.73490477e-03 1.63255136e-03
+ 8.93460963e-03]
+[[3, 0.19796055759197811], [38, 0.051831657941895974], [94, 0.048327286173279006], [72, 0.039170306583758814], [85, 0.03843271010967423], [86, 0.03260138751720025], [22, 0.025371479878431216], [8, 0.021945956283931548]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 33.90769028663635
+Time for finding non-repetitive 2.956390380859375e-05
+gcc -O2 -fcprop-registers -fdce -fdefer-pop -fforward-propagate -fguess-branch-probability -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-profile -fipa-reference -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -funit-at-a-time -fthread-jumps -falign-jumps -falign-loops -fcaller-saves -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -finline-small-functions -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -foptimize-sibling-calls -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-pre -fipa-ra -funswitch-loops -fgcse-after-reload -ftree-loop-distribute-patterns -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:20.11194896697998selected flags:20.99080514907837 val:0.9581313734343831
+[0.9581313734343831]
+features
+[0.02791429 0.01250741 0.00421319 0.16848891 0.00228316 0.00604341
+ 0.00186015 0.00020079 0.02339593 0.01194507 0.00076781 0.00266761
+ 0.00037968 0.00274194 0.00042214 0.00629744 0.02035223 0.00047486
+ 0.00630667 0.00619391 0.00596747 0.00422325 0.03216064 0.00977576
+ 0.00470539 0.00061657 0.00386756 0.00568692 0.00393238 0.00601284
+ 0.00367248 0.00024351 0.02051235 0.00142835 0.00448455 0.00853641
+ 0.00048516 0.00929135 0.01404125 0.00457875 0.0050187  0.00130209
+ 0.00026593 0.0054407  0.01434686 0.01440303 0.00903826 0.00187783
+ 0.00617067 0.00150379 0.00497265 0.00189422 0.00718641 0.02015352
+ 0.00410981 0.00190849 0.00221104 0.00322883 0.00102985 0.00882169
+ 0.00473285 0.00546755 0.0220619  0.00070746 0.0089721  0.00341122
+ 0.01326084 0.02887334 0.00092236 0.01105823 0.00288971 0.0087292
+ 0.03587701 0.00057936 0.01033264 0.00533459 0.00238896 0.00899761
+ 0.01204856 0.00017113 0.01886213 0.00292915 0.00019268 0.01368787
+ 0.00579204 0.04149971 0.01640551 0.0005954  0.00826823 0.02187056
+ 0.04572521 0.00029971 0.00771895 0.00335955 0.04401002 0.00124996
+ 0.00863902 0.00032323 0.00038846 0.0054136  0.00138849]
+[[3, 0.1684889100350519], [90, 0.04572520625929023], [94, 0.04401001967768217], [85, 0.0414997065037692], [72, 0.03587700831746685], [22, 0.03216063987845506], [67, 0.02887334134588604], [0, 0.027914294705847845]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 34.233105182647705
+Time for finding non-repetitive 7.152557373046875e-06
+gcc -O2 -fbranch-count-reg -fcompare-elim -fcprop-registers -fdefer-pop -fdelayed-branch -fdse -fforward-propagate -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-reference -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fssa-backprop -fssa-phiopt -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-dse -ftree-forwprop -ftree-fre -ftree-sink -ftree-slsr -ftree-sra -ftree-pta -ftree-ter -fthread-jumps -falign-jumps -falign-loops -falign-labels -fcaller-saves -fcrossjumping -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-sra -fisolate-erroneous-paths-dereference -flra-remat -foptimize-strlen -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fsched-interblock -fsched-spec -fschedule-insns2 -fstrict-aliasing -ftree-switch-conversion -ftree-tail-merge -fcode-hoisting -ftree-pre -funswitch-loops -ftree-loop-distribute-patterns -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:20.392392873764038selected flags:17.18684959411621 val:1.1865113941967131
+[1.1865113941967131]
+features
+[2.18646603e-02 1.24891301e-02 1.53858482e-03 1.28118139e-01
+ 1.11425450e-02 6.51855156e-03 1.75235803e-03 2.85079799e-03
+ 4.66146804e-02 7.47898280e-03 6.94873789e-05 4.75445646e-03
+ 5.10316968e-04 3.39158310e-03 1.75703398e-04 5.90234747e-03
+ 3.71380094e-02 1.02472357e-04 5.75582063e-03 5.45286399e-04
+ 1.79689820e-02 1.59355302e-03 1.32868566e-02 1.14063397e-02
+ 4.41783233e-03 1.49983827e-03 1.48960580e-03 1.01537658e-02
+ 3.21846339e-03 6.72505804e-04 1.75090220e-02 7.40187840e-03
+ 3.64386685e-02 5.01633181e-03 7.16457274e-03 2.85983565e-04
+ 1.35667796e-03 4.49411645e-04 1.57988819e-02 7.17860530e-03
+ 2.34359898e-03 1.78952005e-02 1.92764079e-03 1.91546539e-02
+ 2.21929726e-02 9.99412320e-03 9.40337652e-03 1.92474965e-03
+ 4.57441334e-03 2.51392581e-03 1.96958098e-03 1.02804010e-03
+ 5.05832313e-03 4.85831534e-03 2.40994054e-03 2.06582765e-03
+ 1.88166233e-03 4.83455335e-03 5.50101469e-04 6.93912469e-04
+ 3.97316269e-03 3.85427188e-03 1.07522728e-02 6.74749132e-03
+ 4.04388152e-03 3.99134455e-03 2.68451840e-02 3.92670989e-02
+ 8.87320169e-03 1.51193181e-03 4.27832923e-03 1.80988119e-03
+ 2.38913729e-02 9.47668461e-04 2.97762737e-02 1.81948893e-03
+ 3.39179775e-03 5.29207009e-03 2.52681143e-02 2.83322383e-04
+ 1.31615913e-02 5.53520632e-03 3.99579226e-03 6.42089429e-03
+ 6.30319167e-04 7.76669203e-03 4.96555125e-02 2.93979980e-04
+ 1.08367727e-02 3.93866614e-02 7.25648442e-03 1.56919083e-03
+ 5.09393956e-03 5.95260930e-04 4.47768449e-02 1.31289442e-04
+ 9.84983640e-03 4.86202748e-03 1.37649038e-04 4.06243724e-04
+ 7.23048554e-04]
+[[3, 0.12811813880416256], [86, 0.049655512459252794], [8, 0.04661468043502129], [94, 0.044776844857446554], [89, 0.039386661423980146], [67, 0.03926709887006524], [16, 0.03713800938630617], [32, 0.03643866845965172]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 33.347336769104004
+Time for finding non-repetitive 1.2874603271484375e-05
+gcc -O2 -fauto-inc-dec -fbranch-count-reg -fcompare-elim -fdce -fdefer-pop -fdse -fforward-propagate -fguess-branch-probability -fif-conversion2 -fif-conversion -fipa-pure-const -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-slsr -ftree-pta -ftree-ter -funit-at-a-time -fthread-jumps -falign-jumps -falign-loops -falign-labels -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -finline-small-functions -findirect-inlining -fipa-bit-cp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fsched-spec -fstore-merging -fstrict-overflow -ftree-tail-merge -ftree-pre -finline-functions -funswitch-loops -fpredictive-commoning -fgcse-after-reload -ftree-loop-distribute-patterns -fsplit-paths -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:19.312061071395874selected flags:21.684558629989624 val:0.8905904612089914
+[0.8905904612089914]
+features
+[3.91358086e-02 8.32261858e-03 9.51203013e-03 8.24866570e-02
+ 6.45533546e-03 9.19811143e-04 1.21202056e-04 1.51527453e-03
+ 8.05706110e-02 1.93237520e-02 2.85554957e-03 2.99696660e-02
+ 4.51952694e-04 8.00788649e-03 1.43709704e-03 7.24992453e-03
+ 2.16720345e-02 2.63421475e-03 7.12139467e-03 2.89672224e-04
+ 2.09139947e-02 6.57273744e-03 1.08959041e-02 1.49542364e-02
+ 7.86210695e-03 1.62748838e-03 1.93857024e-03 9.20525299e-03
+ 5.34670016e-03 5.16691704e-03 8.75596044e-03 1.28519117e-02
+ 2.71630115e-03 5.80876189e-03 8.56764939e-03 5.31401593e-03
+ 1.34470275e-03 2.74723462e-03 2.37608403e-02 3.92388973e-03
+ 3.56659685e-03 5.19724135e-03 1.97922258e-04 5.70763254e-03
+ 8.29650293e-03 6.77656700e-04 3.10669870e-03 3.83738166e-03
+ 6.00083861e-04 2.16006593e-03 4.82573986e-03 2.46461784e-03
+ 1.18618053e-02 1.72499075e-02 1.21549820e-02 2.48745024e-04
+ 5.36859882e-03 4.17810552e-03 2.34985253e-03 1.80862597e-02
+ 8.53911838e-03 5.94700678e-03 3.14422498e-02 2.79211057e-03
+ 1.02823115e-02 1.47511678e-03 1.19347624e-02 3.59628268e-02
+ 2.54385605e-03 3.33102292e-03 2.99795786e-04 3.13923888e-03
+ 6.56705863e-03 3.29048771e-03 5.58340099e-03 1.21928108e-03
+ 2.86875147e-03 6.04085634e-03 5.90247214e-03 8.03886026e-04
+ 3.66654771e-02 6.83279117e-03 8.56820128e-05 5.89830803e-04
+ 7.21090765e-04 3.18535846e-02 6.12694730e-02 3.85837829e-04
+ 1.68892743e-02 1.15461145e-02 9.95711289e-03 4.49405929e-04
+ 2.18119553e-02 7.46994227e-04 3.37857433e-02 1.59303032e-03
+ 3.29069949e-03 2.71025233e-03 1.85593195e-03 4.12725380e-03
+ 4.02787360e-04]
+[[3, 0.08248665696544732], [8, 0.08057061101343524], [86, 0.0612694729585396], [0, 0.03913580864268665], [80, 0.036665477093990706], [67, 0.03596282675927435], [94, 0.03378574325361452], [85, 0.0318535846000225]]
+Length of all flags sequences to be estimated: 65536
+The time for adding the random flags: 33.53881788253784
+Time for finding non-repetitive 9.059906005859375e-06
+gcc -O2 -fbranch-count-reg -fcompare-elim -fcprop-registers -fdefer-pop -fdelayed-branch -fforward-propagate -fif-conversion2 -finline-functions-called-once -fipa-pure-const -fmerge-constants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-phiprop -ftree-sink -ftree-slsr -ftree-sra -ftree-pta -ftree-ter -fthread-jumps -falign-functions -falign-loops -falign-labels -fcaller-saves -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fgcse-lm -finline-small-functions -findirect-inlining -fipa-cp -fipa-vrp -fipa-sra -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fsched-interblock -fstore-merging -fstrict-overflow -ftree-builtin-call-dce -ftree-pre -fipa-ra -funswitch-loops -fgcse-after-reload -ftree-loop-distribute-patterns -ftree-slp-vectorize -ftree-partial-pre -fauto-inc-dec -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:18.6501522064209selected flags:16.989251375198364 val:1.0977618609874233
+[1.0977618609874233]
+features
+[0.03761375 0.00802448 0.00785012 0.11262672 0.00644778 0.0020514
+ 0.0016701  0.00111488 0.08804138 0.02389695 0.0019848  0.04203727
+ 0.00105372 0.006846   0.00324361 0.00569714 0.01375157 0.0011644
+ 0.00679737 0.00155855 0.01020346 0.00102624 0.00546751 0.01151397
+ 0.00257484 0.0002534  0.00094574 0.00202997 0.00107387 0.00678636
+ 0.01171571 0.00835754 0.03157068 0.00053926 0.01123882 0.00097601
+ 0.00079947 0.00297881 0.01194523 0.00134698 0.00652236 0.01052193
+ 0.00043807 0.0033539  0.01294058 0.00220829 0.00467543 0.00483604
+ 0.00020408 0.00574414 0.00122011 0.00074301 0.00054176 0.0153536
+ 0.00453056 0.00150132 0.00702386 0.01295449 0.00153191 0.00384507
+ 0.00300115 0.00683214 0.0011908  0.00196909 0.00321199 0.00030039
+ 0.00553154 0.04071173 0.00489257 0.01103556 0.00294935 0.00727639
+ 0.02687225 0.00052407 0.02451383 0.00150037 0.00623266 0.00235911
+ 0.00041728 0.01158851 0.01356485 0.01263651 0.00895564 0.00595942
+ 0.00597563 0.03400597 0.03979429 0.00035357 0.00427755 0.02209701
+ 0.01010782 0.00065111 0.0308248  0.00214867 0.02069783 0.00164935
+ 0.00337899 0.01457532 0.00078258 0.0033131  0.00383281]
+[[3, 0.11262672393266362], [8, 0.08804138009737145], [11, 0.04203727013381738], [67, 0.04071173076369586], [86, 0.03979428628573642], [0, 0.037613753829881046], [85, 0.03400596620650107], [32, 0.03157067664400454]]
+Length of all flags sequences to be estimated: 65536
+The time for adding the random flags: 33.387425661087036
+Time for finding non-repetitive 1.0251998901367188e-05
+gcc -O2 -fcompare-elim -fdefer-pop -fdelayed-branch -fforward-propagate -fipa-pure-const -fshrink-wrap-separate -fsplit-wide-types -fssa-phiopt -ftree-bit-ccp -ftree-coalesce-vars -ftree-copy-prop -ftree-dse -ftree-forwprop -ftree-sink -ftree-pta -falign-jumps -falign-loops -fcse-follow-jumps -fdelete-null-pointer-checks -fdevirtualize -fexpensive-optimizations -fhoist-adjacent-loads -fipa-vrp -fipa-sra -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -fpartial-inlining -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fschedule-insns2 -fstore-merging -fstrict-aliasing -fgcse-after-reload -fpeel-loops -fbranch-count-reg -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:16.464481115341187selected flags:16.024405479431152 val:1.027462837012887
+[1.027462837012887]
+features
+[1.13886288e-01 4.86894448e-03 1.05236629e-02 9.40714394e-02
+ 2.35024164e-03 2.14965502e-03 3.79063989e-03 3.34022988e-04
+ 6.86113845e-02 9.50556492e-03 1.21682174e-06 4.61372071e-02
+ 1.96707134e-03 2.59349115e-03 1.36366018e-04 3.18443960e-04
+ 6.41239020e-03 2.34505951e-03 1.50116776e-02 6.68099833e-04
+ 2.23440633e-02 1.19066302e-02 1.88600031e-03 3.88632078e-03
+ 6.19218071e-03 5.38072439e-04 5.15510838e-03 8.95655835e-03
+ 2.10373024e-03 1.08313204e-02 2.20232366e-02 8.96237484e-03
+ 7.89639873e-03 7.51500455e-03 5.78729090e-03 2.28901951e-03
+ 1.00397659e-04 4.42660903e-04 1.46522354e-02 1.30002428e-03
+ 2.87809237e-03 6.16593748e-03 5.35308170e-04 7.94981962e-03
+ 7.42794324e-03 4.50888686e-03 2.51643065e-03 2.51229566e-03
+ 8.57142726e-05 3.63806912e-03 7.70212416e-04 6.60634982e-03
+ 1.14171374e-03 7.22296021e-03 1.51633503e-02 1.48429399e-03
+ 2.78862109e-03 2.23058020e-02 8.67686620e-04 1.21933811e-02
+ 3.41063410e-03 3.38468002e-03 1.50767663e-02 3.92858970e-03
+ 2.05276846e-03 2.83912379e-03 1.93260766e-02 1.94965570e-02
+ 3.61443094e-03 6.11399398e-03 1.49153573e-02 8.94012268e-03
+ 1.48491253e-02 3.20377581e-03 9.16373340e-03 8.41670821e-04
+ 7.51440554e-03 5.97221289e-03 6.05821545e-03 1.37089577e-03
+ 2.18761204e-02 5.22539637e-03 1.40995265e-02 1.37341230e-02
+ 1.01719318e-03 2.06416181e-02 3.19021880e-02 4.67682493e-03
+ 1.03874519e-02 1.77946929e-02 1.59000356e-02 6.81145256e-03
+ 7.25692358e-03 1.78892595e-03 1.24820640e-02 1.33375517e-03
+ 4.37078054e-03 1.13893340e-02 2.09434482e-03 2.13175239e-03
+ 1.79799627e-03]
+[[0, 0.11388628756087119], [3, 0.0940714394129674], [8, 0.06861138447979706], [11, 0.046137207145219475], [86, 0.031902187966288194], [20, 0.022344063253859053], [57, 0.022305802034885823], [30, 0.02202323661541567]]
+Length of all flags sequences to be estimated: 65536
+The time for adding the random flags: 33.93181824684143
+Time for finding non-repetitive 7.867813110351562e-06
+gcc -O2 -fdce -fdelayed-branch -fforward-propagate -fguess-branch-probability -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-reference -freorder-blocks -fsplit-wide-types -fssa-backprop -ftree-bit-ccp -ftree-coalesce-vars -ftree-dce -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-pta -ftree-ter -funit-at-a-time -falign-loops -fexpensive-optimizations -fgcse-lm -finline-small-functions -findirect-inlining -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fsched-interblock -fstrict-aliasing -ftree-pre -ftree-vrp -fgcse-after-reload -ftree-loop-distribute-patterns -ftree-slp-vectorize -ftree-partial-pre -fpeel-loops -fcompare-elim -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:22.219533681869507selected flags:18.897889137268066 val:1.1757680194054534
+[1.1757680194054534]
+features
+[0.08933416 0.003551   0.00387268 0.06069747 0.00724192 0.00179934
+ 0.00768986 0.00059343 0.14296378 0.0143248  0.00352164 0.01065717
+ 0.0010278  0.00606597 0.00371494 0.00295006 0.00253317 0.00362871
+ 0.00814408 0.00250184 0.01772536 0.00956818 0.00364002 0.01064193
+ 0.00926346 0.00066317 0.00695854 0.00353924 0.00047755 0.0125309
+ 0.03335342 0.0060014  0.00932372 0.00107123 0.00536095 0.0001527
+ 0.00127468 0.00061056 0.0260459  0.0017301  0.00449162 0.00298596
+ 0.00089646 0.00857082 0.01011231 0.00080253 0.00553789 0.00065736
+ 0.00093641 0.00068133 0.00121133 0.003702   0.0067291  0.00128754
+ 0.01763851 0.0020294  0.00460245 0.02387804 0.00248624 0.00750046
+ 0.00984983 0.00025753 0.00887077 0.004524   0.00314183 0.00064383
+ 0.01928762 0.0063489  0.00486228 0.00096838 0.00269562 0.0031726
+ 0.02060497 0.00120077 0.00203265 0.00550964 0.02152268 0.0079883
+ 0.01237482 0.00664954 0.05333495 0.00876649 0.00513806 0.00532643
+ 0.00049393 0.01718163 0.0196147  0.00173648 0.00940264 0.00494338
+ 0.0059773  0.00029427 0.01862618 0.00294638 0.02922313 0.00067315
+ 0.00633986 0.01281303 0.00175698 0.00455729 0.00486257]
+[[8, 0.14296377611140162], [0, 0.0893341601755932], [3, 0.06069747338759944], [80, 0.05333494671571172], [30, 0.0333534235298191], [94, 0.029223128216953], [38, 0.02604589547555802], [57, 0.02387803886694449]]
+Length of all flags sequences to be estimated: 65536
+The time for adding the random flags: 33.45942306518555
+Time for finding non-repetitive 9.775161743164062e-06
+gcc -O2 -fbranch-count-reg -fcompare-elim -fcprop-registers -fdce -fdefer-pop -fdelayed-branch -fdse -fforward-propagate -fguess-branch-probability -fif-conversion2 -finline-functions-called-once -fipa-pure-const -fipa-profile -fipa-reference -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap-separate -fsplit-wide-types -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-sink -ftree-slsr -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -fthread-jumps -falign-loops -falign-labels -fcaller-saves -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fexpensive-optimizations -fgcse -fgcse-lm -finline-small-functions -findirect-inlining -fipa-cp -fipa-vrp -fipa-sra -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -fpeephole2 -freorder-blocks-algorithm=stc -freorder-functions -frerun-cse-after-loop -fsched-interblock -fschedule-insns -fschedule-insns2 -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -ftree-pre -ftree-vrp -finline-functions -funswitch-loops -fpredictive-commoning -fgcse-after-reload -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:21.488213777542114selected flags:21.244462966918945 val:1.011473616019512
+[1.011473616019512]
+features
+[4.27810479e-02 2.78606984e-03 1.50875104e-02 9.75617223e-02
+ 6.70815687e-03 6.03350963e-03 1.63360300e-03 9.54067799e-04
+ 8.22310610e-02 2.18931358e-02 4.80407731e-03 2.92769171e-02
+ 3.24274990e-04 5.49461136e-03 1.63239977e-03 1.23545106e-03
+ 1.73914420e-02 3.66871182e-03 5.57739881e-03 3.09954495e-03
+ 1.33450627e-02 5.52162769e-03 2.33278286e-03 7.28153337e-03
+ 1.43908577e-02 2.68516946e-04 2.36480033e-03 3.47787213e-03
+ 4.68837796e-04 1.30089734e-04 1.65802781e-02 2.63491607e-03
+ 1.88659802e-02 7.93986325e-04 9.96595071e-03 8.97603874e-04
+ 2.74978821e-03 3.71777131e-03 1.81916532e-02 2.08064661e-03
+ 2.27308207e-03 4.36301317e-03 9.96650447e-05 1.88539609e-03
+ 1.22687665e-02 2.09582383e-03 6.21298190e-03 1.99240446e-03
+ 8.72729309e-04 5.81633789e-04 1.19181006e-03 1.04677747e-03
+ 1.09218974e-02 7.57649255e-03 1.47278649e-02 1.70944054e-03
+ 6.22065424e-03 3.34828370e-02 1.61117403e-03 5.39262080e-03
+ 5.15544680e-03 6.91441746e-04 1.35639821e-02 3.92976364e-03
+ 7.22185287e-03 5.31372695e-04 1.92941841e-03 1.48946903e-02
+ 6.31931686e-03 7.95080590e-03 1.78054446e-02 6.21371801e-03
+ 1.54060547e-02 5.54057550e-03 1.26192406e-02 1.14918004e-03
+ 1.12741564e-02 1.96853830e-02 1.25412330e-02 1.56541315e-03
+ 4.37496015e-02 8.50428870e-03 1.17781804e-02 4.58766259e-03
+ 4.24839105e-03 3.70153086e-02 1.41891904e-02 2.80782989e-03
+ 6.27585341e-03 6.31131548e-03 6.49890477e-03 1.41918518e-03
+ 2.48096478e-02 2.72194339e-03 3.05704315e-02 3.12621338e-03
+ 2.53972415e-03 2.22628790e-02 2.46478072e-04 3.62147069e-03
+ 3.96467505e-03]
+[[3, 0.09756172229701997], [8, 0.08223106098696975], [80, 0.04374960146600827], [0, 0.04278104786943121], [85, 0.037015308606435704], [57, 0.03348283703698175], [94, 0.0305704314724173], [11, 0.029276917128242475]]
+Length of all flags sequences to be estimated: 65536
+The time for adding the random flags: 33.49405336380005
+Time for finding non-repetitive 6.9141387939453125e-06
+gcc -O2 -fipa-pure-const -fipa-reference -fmerge-constants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fssa-phiopt -ftree-coalesce-vars -ftree-forwprop -ftree-sink -ftree-ter -falign-labels -fcaller-saves -fcrossjumping -fdelete-null-pointer-checks -fdevirtualize -fgcse -fgcse-lm -findirect-inlining -fipa-icf -flra-remat -foptimize-sibling-calls -fpeephole2 -freorder-blocks-algorithm=stc -fsched-spec -fschedule-insns2 -fipa-ra -finline-functions -funswitch-loops -fgcse-after-reload -fvect-cost-model -ftree-partial-pre -fpeel-loops -fdelayed-branch -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:18.859121322631836selected flags:17.410150051116943 val:1.0832256624590053
+[1.0832256624590053]
+features
+[0.034355   0.00293628 0.0067156  0.13945527 0.00359435 0.00145191
+ 0.00961347 0.00124869 0.06018758 0.01976908 0.00281439 0.00645237
+ 0.00130805 0.00545431 0.00545493 0.00393302 0.0146311  0.0009563
+ 0.01016976 0.00106516 0.00853855 0.00557803 0.00832599 0.0212658
+ 0.01307671 0.00352285 0.00213534 0.02062294 0.00184443 0.00093808
+ 0.004139   0.00166056 0.0173036  0.00362839 0.00981304 0.00325783
+ 0.00213225 0.0001678  0.01200056 0.00068079 0.00175378 0.01550438
+ 0.0009109  0.00212891 0.00756287 0.00124899 0.00410044 0.00120484
+ 0.00090447 0.00196824 0.00570661 0.01169221 0.00343661 0.00314219
+ 0.01727385 0.00549993 0.00251153 0.01189819 0.0015181  0.00146479
+ 0.00597652 0.00286494 0.0086552  0.00369704 0.00622944 0.00047021
+ 0.00699655 0.00949364 0.00572701 0.00416977 0.00908317 0.00721796
+ 0.00309443 0.00753293 0.00639376 0.00172411 0.01335774 0.01078541
+ 0.02147143 0.00105808 0.03872777 0.00942976 0.02831647 0.00195453
+ 0.00298144 0.04446517 0.02724792 0.00187555 0.00698227 0.01568833
+ 0.00577108 0.00202095 0.04225804 0.00273169 0.0214149  0.00882222
+ 0.00725167 0.01571845 0.00132186 0.00247306 0.00291653]
+[[3, 0.1394552720758312], [8, 0.06018757724407017], [85, 0.044465171284142437], [92, 0.04225803805729911], [80, 0.03872777342970785], [0, 0.03435499983325443], [82, 0.02831646764966539], [86, 0.02724791520463858]]
+Length of all flags sequences to be estimated: 65536
+The time for adding the random flags: 31.95859980583191
+Time for finding non-repetitive 1.33514404296875e-05
+gcc -O2 -fdce -fdefer-pop -fdelayed-branch -fdse -fforward-propagate -fif-conversion2 -fipa-pure-const -fipa-reference -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fsplit-wide-types -fssa-backprop -ftree-bit-ccp -ftree-ccp -ftree-coalesce-vars -ftree-copy-prop -ftree-dce -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-slsr -ftree-pta -ftree-ter -fthread-jumps -falign-loops -falign-labels -fcaller-saves -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdevirtualize -fexpensive-optimizations -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -fpeephole2 -freorder-blocks-algorithm=stc -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fstrict-aliasing -ftree-builtin-call-dce -ftree-switch-conversion -ftree-pre -ftree-vrp -finline-functions -funswitch-loops -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fcprop-registers -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:17.91267204284668selected flags:21.089831829071045 val:0.8493511085354012
+[0.8493511085354012]
+features
+[0.02567585 0.00529638 0.00971854 0.05640497 0.00628414 0.00371949
+ 0.00881549 0.0011452  0.04962148 0.04648036 0.00451379 0.00939548
+ 0.00137571 0.0108507  0.00549982 0.00014592 0.03032371 0.00061359
+ 0.00986045 0.00037263 0.00664399 0.00746673 0.0036125  0.01325147
+ 0.01165507 0.00480879 0.00468739 0.01150013 0.00031622 0.00431184
+ 0.03607458 0.0059575  0.01152025 0.00236891 0.00839182 0.01249346
+ 0.00208353 0.01862695 0.03605942 0.00719602 0.00355967 0.00700469
+ 0.00148272 0.00349104 0.00285925 0.00134095 0.00443114 0.00713745
+ 0.00111934 0.00301984 0.00171616 0.00543146 0.00517989 0.00112697
+ 0.00902122 0.00222016 0.0182928  0.02033321 0.00233079 0.00940434
+ 0.01102274 0.00679026 0.00884096 0.00285759 0.00404253 0.00325238
+ 0.00726804 0.0043976  0.00942484 0.00862631 0.00733575 0.00616028
+ 0.00928023 0.00298126 0.01537609 0.00069313 0.01480529 0.00725895
+ 0.01456251 0.0077916  0.01707253 0.00409479 0.00311145 0.01665032
+ 0.0022344  0.01087262 0.03454082 0.01043888 0.00360364 0.01271867
+ 0.00187876 0.00481534 0.01313469 0.00199213 0.06800497 0.00634078
+ 0.01170601 0.01237805 0.0017599  0.0020366  0.00220294]
+[[94, 0.06800497480858285], [3, 0.056404969356807645], [8, 0.04962147774177161], [9, 0.046480356651863286], [30, 0.03607457862049929], [38, 0.03605942398156424], [86, 0.034540821616275925], [16, 0.030323708021417244]]
+Length of all flags sequences to be estimated: 65280
+The time for adding the random flags: 33.08203077316284
+Time for finding non-repetitive 1.239776611328125e-05
+gcc -O2 -fauto-inc-dec -fbranch-count-reg -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdefer-pop -fdelayed-branch -fforward-propagate -fif-conversion -finline-functions-called-once -fipa-pure-const -fmerge-constants -fmove-loop-invariants -fsplit-wide-types -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-dce -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -funit-at-a-time -fcse-skip-blocks -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -finline-small-functions -findirect-inlining -fipa-cp -fipa-vrp -fipa-sra -fipa-icf -flra-remat -foptimize-sibling-calls -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstrict-aliasing -fstrict-overflow -ftree-switch-conversion -ftree-tail-merge -ftree-pre -fipa-ra -finline-functions -fgcse-after-reload -fsplit-paths -ftree-slp-vectorize -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:20.342358589172363selected flags:16.34670615196228 val:1.244431654919694
+[1.244431654919694]
+features
+[2.64349835e-02 5.80621434e-03 5.55020769e-03 1.63868120e-02
+ 8.68202507e-03 4.97246618e-04 1.73838166e-02 4.14699884e-05
+ 5.30574428e-02 1.80528904e-02 4.08761122e-03 6.77642410e-03
+ 3.53835462e-03 7.01022092e-03 1.18213774e-02 2.99531038e-03
+ 3.62092220e-02 1.81499135e-03 6.67505955e-03 2.09093039e-03
+ 1.53053245e-02 1.37128702e-02 3.89275637e-03 9.64919022e-03
+ 3.58774531e-03 2.92479856e-03 6.13376902e-03 1.68972611e-02
+ 1.98078591e-03 5.35052935e-03 3.03967842e-02 2.15954454e-03
+ 2.56500359e-02 4.95897563e-03 1.11384330e-02 4.14428381e-03
+ 2.30681004e-03 1.58896381e-02 4.78492307e-02 7.86665529e-04
+ 1.58609589e-03 4.91703322e-03 2.32321334e-03 3.87781256e-03
+ 9.59856242e-03 3.23544023e-03 1.22172399e-03 2.10143164e-03
+ 4.14998949e-04 5.20362943e-03 1.51289124e-03 3.68520856e-03
+ 1.42129820e-03 2.58271174e-04 8.78279780e-03 6.90660182e-03
+ 2.27273731e-02 1.67210647e-02 1.28259811e-03 1.64849583e-03
+ 3.02707206e-03 6.14843116e-03 1.73485449e-03 3.53014043e-03
+ 6.61544838e-04 2.60977785e-03 1.96631578e-03 1.26789234e-02
+ 6.81994598e-03 1.75061315e-02 2.58847238e-02 4.66252388e-03
+ 1.79690506e-02 1.48582044e-02 6.27713418e-03 8.94842305e-03
+ 1.27130689e-02 1.34807954e-02 8.43126296e-03 2.48983810e-03
+ 8.76137862e-03 1.16128414e-02 4.81100743e-03 3.19582153e-02
+ 6.79352961e-03 8.83930202e-04 3.00446106e-02 4.44942931e-03
+ 2.36361889e-03 4.77863267e-03 1.12361350e-02 8.96437868e-04
+ 2.83904954e-02 2.24499903e-03 7.81242153e-02 3.99082017e-03
+ 1.64218692e-02 8.39438777e-03 4.05724590e-03 3.55067406e-03
+ 4.78277855e-03]
+[[94, 0.07812421530428262], [8, 0.05305744278729227], [38, 0.047849230701598876], [16, 0.036209221961305584], [83, 0.0319582152522779], [30, 0.030396784200673967], [86, 0.03004461062291718], [92, 0.0283904953753196]]
+Length of all flags sequences to be estimated: 65280
+The time for adding the random flags: 33.02562403678894
+Time for finding non-repetitive 1.0251998901367188e-05
+gcc -O2 -fauto-inc-dec -fbranch-count-reg -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdce -fdefer-pop -fdelayed-branch -fdse -fforward-propagate -fguess-branch-probability -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-reference -fmerge-constants -freorder-blocks -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre -ftree-sink -ftree-sra -ftree-pta -fthread-jumps -falign-jumps -falign-loops -falign-labels -fcaller-saves -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -fpartial-inlining -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -ftree-switch-conversion -ftree-tail-merge -ftree-pre -ftree-vrp -finline-functions -funswitch-loops -fgcse-after-reload -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:21.22800874710083selected flags:21.042707920074463 val:1.0088059401732032
+[1.0088059401732032]
+features
+[0.01304851 0.01066047 0.00949117 0.01478704 0.0016016  0.00274276
+ 0.01183256 0.00631924 0.04267655 0.03515322 0.00384732 0.01973147
+ 0.0031547  0.00617504 0.01196802 0.01098    0.01129847 0.00234924
+ 0.00818283 0.00276097 0.00747866 0.00299477 0.00968703 0.02226106
+ 0.00895905 0.00351474 0.00167106 0.01891856 0.00223333 0.00121945
+ 0.00922836 0.00251067 0.03516874 0.00394961 0.01799067 0.00921068
+ 0.00948724 0.01601895 0.02910095 0.00095845 0.00347966 0.00522559
+ 0.00340041 0.00334965 0.00430491 0.00082668 0.00242995 0.00839468
+ 0.00375823 0.00099792 0.01631094 0.00619652 0.00208311 0.00079026
+ 0.01041183 0.00655721 0.01473904 0.01733007 0.00063235 0.00531137
+ 0.00673537 0.00039883 0.0163594  0.00322164 0.00300763 0.00074811
+ 0.00207236 0.00088456 0.00953929 0.00609465 0.02912011 0.0053099
+ 0.00888178 0.00712821 0.01050913 0.00495637 0.00735238 0.01285692
+ 0.01268353 0.00353028 0.03728743 0.00825736 0.00071937 0.01584955
+ 0.00139358 0.00435545 0.0149473  0.01288977 0.01057332 0.00623253
+ 0.0033618  0.00407561 0.01995962 0.00207442 0.10893168 0.01025099
+ 0.00803817 0.01602131 0.00069579 0.00011199 0.00472889]
+[[94, 0.10893167750004148], [8, 0.04267655471452467], [80, 0.03728743072734094], [32, 0.03516873972025527], [9, 0.03515322337153923], [70, 0.029120105058892946], [38, 0.02910095105917084], [23, 0.022261062044453894]]
+Length of all flags sequences to be estimated: 65280
+The time for adding the random flags: 33.651461362838745
+Time for finding non-repetitive 1.1920928955078125e-05
+gcc -O2 -fauto-inc-dec -fcombine-stack-adjustments -fcompare-elim -fdefer-pop -fdelayed-branch -fguess-branch-probability -fif-conversion2 -fif-conversion -fipa-reference -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop -ftree-dce -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -ftree-pta -funit-at-a-time -fthread-jumps -falign-jumps -falign-loops -fcrossjumping -fcse-skip-blocks -fdelete-null-pointer-checks -fexpensive-optimizations -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-cp -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpeephole2 -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns2 -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -ftree-pre -ftree-vrp -fipa-ra -finline-functions -funswitch-loops -ftree-loop-distribute-patterns -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:20.85290813446045selected flags:22.183898210525513 val:0.9400019751517994
+[0.9400019751517994]
+features
+[0.02606429 0.00389352 0.00517708 0.02690607 0.00228365 0.00208452
+ 0.00753454 0.00119559 0.05346528 0.03886724 0.0078381  0.02361712
+ 0.00576706 0.00316838 0.00646235 0.00583011 0.01105945 0.00114814
+ 0.00306269 0.00402938 0.01017285 0.00629073 0.0042945  0.01036698
+ 0.00705732 0.00200809 0.0056638  0.0174036  0.00326699 0.00223685
+ 0.02592871 0.00470317 0.02018574 0.00138288 0.02473998 0.0058089
+ 0.01172745 0.00965518 0.01932159 0.00100467 0.00356106 0.01767455
+ 0.00286852 0.00166444 0.00709713 0.00207786 0.00750714 0.00278099
+ 0.00126024 0.00566809 0.00243839 0.00841373 0.01191722 0.00119081
+ 0.00976342 0.00534971 0.01635539 0.01777303 0.00342326 0.00793407
+ 0.00375411 0.00735761 0.00347229 0.0011417  0.00421183 0.00356318
+ 0.00733407 0.00625099 0.00619731 0.00816296 0.01046194 0.00387243
+ 0.03789285 0.00776903 0.0165602  0.0014784  0.00614003 0.02549359
+ 0.0072976  0.00726954 0.01738591 0.0106555  0.00432013 0.02912819
+ 0.00317957 0.00675552 0.0301044  0.00326759 0.02580058 0.00210172
+ 0.00168176 0.00062036 0.01803508 0.00301975 0.06651375 0.00410539
+ 0.00467387 0.00817722 0.00770894 0.00264905 0.00504045]
+[[94, 0.06651374725696152], [8, 0.05346528053252788], [9, 0.03886723887849503], [72, 0.03789284908991955], [86, 0.030104395012843205], [83, 0.029128190784727802], [3, 0.026906072958660546], [0, 0.026064294348603217]]
+Length of all flags sequences to be estimated: 65024
+The time for adding the random flags: 31.78350830078125
+Time for finding non-repetitive 2.6464462280273438e-05
+gcc -O2 -fauto-inc-dec -fbranch-count-reg -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdce -fdefer-pop -fdelayed-branch -fif-conversion2 -fif-conversion -fipa-pure-const -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-copy-prop -ftree-dse -ftree-forwprop -ftree-phiprop -ftree-slsr -ftree-sra -ftree-pta -ftree-ter -fthread-jumps -falign-loops -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-spec -fschedule-insns -ftree-builtin-call-dce -ftree-switch-conversion -ftree-pre -fipa-ra -finline-functions -fgcse-after-reload -ftree-loop-distribute-patterns -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:21.221258640289307selected flags:19.414201498031616 val:1.09307913809594
+[1.09307913809594]
+features
+[0.02616706 0.00228147 0.00671848 0.01110581 0.00958278 0.00355154
+ 0.00407837 0.00572408 0.04316406 0.06904975 0.00721229 0.03331891
+ 0.00906146 0.00223777 0.001372   0.00077138 0.0043665  0.00333259
+ 0.0072929  0.003946   0.01100262 0.00458299 0.00262672 0.01972588
+ 0.00679646 0.00352082 0.00956565 0.0067338  0.00257191 0.00268202
+ 0.03125955 0.00127166 0.02191914 0.0050927  0.01389453 0.01249152
+ 0.00554556 0.01168464 0.00906505 0.00422287 0.00088076 0.01187224
+ 0.0021816  0.0010498  0.00423584 0.00246517 0.00075558 0.00374596
+ 0.00298795 0.00327103 0.0012894  0.00986795 0.00311772 0.00025899
+ 0.00721246 0.00320289 0.0287857  0.01026848 0.00491365 0.00839724
+ 0.00501962 0.00948366 0.0016545  0.00449178 0.00602454 0.00597377
+ 0.00293362 0.00485904 0.00237191 0.01501855 0.01108177 0.00798571
+ 0.02879944 0.00289655 0.01226913 0.0064952  0.01797322 0.01121566
+ 0.0113797  0.00377438 0.02530414 0.00355539 0.00177702 0.02073974
+ 0.00181715 0.0173352  0.03354504 0.00489468 0.01451751 0.00795659
+ 0.0070334  0.00427358 0.01170021 0.00193281 0.07658847 0.01427783
+ 0.00934266 0.01026737 0.0016374  0.00268545 0.00576491]
+[[94, 0.07658846893104872], [9, 0.06904974589267517], [8, 0.04316406340235471], [86, 0.03354503523091723], [11, 0.03331891275247947], [30, 0.03125955361015108], [72, 0.028799436463099636], [56, 0.028785702507443604]]
+Length of all flags sequences to be estimated: 65024
+The time for adding the random flags: 32.608399868011475
+Time for finding non-repetitive 1.4066696166992188e-05
+gcc -O2 -fcompare-elim -fcprop-registers -fdce -fdefer-pop -fguess-branch-probability -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-profile -fmerge-constants -fmove-loop-invariants -fshrink-wrap-separate -fsplit-wide-types -fssa-phiopt -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop -ftree-dse -ftree-forwprop -ftree-phiprop -ftree-slsr -ftree-ter -fthread-jumps -falign-jumps -falign-loops -falign-labels -fcse-skip-blocks -fdevirtualize -fdevirtualize-speculatively -fgcse -fgcse-lm -fhoist-adjacent-loads -findirect-inlining -fipa-bit-cp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -fsched-interblock -fsched-spec -fschedule-insns2 -fstrict-overflow -ftree-builtin-call-dce -finline-functions -funswitch-loops -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fcombine-stack-adjustments -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:19.737098217010498selected flags:23.10337781906128 val:0.8542949161627156
+[0.8542949161627156]
+features
+[0.00547251 0.00760584 0.00301111 0.04030847 0.00883621 0.00781513
+ 0.00756644 0.00789409 0.0753008  0.03359221 0.00808091 0.04834941
+ 0.00066567 0.00558076 0.00496128 0.00752294 0.01860258 0.00867624
+ 0.0039924  0.00392328 0.00429405 0.0021843  0.00064316 0.01659193
+ 0.00485377 0.00322736 0.01403425 0.01230471 0.00580198 0.0061733
+ 0.03625287 0.00144983 0.01351951 0.01046866 0.00649493 0.00694446
+ 0.00755219 0.0220489  0.02677978 0.00110925 0.00348128 0.01583025
+ 0.00311552 0.00469009 0.00565546 0.00238469 0.00411231 0.00475614
+ 0.00138901 0.00468397 0.00581505 0.0066461  0.00768519 0.00593728
+ 0.00680799 0.00283064 0.01482183 0.00523494 0.00767355 0.00187416
+ 0.00287834 0.00295565 0.01239634 0.00298725 0.0018376  0.00416584
+ 0.00332665 0.00194539 0.00685718 0.01659071 0.0091877  0.00695514
+ 0.01278802 0.01220106 0.01350819 0.00403128 0.01901753 0.02385186
+ 0.00821355 0.00363179 0.01379264 0.00871594 0.00889143 0.01798378
+ 0.00084388 0.00299568 0.0230038  0.00370284 0.00705246 0.00517874
+ 0.00051186 0.00238583 0.0300943  0.00177701 0.04977372 0.00595338
+ 0.01264414 0.00489803 0.00067562 0.0009661  0.00291882]
+[[8, 0.07530079844212943], [94, 0.049773716862981945], [11, 0.0483494081382578], [3, 0.040308473910448374], [30, 0.036252871701576636], [9, 0.03359220666663792], [92, 0.030094300317782235], [38, 0.0267797818650038]]
+Length of all flags sequences to be estimated: 64768
+The time for adding the random flags: 33.15342688560486
+Time for finding non-repetitive 1.3113021850585938e-05
+gcc -O2 -fauto-inc-dec -fbranch-count-reg -fcombine-stack-adjustments -fcprop-registers -fdce -fdefer-pop -fdelayed-branch -fforward-propagate -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-reference -fmerge-constants -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-slsr -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -falign-functions -falign-jumps -falign-loops -falign-labels -fcaller-saves -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -fipa-cp -fipa-icf -flra-remat -foptimize-sibling-calls -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -fcode-hoisting -funswitch-loops -fgcse-after-reload -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:20.98779606819153selected flags:19.909624099731445 val:1.0541533061126265
+[1.0541533061126265]
+features
+[0.01392925 0.00539457 0.01012696 0.02252906 0.00506117 0.0023222
+ 0.00573519 0.00381209 0.0756987  0.01692503 0.0051447  0.05385963
+ 0.00262537 0.00702847 0.00289283 0.00057473 0.01828055 0.00117255
+ 0.01396088 0.00185542 0.01227085 0.00471612 0.00262286 0.00814449
+ 0.00319447 0.00363479 0.00467539 0.002909   0.00320235 0.00638426
+ 0.04636047 0.00355697 0.01877027 0.00340111 0.02210678 0.0027356
+ 0.0046094  0.01553676 0.02485897 0.00125184 0.00265585 0.00650919
+ 0.00421435 0.00357454 0.0135107  0.00288029 0.00452996 0.00325035
+ 0.00100565 0.00101667 0.0012435  0.00700369 0.00525317 0.0067013
+ 0.00385093 0.00089461 0.02423689 0.01568811 0.01381557 0.00772572
+ 0.00556018 0.00053216 0.0009718  0.00334198 0.00592421 0.00337777
+ 0.0036488  0.00432677 0.00597116 0.0110477  0.00654156 0.01672689
+ 0.01843467 0.00653162 0.02376679 0.00293827 0.01658436 0.00711946
+ 0.00252444 0.00278212 0.01626123 0.01311637 0.00490697 0.03085825
+ 0.00430382 0.00715602 0.01636777 0.00859822 0.01090079 0.00093293
+ 0.00337923 0.00574188 0.01509439 0.00285105 0.07247507 0.01537165
+ 0.01200304 0.00612277 0.00375706 0.00177404 0.00594168]
+[[8, 0.07569869748290795], [94, 0.07247506505532503], [11, 0.05385963013924604], [30, 0.04636047369698171], [83, 0.03085824677103234], [38, 0.024858968133070772], [56, 0.02423688631951025], [74, 0.02376679345992301]]
+Length of all flags sequences to be estimated: 64512
+The time for adding the random flags: 32.655725955963135
+Time for finding non-repetitive 1.9788742065429688e-05
+gcc -O2 -fcompare-elim -fcprop-registers -fdefer-pop -fdelayed-branch -fdse -fforward-propagate -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-reference -fmerge-constants -fmove-loop-invariants -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-dominator-opts -ftree-forwprop -ftree-phiprop -ftree-sink -ftree-pta -ftree-ter -falign-loops -falign-labels -fcaller-saves -fcse-skip-blocks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -fipa-cp -fipa-vrp -fipa-sra -foptimize-sibling-calls -foptimize-strlen -freorder-blocks-algorithm=stc -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fstrict-overflow -ftree-switch-conversion -ftree-pre -fipa-ra -finline-functions -fpredictive-commoning -fgcse-after-reload -ftree-loop-distribute-patterns -fsplit-paths -fvect-cost-model -fpeel-loops -fcombine-stack-adjustments -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:19.57390594482422selected flags:15.722299575805664 val:1.244977291677206
+[1.244977291677206]
+features
+[0.01287877 0.00333111 0.00933046 0.01419012 0.00853015 0.00282792
+ 0.01142597 0.00172422 0.0785527  0.00629065 0.00437529 0.05228308
+ 0.00701857 0.0039309  0.00917217 0.004657   0.0277358  0.00180074
+ 0.00527627 0.00881226 0.01060821 0.00276082 0.00254753 0.00588266
+ 0.00384152 0.00104779 0.00509938 0.01198403 0.00364236 0.00234194
+ 0.03745565 0.00265708 0.00887956 0.00306603 0.0097198  0.00217218
+ 0.00893427 0.01737537 0.04744905 0.00271094 0.00297964 0.01225022
+ 0.00142887 0.0047004  0.01031629 0.00695254 0.00124095 0.00825104
+ 0.00165185 0.00459443 0.00656274 0.00543998 0.01293781 0.00679401
+ 0.00428408 0.00196889 0.00897654 0.01102835 0.00220099 0.00797502
+ 0.0025532  0.00582258 0.00913475 0.00328511 0.00972888 0.00166632
+ 0.00077701 0.00303877 0.00678591 0.00543779 0.01382548 0.01849181
+ 0.03421687 0.00194044 0.00826893 0.00147979 0.02178857 0.01419002
+ 0.00183668 0.00069094 0.00856645 0.00267513 0.00993734 0.04517676
+ 0.00052073 0.02648661 0.01644619 0.01254201 0.01630048 0.00220682
+ 0.00480298 0.00838729 0.00178025 0.0038373  0.04801295 0.01787497
+ 0.00924463 0.0040621  0.00165572 0.00550458 0.00216392]
+[[8, 0.07855270000014142], [11, 0.05228308358585215], [94, 0.04801295080540896], [38, 0.047449046686168346], [83, 0.04517675612848381], [30, 0.037455646136433464], [72, 0.034216872435818585], [16, 0.02773580420670797]]
+Length of all flags sequences to be estimated: 64512
+The time for adding the random flags: 32.709245681762695
+Time for finding non-repetitive 1.430511474609375e-05
+gcc -O2 -fcombine-stack-adjustments -fcompare-elim -fdelayed-branch -fdse -fguess-branch-probability -fif-conversion2 -fipa-pure-const -fipa-reference -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -ftree-bit-ccp -ftree-ccp -ftree-coalesce-vars -ftree-dominator-opts -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -ftree-pta -ftree-ter -falign-functions -falign-loops -falign-labels -fcrossjumping -fcse-follow-jumps -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-sra -fipa-icf -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstrict-aliasing -fstrict-overflow -ftree-tail-merge -fcode-hoisting -ftree-pre -fipa-ra -ftree-loop-distribute-patterns -fsplit-paths -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:17.51707363128662selected flags:16.62652277946472 val:1.0535620624729671
+[1.0535620624729671]
+features
+[0.01014481 0.00852473 0.01201454 0.00921303 0.00253253 0.00092354
+ 0.01278236 0.00152225 0.05444584 0.00698216 0.00549455 0.03483894
+ 0.01021456 0.00426596 0.00182019 0.00038885 0.02959653 0.00147944
+ 0.00913299 0.00927423 0.00559585 0.00420175 0.00539057 0.01471243
+ 0.00374176 0.00468451 0.00886213 0.00678138 0.00318497 0.00137979
+ 0.05226113 0.00913007 0.00958282 0.00649042 0.00749274 0.00655374
+ 0.00652118 0.02260169 0.02820026 0.00332496 0.0016311  0.0104786
+ 0.00193565 0.00658758 0.01918603 0.00209686 0.00090459 0.00301914
+ 0.00083125 0.00164546 0.0099752  0.01039094 0.00697377 0.00226099
+ 0.00429143 0.00134209 0.00702037 0.00902988 0.00522449 0.00886777
+ 0.00609724 0.00226304 0.00696263 0.00198646 0.00828199 0.00343486
+ 0.00419274 0.00113558 0.00582398 0.0058002  0.01528117 0.01530382
+ 0.03681805 0.00372539 0.01137709 0.00117297 0.01460666 0.00966723
+ 0.00465767 0.00197698 0.00269608 0.00860891 0.00674226 0.05617033
+ 0.0011825  0.0127363  0.03842702 0.00978041 0.01467767 0.00503298
+ 0.00763252 0.01638247 0.00742893 0.0036965  0.05912476 0.01597039
+ 0.00636804 0.00817766 0.00364268 0.00112654 0.00384994]
+[[94, 0.05912476174994476], [83, 0.05617033457419751], [8, 0.05444583993203373], [30, 0.05226112850487663], [86, 0.03842701926495769], [72, 0.03681804648542172], [11, 0.03483893827588531], [16, 0.029596529303750292]]
+Length of all flags sequences to be estimated: 64256
+The time for adding the random flags: 32.669716596603394
+Time for finding non-repetitive 8.344650268554688e-06
+gcc -O2 -fcombine-stack-adjustments -fcprop-registers -fdce -fdelayed-branch -fguess-branch-probability -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-reference -fmove-loop-invariants -freorder-blocks -fsplit-wide-types -fssa-phiopt -ftree-ch -ftree-dce -ftree-dse -ftree-phiprop -ftree-sink -ftree-pta -ftree-ter -funit-at-a-time -fthread-jumps -falign-jumps -falign-labels -fcse-follow-jumps -fdevirtualize-speculatively -fexpensive-optimizations -fgcse-lm -fhoist-adjacent-loads -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-vrp -fipa-sra -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -fsched-interblock -fsched-spec -fschedule-insns -fstrict-aliasing -ftree-switch-conversion -ftree-pre -fipa-ra -finline-functions -funswitch-loops -fpredictive-commoning -fgcse-after-reload -ftree-loop-distribute-patterns -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:19.705028295516968selected flags:17.73171901702881 val:1.1112869697852237
+[1.1112869697852237]
+features
+[0.00753046 0.00403239 0.01106473 0.00828598 0.00862729 0.00097809
+ 0.00630035 0.01050059 0.10172708 0.00631338 0.01860807 0.01042599
+ 0.00781685 0.00655361 0.00213823 0.001595   0.04343067 0.00089064
+ 0.00289856 0.00812718 0.00472056 0.00329101 0.0015734  0.01826494
+ 0.00462685 0.00283282 0.0169643  0.00547315 0.00197664 0.00434072
+ 0.06729861 0.01139872 0.00347788 0.00441246 0.01601928 0.00260935
+ 0.00687142 0.01843243 0.05573134 0.00197484 0.0006867  0.00643896
+ 0.00339255 0.00600417 0.00789767 0.0021844  0.00441333 0.00247308
+ 0.00056802 0.00049906 0.006167   0.01502669 0.0104071  0.01087117
+ 0.00424163 0.00397193 0.0095014  0.00904499 0.00472326 0.00726763
+ 0.00275028 0.00124472 0.01281677 0.00112315 0.00828622 0.00152416
+ 0.00358935 0.00465762 0.00314048 0.00859219 0.02549821 0.00606071
+ 0.02598392 0.00444632 0.00482353 0.00330729 0.01149318 0.00912581
+ 0.00161725 0.00416905 0.01859727 0.00484038 0.00514206 0.03763564
+ 0.00844593 0.00435535 0.01536351 0.00738777 0.02345647 0.00598415
+ 0.00616698 0.00965309 0.00650458 0.00174916 0.0338786  0.01230864
+ 0.00329253 0.00325882 0.00099289 0.00810936 0.00271001]
+[[8, 0.10172707920635277], [30, 0.06729861356926566], [38, 0.05573134157307194], [16, 0.04343067091969564], [83, 0.03763564078721411], [94, 0.033878597022140786], [72, 0.025983922383264472], [70, 0.025498207115174178]]
+Length of all flags sequences to be estimated: 64000
+The time for adding the random flags: 32.182952642440796
+Time for finding non-repetitive 1.4066696166992188e-05
+gcc -O2 -fauto-inc-dec -fcombine-stack-adjustments -fcompare-elim -fdce -fdefer-pop -fdelayed-branch -fdse -fforward-propagate -fif-conversion2 -finline-functions-called-once -fipa-pure-const -fipa-reference -fmerge-constants -fmove-loop-invariants -fsplit-wide-types -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-pta -ftree-ter -falign-jumps -falign-loops -falign-labels -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fexpensive-optimizations -fgcse -findirect-inlining -fipa-vrp -fipa-sra -fisolate-erroneous-paths-dereference -foptimize-sibling-calls -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-switch-conversion -ftree-tail-merge -fipa-ra -funswitch-loops -fpredictive-commoning -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:20.63397216796875selected flags:19.845435857772827 val:1.0397338872195683
+[1.0397338872195683]
+features
+[0.00969285 0.00383664 0.00510326 0.01120953 0.00929069 0.00453008
+ 0.00485801 0.00201086 0.0885164  0.00427796 0.00965478 0.02686219
+ 0.01008962 0.00482084 0.00637208 0.00498304 0.02484928 0.00244006
+ 0.01786227 0.00511769 0.00655889 0.00112055 0.00388374 0.00490936
+ 0.0054248  0.00080682 0.00715929 0.00676507 0.00281099 0.00520009
+ 0.06701689 0.00265251 0.00825858 0.00102592 0.00990202 0.0118566
+ 0.01640413 0.02076198 0.03337016 0.00034734 0.00030727 0.01050394
+ 0.00322554 0.00395325 0.00799874 0.00310449 0.00371645 0.00304705
+ 0.000778   0.00815379 0.00731607 0.00948222 0.00822519 0.00583649
+ 0.00809248 0.00223784 0.02108314 0.00847245 0.0004097  0.00554173
+ 0.00165748 0.00624133 0.00954065 0.00121056 0.00850439 0.00168155
+ 0.00365676 0.00527166 0.00220616 0.00994102 0.01917691 0.01032423
+ 0.01795627 0.01026102 0.01005063 0.00384646 0.00492158 0.00831464
+ 0.00291119 0.00289843 0.02978648 0.00695278 0.00164506 0.04092412
+ 0.00094802 0.00848992 0.01997545 0.00832896 0.01445258 0.00311424
+ 0.00639068 0.02035325 0.00134891 0.00256093 0.05534718 0.0077795
+ 0.01785962 0.00707796 0.0012394  0.00723072 0.00352165]
+[[8, 0.08851639858057815], [30, 0.06701689060748972], [94, 0.05534718256168172], [83, 0.04092412465551736], [38, 0.03337015798528645], [80, 0.029786481499169196], [11, 0.02686218555769454], [16, 0.024849281506799936]]
+Length of all flags sequences to be estimated: 63744
+The time for adding the random flags: 32.56078124046326
+Time for finding non-repetitive 1.1444091796875e-05
+gcc -O2 -fauto-inc-dec -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdce -fdefer-pop -fdelayed-branch -fdse -fforward-propagate -fipa-pure-const -fipa-reference -fmerge-constants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -funit-at-a-time -falign-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -fipa-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-strlen -fpartial-inlining -fpeephole2 -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstrict-overflow -ftree-switch-conversion -fcode-hoisting -ftree-pre -fipa-ra -finline-functions -fpredictive-commoning -ftree-loop-vectorize -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:21.15750503540039selected flags:18.819297075271606 val:1.124245233537504
+[1.124245233537504]
+features
+[0.00586068 0.00411901 0.00934288 0.00831324 0.0098639  0.00156991
+ 0.00765692 0.00315543 0.11228847 0.01121028 0.00501729 0.03268663
+ 0.01598223 0.00743387 0.00858633 0.00518884 0.0217943  0.00451509
+ 0.0082595  0.00115739 0.01233234 0.00351118 0.00209419 0.0130267
+ 0.00669411 0.00110869 0.00753158 0.00259843 0.00203053 0.00272813
+ 0.0639274  0.0025744  0.00329138 0.0057633  0.00680999 0.00605504
+ 0.01312362 0.01180505 0.03417789 0.00287249 0.0019228  0.00875919
+ 0.00573808 0.00524367 0.01225692 0.00253426 0.00598181 0.00272082
+ 0.00170134 0.01094915 0.00918845 0.00472887 0.01429703 0.00161915
+ 0.00255018 0.00062609 0.02166208 0.01237488 0.00746382 0.01235605
+ 0.00236646 0.01050832 0.0058067  0.00207584 0.00436322 0.00077993
+ 0.00742545 0.005521   0.00720601 0.00447665 0.00574148 0.00886224
+ 0.01476351 0.00636021 0.00838531 0.00341208 0.00438324 0.01001473
+ 0.00307211 0.00198059 0.0097326  0.00507721 0.00242878 0.05911087
+ 0.00210202 0.00554571 0.02853435 0.00758949 0.02262315 0.00746015
+ 0.00992358 0.00817267 0.00527795 0.00400448 0.04694601 0.0053938
+ 0.00415989 0.00459843 0.00125148 0.00712219 0.00270681]
+[[8, 0.11228846545222496], [30, 0.06392739869915444], [83, 0.05911087119907189], [94, 0.046946009293712655], [38, 0.03417788757759856], [11, 0.03268662590143641], [86, 0.0285343543144271], [88, 0.022623154148067683]]
+Length of all flags sequences to be estimated: 63744
+The time for adding the random flags: 32.418365240097046
+Time for finding non-repetitive 1.621246337890625e-05
+gcc -O2 -fbranch-count-reg -fcompare-elim -fcprop-registers -fdefer-pop -fforward-propagate -fguess-branch-probability -finline-functions-called-once -fipa-pure-const -fipa-reference -fmove-loop-invariants -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ch -ftree-coalesce-vars -ftree-dominator-opts -ftree-forwprop -ftree-sink -ftree-sra -ftree-ter -funit-at-a-time -falign-loops -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -fpartial-inlining -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns2 -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-pre -finline-functions -funswitch-loops -fpredictive-commoning -fgcse-after-reload -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:20.427629709243774selected flags:17.48212456703186 val:1.16848668083321
+[1.16848668083321]
+features
+[0.00986112 0.00522292 0.00148995 0.00674425 0.00298555 0.00363128
+ 0.01045115 0.00147634 0.06968731 0.00586772 0.00816031 0.02169526
+ 0.01069998 0.00301722 0.00476492 0.00866146 0.02814015 0.00680163
+ 0.01620098 0.00448098 0.00923821 0.00765091 0.00294232 0.00646523
+ 0.00590265 0.00354161 0.00573062 0.00826068 0.00205364 0.00763104
+ 0.05638234 0.00285162 0.00117113 0.00386194 0.00391472 0.00932916
+ 0.00959062 0.01733365 0.03680279 0.00156851 0.00397221 0.00479521
+ 0.00345478 0.00370502 0.01595853 0.00316181 0.00608508 0.00438927
+ 0.00164839 0.01444569 0.00405048 0.00571662 0.01356809 0.00590671
+ 0.00579475 0.00242853 0.01825704 0.01929744 0.00205089 0.010337
+ 0.00237793 0.00376419 0.02040623 0.00109209 0.00359771 0.00229161
+ 0.00213534 0.00639497 0.00804627 0.00275447 0.0092697  0.01304367
+ 0.02080689 0.00651951 0.01195806 0.00099141 0.01197786 0.0137483
+ 0.0036098  0.00199836 0.01544159 0.00652837 0.00390655 0.06441524
+ 0.00281848 0.01464539 0.01464416 0.00785189 0.02169749 0.00362437
+ 0.00949216 0.00539142 0.0067417  0.00323753 0.0482601  0.01043401
+ 0.00441279 0.00950424 0.00521222 0.0095337  0.00413482]
+[[8, 0.06968730553675555], [83, 0.06441523525462749], [30, 0.05638233702711081], [94, 0.048260101139280184], [38, 0.03680279232200176], [16, 0.028140145118943017], [88, 0.02169748887624525], [11, 0.021695256277029333]]
+Length of all flags sequences to be estimated: 63488
+The time for adding the random flags: 31.967862844467163
+Time for finding non-repetitive 1.430511474609375e-05
+gcc -O2 -fdelayed-branch -fdse -fforward-propagate -fguess-branch-probability -fipa-pure-const -fmerge-constants -fsplit-wide-types -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-dce -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-slsr -ftree-sra -ftree-pta -fthread-jumps -falign-loops -fcaller-saves -fcse-follow-jumps -fcse-skip-blocks -fgcse-lm -finline-small-functions -fipa-cp -fipa-icf -flra-remat -foptimize-sibling-calls -freorder-functions -frerun-cse-after-loop -fstrict-aliasing -fstrict-overflow -ftree-pre -finline-functions -funswitch-loops -fpredictive-commoning -ftree-loop-distribute-patterns -ftree-slp-vectorize -fcompare-elim -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:18.49177050590515selected flags:19.920734882354736 val:0.9282674868729204
+[0.9282674868729204]
+features
+[0.0157982  0.00515327 0.00707328 0.00657509 0.00154245 0.00512239
+ 0.00695797 0.00182664 0.03130851 0.0139918  0.00860885 0.0250752
+ 0.01576514 0.00385807 0.0050221  0.00170589 0.01457759 0.00417049
+ 0.01186235 0.00285754 0.00724733 0.01373468 0.00255828 0.01519455
+ 0.0049212  0.00062836 0.00205103 0.00664228 0.00062952 0.00931843
+ 0.06698303 0.00334773 0.00212133 0.00261845 0.00627479 0.02411665
+ 0.00468667 0.01729578 0.09257169 0.00267449 0.00686164 0.01149191
+ 0.00708799 0.00445959 0.01130012 0.00474783 0.01454768 0.0034008
+ 0.00211561 0.00256075 0.01139528 0.00917421 0.01237888 0.00193733
+ 0.00168486 0.00095432 0.0201039  0.01489773 0.00207626 0.01353719
+ 0.00398088 0.00494285 0.00678668 0.00321019 0.01178786 0.00310142
+ 0.00526677 0.00541115 0.0092222  0.00246263 0.00930024 0.00993021
+ 0.03180381 0.00242263 0.01378674 0.00513673 0.01013015 0.00533421
+ 0.00226906 0.00302015 0.00705069 0.00511691 0.00507053 0.05492844
+ 0.0056954  0.00735769 0.02031073 0.00766809 0.01354039 0.00688428
+ 0.00881446 0.00646277 0.00397138 0.00894378 0.02345053 0.01246726
+ 0.00629594 0.00611354 0.00021121 0.00562506 0.00353141]
+[[38, 0.09257168760791783], [30, 0.06698303027919765], [83, 0.054928438246094564], [72, 0.031803808814661896], [8, 0.031308505215645786], [11, 0.025075199119935356], [35, 0.02411665396189096], [94, 0.02345052592206918]]
+Length of all flags sequences to be estimated: 63232
+The time for adding the random flags: 31.76149892807007
+Time for finding non-repetitive 1.6450881958007812e-05
+gcc -O2 -fbranch-count-reg -fcombine-stack-adjustments -fdefer-pop -fdse -fforward-propagate -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-profile -fipa-reference -fmerge-constants -fmove-loop-invariants -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-ch -ftree-coalesce-vars -ftree-dse -ftree-phiprop -funit-at-a-time -falign-functions -falign-loops -falign-labels -fcse-skip-blocks -fdevirtualize -fexpensive-optimizations -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-bit-cp -fipa-vrp -fipa-sra -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -fsched-interblock -fsched-spec -fschedule-insns2 -fstrict-aliasing -ftree-pre -ftree-vrp -fipa-ra -finline-functions -funswitch-loops -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -fvect-cost-model -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:21.823957204818726selected flags:18.282155513763428 val:1.193729983775103
+[1.193729983775103]
+features
+[0.00157296 0.00414387 0.00250303 0.00504888 0.00216485 0.00114725
+ 0.01113703 0.00053343 0.03036049 0.01580592 0.0109085  0.03380542
+ 0.01199233 0.00561156 0.00955864 0.00450235 0.00774582 0.0062453
+ 0.01338646 0.0046805  0.00627512 0.00659496 0.00323994 0.01268993
+ 0.00696557 0.00157982 0.00357033 0.01201091 0.00277128 0.0056601
+ 0.05292782 0.00377699 0.00608914 0.00306543 0.00879101 0.01275435
+ 0.00717708 0.00439349 0.10035355 0.00467317 0.0036065  0.01183809
+ 0.01204972 0.00304031 0.00913553 0.00821309 0.00343927 0.00307379
+ 0.00491813 0.00513122 0.01483178 0.01326789 0.00815684 0.00399318
+ 0.00472013 0.00191217 0.02247394 0.01241352 0.0026036  0.01196571
+ 0.00390963 0.00354416 0.00729888 0.01247468 0.01732107 0.00078534
+ 0.00251018 0.00318809 0.00360972 0.00429666 0.00774636 0.0114065
+ 0.03069844 0.00476389 0.00829416 0.00308898 0.01400469 0.00759047
+ 0.0035608  0.0029921  0.0105545  0.00675177 0.00601604 0.06821048
+ 0.00520703 0.01910982 0.01602006 0.01508312 0.00861773 0.00414413
+ 0.00739822 0.00402464 0.00361737 0.0074582  0.02116028 0.01053738
+ 0.00589419 0.00502336 0.00360808 0.00183492 0.00764488]
+[[38, 0.10035355169091172], [83, 0.0682104799990113], [30, 0.05292782310132698], [11, 0.033805418217783406], [72, 0.030698442986769464], [8, 0.030360488811697096], [56, 0.022473940501217777], [94, 0.021160283383374407]]
+Length of all flags sequences to be estimated: 62976
+The time for adding the random flags: 32.22278189659119
+Time for finding non-repetitive 1.049041748046875e-05
+gcc -O2 -fauto-inc-dec -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdce -fdelayed-branch -fdse -fforward-propagate -fif-conversion2 -fif-conversion -fipa-pure-const -fipa-reference -fmerge-constants -fmove-loop-invariants -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-pta -ftree-ter -funit-at-a-time -fthread-jumps -falign-functions -falign-loops -falign-labels -fcaller-saves -fcrossjumping -fcse-skip-blocks -fdelete-null-pointer-checks -fexpensive-optimizations -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-vrp -fipa-sra -fipa-icf -foptimize-sibling-calls -foptimize-strlen -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-overflow -ftree-switch-conversion -fcode-hoisting -ftree-pre -ftree-vrp -fipa-ra -finline-functions -funswitch-loops -fpredictive-commoning -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:23.92562437057495selected flags:21.10384488105774 val:1.1337092603466759
+[1.1337092603466759]
+features
+[0.00541601 0.01369202 0.00305302 0.00311472 0.00409429 0.00727715
+ 0.00612577 0.0037898  0.03097483 0.00851958 0.00816436 0.04826659
+ 0.0106639  0.00998349 0.00531112 0.00556024 0.00759842 0.0087922
+ 0.01474203 0.00064242 0.00764703 0.0053329  0.00493693 0.02031347
+ 0.00648145 0.00101081 0.008931   0.00932349 0.00362842 0.00338939
+ 0.06541882 0.00138934 0.00709392 0.00588462 0.0080117  0.01874257
+ 0.0049515  0.00476863 0.11620896 0.00387718 0.00196701 0.00878526
+ 0.00837911 0.0062305  0.00647361 0.00433525 0.0030252  0.00256187
+ 0.00104867 0.01114005 0.00856004 0.00722105 0.00879898 0.00670336
+ 0.00992727 0.00298303 0.01727994 0.0124599  0.00248791 0.00880828
+ 0.00406274 0.00489288 0.01332106 0.00175105 0.00980139 0.00378412
+ 0.00070232 0.00350773 0.00417758 0.00263056 0.01232706 0.00834349
+ 0.02652496 0.0079377  0.0116815  0.00347208 0.0127925  0.00783562
+ 0.00434791 0.00241312 0.01263705 0.00553051 0.00317797 0.03460183
+ 0.00233949 0.01218264 0.0271129  0.01073865 0.00548379 0.00079396
+ 0.01400381 0.00591818 0.00684095 0.00188995 0.0163134  0.00766873
+ 0.00841711 0.01004848 0.00336553 0.00547166 0.00685567]
+[[38, 0.11620895652952648], [30, 0.06541882422298025], [11, 0.04826659121512246], [83, 0.03460183274156472], [8, 0.030974829586539056], [86, 0.027112900257769638], [72, 0.0265249603184193], [23, 0.020313473424462006]]
+Length of all flags sequences to be estimated: 62720
+The time for adding the random flags: 32.19116544723511
+Time for finding non-repetitive 9.775161743164062e-06
+gcc -O2 -fauto-inc-dec -fbranch-count-reg -fcompare-elim -fdce -fdefer-pop -fdelayed-branch -fforward-propagate -fguess-branch-probability -fipa-pure-const -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -ftree-bit-ccp -ftree-ccp -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -ftree-pta -falign-loops -fcse-follow-jumps -fcse-skip-blocks -fdevirtualize -fgcse -fhoist-adjacent-loads -findirect-inlining -fipa-cp -fipa-vrp -fipa-sra -flra-remat -fsched-interblock -fschedule-insns2 -fstore-merging -fstrict-overflow -ftree-pre -ftree-vrp -fipa-ra -funswitch-loops -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:21.00174117088318selected flags:21.883533000946045 val:0.9597052345238428
+[0.9597052345238428]
+features
+[0.00460775 0.0091677  0.00383639 0.00362398 0.00416631 0.00284999
+ 0.00752906 0.00225813 0.0100581  0.00752324 0.01125056 0.04029071
+ 0.00402337 0.00570224 0.00639367 0.00438437 0.01913997 0.00498516
+ 0.01274549 0.00596    0.00849247 0.00916926 0.00373263 0.01770021
+ 0.00640119 0.00100543 0.00447316 0.00548796 0.0037074  0.00712163
+ 0.05569662 0.00132786 0.00346628 0.00092054 0.01102685 0.01800601
+ 0.00369252 0.00816687 0.14761097 0.00105707 0.00383946 0.01724035
+ 0.00579501 0.00208445 0.00390512 0.00107558 0.00470916 0.00347313
+ 0.00074782 0.00318929 0.01066439 0.00681382 0.00668882 0.00631015
+ 0.00227966 0.0059015  0.01689813 0.02748973 0.00136808 0.01166486
+ 0.00366075 0.00510202 0.01431468 0.00176839 0.00540602 0.00365193
+ 0.00385649 0.00215745 0.0036558  0.001094   0.01537721 0.00864849
+ 0.03973888 0.00548593 0.01774528 0.00413666 0.00833783 0.00706694
+ 0.0062625  0.0053056  0.00689092 0.00996254 0.00922416 0.05799809
+ 0.000706   0.00870045 0.02154579 0.00707401 0.00764474 0.00391776
+ 0.01199974 0.00710282 0.00551904 0.00299395 0.01919292 0.00639053
+ 0.00190964 0.00279429 0.00286377 0.00446412 0.00743422]
+[[38, 0.14761096541484986], [83, 0.05799809419551028], [30, 0.05569661779651039], [11, 0.04029071262011644], [72, 0.039738883897472606], [57, 0.02748973318186012], [86, 0.021545794875570404], [94, 0.019192917463161662]]
+Length of all flags sequences to be estimated: 62464
+The time for adding the random flags: 31.611842155456543
+Time for finding non-repetitive 2.3603439331054688e-05
+gcc -O2 -fbranch-count-reg -fcompare-elim -fdce -fdefer-pop -fforward-propagate -fguess-branch-probability -fif-conversion2 -fif-conversion -fipa-profile -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-coalesce-vars -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-phiprop -ftree-sra -ftree-ter -fthread-jumps -falign-loops -falign-labels -fcaller-saves -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdevirtualize -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-cp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpeephole2 -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -fcode-hoisting -ftree-pre -finline-functions -fpredictive-commoning -fgcse-after-reload -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:22.686773538589478selected flags:18.993059396743774 val:1.1944770489413077
+[1.1944770489413077]
+features
+[0.00215038 0.00811142 0.00257053 0.00265017 0.00382061 0.00550408
+ 0.00455777 0.00102375 0.01664192 0.0083868  0.01309847 0.03378145
+ 0.00713267 0.00267171 0.00233686 0.00216799 0.00555137 0.00857198
+ 0.0075236  0.00386812 0.00651347 0.01067094 0.00432668 0.01712356
+ 0.00323987 0.00156141 0.00500776 0.00631499 0.00260892 0.00428042
+ 0.10387238 0.00427668 0.01111614 0.00023268 0.00920415 0.00888776
+ 0.00197646 0.00283252 0.13262531 0.00147505 0.00334383 0.01131937
+ 0.00525743 0.00416885 0.01213164 0.0058826  0.00378945 0.00484697
+ 0.0016625  0.00179928 0.00074199 0.00492952 0.01290285 0.0052026
+ 0.00251506 0.00159699 0.02061834 0.03313202 0.0038446  0.01020162
+ 0.00320265 0.00677431 0.00234015 0.0015712  0.00164619 0.0019319
+ 0.00500353 0.00255043 0.00330631 0.00420727 0.0069303  0.00755951
+ 0.0224583  0.01001007 0.01842745 0.00475248 0.01335209 0.0058857
+ 0.00730623 0.0011189  0.00375999 0.00745865 0.00487611 0.02854576
+ 0.00429299 0.03502154 0.02852339 0.00926435 0.00485063 0.00627312
+ 0.01145622 0.00902709 0.01007392 0.00435192 0.03176606 0.00314172
+ 0.00420771 0.00623982 0.00308799 0.00287248 0.02041723]
+[[38, 0.13262531266316577], [30, 0.10387237814894588], [85, 0.035021538893359044], [11, 0.03378144559497596], [57, 0.03313201715987625], [94, 0.031766062901970066], [83, 0.02854575888118013], [86, 0.028523386103614014]]
+Length of all flags sequences to be estimated: 62208
+The time for adding the random flags: 32.03422546386719
+Time for finding non-repetitive 1.5974044799804688e-05
+gcc -O2 -fbranch-count-reg -fcprop-registers -fdce -fdefer-pop -fdelayed-branch -fdse -fforward-propagate -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-profile -fipa-reference -fmerge-constants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -ftree-ter -funit-at-a-time -fthread-jumps -falign-loops -falign-labels -fcaller-saves -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -finline-small-functions -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-vrp -fipa-icf -fisolate-erroneous-paths-dereference -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-pre -ftree-vrp -fipa-ra -finline-functions -funswitch-loops -fpredictive-commoning -ftree-loop-vectorize -ftree-loop-distribute-patterns -ftree-slp-vectorize -ftree-partial-pre -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:23.970127820968628selected flags:21.138488054275513 val:1.1339565894884513
+[1.1339565894884513]
+features
+[0.00505419 0.00852726 0.00596655 0.00413191 0.00430513 0.00172276
+ 0.00414941 0.00460594 0.01389283 0.00472016 0.01165074 0.0581157
+ 0.00528684 0.00650889 0.00519524 0.00240009 0.00095724 0.0086402
+ 0.00542956 0.0009032  0.00454366 0.00765349 0.00597449 0.01441935
+ 0.00371505 0.00267143 0.00987596 0.00874956 0.00534721 0.00215531
+ 0.09923943 0.00751647 0.00859902 0.00210276 0.00740486 0.00671894
+ 0.00658848 0.00439537 0.1612333  0.00374173 0.0021883  0.0132238
+ 0.01469808 0.00222318 0.00887526 0.00456212 0.00276402 0.00173702
+ 0.00155289 0.00131308 0.00437517 0.0068067  0.01435526 0.00724817
+ 0.00250458 0.00501341 0.01518125 0.03627724 0.00376004 0.01230455
+ 0.00182911 0.0028146  0.01017382 0.00067791 0.00403572 0.00627051
+ 0.00607156 0.00221963 0.00647167 0.00232392 0.00456616 0.01304038
+ 0.03055401 0.01519587 0.01013368 0.00392852 0.00828916 0.00308202
+ 0.00564009 0.00378369 0.0085116  0.00279583 0.0045429  0.01818453
+ 0.00626569 0.01951251 0.01483739 0.00668943 0.00724635 0.00529977
+ 0.01809636 0.00825889 0.00548126 0.00334552 0.01049498 0.00642625
+ 0.00426413 0.00197169 0.00182792 0.00397628 0.00509483]
+[[38, 0.1612333045579458], [30, 0.09923943349713206], [11, 0.05811570207074884], [57, 0.03627724110769077], [72, 0.03055400892938729], [85, 0.019512511399120823], [83, 0.01818453313231299], [90, 0.018096360023676844]]
+Length of all flags sequences to be estimated: 61952
+The time for adding the random flags: 32.011754751205444
+Time for finding non-repetitive 9.5367431640625e-06
+gcc -O2 -fauto-inc-dec -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdce -fdefer-pop -fforward-propagate -fguess-branch-probability -fif-conversion2 -finline-functions-called-once -fipa-pure-const -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fssa-backprop -ftree-ccp -ftree-coalesce-vars -ftree-dce -ftree-forwprop -ftree-pta -ftree-ter -funit-at-a-time -falign-jumps -falign-labels -fcaller-saves -fcrossjumping -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -fipa-cp -fipa-bit-cp -fipa-vrp -fipa-icf -fisolate-erroneous-paths-dereference -freorder-blocks-algorithm=stc -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns2 -ftree-switch-conversion -fpredictive-commoning -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:19.943161487579346selected flags:24.099045753479004 val:0.8275498412504693
+[0.8275498412504693]
+features
+[0.00761829 0.0072128  0.00380023 0.00947796 0.00900461 0.00361737
+ 0.00507491 0.00144522 0.04373236 0.00499452 0.00312181 0.06882794
+ 0.01046623 0.00983309 0.00588516 0.00067169 0.00419037 0.01279542
+ 0.01788171 0.00306889 0.01017623 0.01169826 0.00644809 0.00974897
+ 0.00577274 0.0054121  0.01333749 0.00515108 0.00286429 0.00290012
+ 0.04731915 0.00118865 0.00624734 0.00067705 0.01078797 0.00260593
+ 0.00663124 0.02041704 0.0730738  0.00465211 0.01235448 0.01267678
+ 0.00370889 0.00190454 0.00451542 0.01184955 0.00368192 0.00365243
+ 0.00292566 0.00147804 0.00633532 0.00917356 0.00808024 0.00485898
+ 0.01490124 0.00244985 0.013499   0.01866906 0.00695803 0.01353653
+ 0.00182998 0.00597719 0.01920661 0.00230643 0.00352724 0.00163019
+ 0.0029365  0.00272339 0.00316608 0.00256672 0.00800137 0.00785238
+ 0.01749579 0.02607782 0.01112029 0.00470708 0.01322136 0.00110904
+ 0.00186347 0.00065013 0.00772295 0.01608949 0.00409105 0.01760091
+ 0.00458382 0.0255553  0.02453246 0.01417952 0.01110716 0.00733628
+ 0.0111001  0.00662666 0.00220695 0.004658   0.02897378 0.01087427
+ 0.00835869 0.00514426 0.0025618  0.00701303 0.00467476]
+[[38, 0.0730737963603187], [11, 0.06882793868525981], [30, 0.04731915275555319], [8, 0.04373235516412774], [94, 0.028973776380677913], [73, 0.02607781797892435], [85, 0.025555304667882143], [86, 0.024532464466101318]]
+Length of all flags sequences to be estimated: 61440
+The time for adding the random flags: 31.71538496017456
+Time for finding non-repetitive 1.1682510375976562e-05
+gcc -O2 -fauto-inc-dec -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdelayed-branch -fdse -fforward-propagate -finline-functions-called-once -fipa-profile -fmerge-constants -fmove-loop-invariants -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-ccp -ftree-ch -ftree-dce -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -ftree-pta -funit-at-a-time -falign-functions -falign-jumps -fcaller-saves -fcse-follow-jumps -fcse-skip-blocks -fdevirtualize -fdevirtualize-speculatively -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-cp -fipa-vrp -fipa-sra -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -freorder-blocks-algorithm=stc -fsched-interblock -fsched-spec -fschedule-insns2 -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-pre -funswitch-loops -fpredictive-commoning -fgcse-after-reload -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:22.930742502212524selected flags:20.70638608932495 val:1.1074236906088757
+[1.1074236906088757]
+features
+[0.0054719  0.01544399 0.00473459 0.01149679 0.00966562 0.00497054
+ 0.00286202 0.00300611 0.02459934 0.01077668 0.01474672 0.07833117
+ 0.00529923 0.01535269 0.00543407 0.00138612 0.00414517 0.00383936
+ 0.01160637 0.00278463 0.01171018 0.00651929 0.00219473 0.00460573
+ 0.00312851 0.00706497 0.00981674 0.00479658 0.00327964 0.00232471
+ 0.07074243 0.0014355  0.00432639 0.0009747  0.00971087 0.00383149
+ 0.0029337  0.0201666  0.0840517  0.0041038  0.00976111 0.01706896
+ 0.0067385  0.00185534 0.00840276 0.00926517 0.00859681 0.00260076
+ 0.00338514 0.00100801 0.00662006 0.00740878 0.0057725  0.00320485
+ 0.00483697 0.00194058 0.01299786 0.02861444 0.0056151  0.00384064
+ 0.00043988 0.00690564 0.00791966 0.00081752 0.01153047 0.00406567
+ 0.00193301 0.00949442 0.00579129 0.00327945 0.00572778 0.00544086
+ 0.02460677 0.00882631 0.01284187 0.00508074 0.01524583 0.00215884
+ 0.00525901 0.00238196 0.01424358 0.02000876 0.00293685 0.01225666
+ 0.00561979 0.02020274 0.02121747 0.00892739 0.00457777 0.00461629
+ 0.01354992 0.00421068 0.00614838 0.00329287 0.04584979 0.00352674
+ 0.00465378 0.00657946 0.00207646 0.0073294  0.00522252]
+[[38, 0.08405170156043558], [11, 0.07833117175605636], [30, 0.07074242888069077], [94, 0.04584978647469001], [57, 0.028614440305758496], [72, 0.024606772522559522], [8, 0.024599337628110604], [86, 0.02121746537688009]]
+Length of all flags sequences to be estimated: 61184
+The time for adding the random flags: 30.99597454071045
+Time for finding non-repetitive 4.315376281738281e-05
+gcc -O2 -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdefer-pop -fforward-propagate -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-profile -fipa-reference -freorder-blocks -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ch -ftree-dce -ftree-dominator-opts -ftree-forwprop -ftree-sink -ftree-pta -falign-functions -falign-loops -falign-labels -fcrossjumping -fcse-skip-blocks -fexpensive-optimizations -fgcse-lm -findirect-inlining -fipa-cp -fipa-sra -flra-remat -fpeephole2 -freorder-blocks-algorithm=stc -freorder-functions -fsched-interblock -fschedule-insns2 -fstrict-aliasing -fstrict-overflow -ftree-pre -ftree-vrp -fipa-ra -finline-functions -funswitch-loops -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:22.815218210220337selected flags:21.893794298171997 val:1.0420860769722895
+[1.0420860769722895]
+features
+[0.00425566 0.00880321 0.00453231 0.00475208 0.00463757 0.00367901
+ 0.0125889  0.00017193 0.03140086 0.01156709 0.00540215 0.06182239
+ 0.01163647 0.00595715 0.00386517 0.00214851 0.00293228 0.00589423
+ 0.01702462 0.00255905 0.00557781 0.00856149 0.00205766 0.00338452
+ 0.00502233 0.00277569 0.00768231 0.01042148 0.00316446 0.00570712
+ 0.06044758 0.00287275 0.00784239 0.00232572 0.01240487 0.0033543
+ 0.00705663 0.02521238 0.10341088 0.00376064 0.0089976  0.01414211
+ 0.00471536 0.00392973 0.00872907 0.00476833 0.00285725 0.00680633
+ 0.00230121 0.0032612  0.00757429 0.00727195 0.0157686  0.00544709
+ 0.00495886 0.00264927 0.01196952 0.01987673 0.00419521 0.01090236
+ 0.00099621 0.00579964 0.0069705  0.00633158 0.00499615 0.0063055
+ 0.0028851  0.00206864 0.00303214 0.00661198 0.0082279  0.00495431
+ 0.01885294 0.02412704 0.01503618 0.00419284 0.01051912 0.0040659
+ 0.0032913  0.004426   0.00702529 0.01950184 0.00376432 0.00566369
+ 0.00379515 0.01460153 0.03755082 0.00656845 0.01140462 0.01098499
+ 0.01677547 0.00421645 0.00360282 0.00578982 0.03463081 0.00490153
+ 0.00844623 0.00470407 0.0029271  0.00635121 0.00330714]
+[[38, 0.10341087734083837], [11, 0.06182239098999027], [30, 0.060447579669653584], [86, 0.03755081775649122], [94, 0.0346308091242602], [8, 0.03140085599084927], [37, 0.025212376398181285], [73, 0.024127040586672126]]
+Length of all flags sequences to be estimated: 60928
+The time for adding the random flags: 31.15469241142273
+Time for finding non-repetitive 1.6689300537109375e-05
+gcc -O2 -fcprop-registers -fdce -fdefer-pop -fdse -fforward-propagate -fipa-pure-const -fipa-reference -fmerge-constants -fmove-loop-invariants -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -ftree-bit-ccp -ftree-ccp -ftree-coalesce-vars -ftree-copy-prop -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-pta -ftree-ter -funit-at-a-time -falign-loops -falign-labels -fcaller-saves -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-vrp -fipa-icf -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fsched-interblock -fsched-spec -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-pre -fipa-ra -fgcse-after-reload -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -ftree-partial-pre -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:20.79395365715027selected flags:21.555328369140625 val:0.9646781204650834
+[0.9646781204650834]
+features
+[0.01317165 0.00787727 0.00669564 0.01062146 0.00399407 0.00323414
+ 0.00478461 0.0073539  0.02303313 0.00263146 0.00660053 0.06891278
+ 0.01209717 0.01407174 0.003048   0.00147226 0.00126038 0.00406016
+ 0.01541603 0.00360909 0.00691026 0.00825775 0.00307986 0.00760644
+ 0.00366884 0.00505173 0.00567367 0.00903806 0.00692536 0.00703158
+ 0.07315244 0.00115948 0.01074382 0.00167757 0.00397166 0.00577924
+ 0.00921129 0.01585863 0.07369258 0.00670063 0.00839966 0.01349348
+ 0.00558747 0.00209718 0.00670065 0.00726323 0.00198708 0.00528895
+ 0.00265704 0.00598094 0.01406767 0.01055012 0.00804561 0.00341294
+ 0.00757817 0.0014052  0.01405676 0.01492219 0.00751886 0.00953277
+ 0.00399678 0.00664879 0.00842888 0.0033805  0.01246424 0.00128982
+ 0.0026239  0.00215943 0.00340235 0.00194446 0.00585271 0.00830827
+ 0.01576694 0.01927399 0.01816238 0.0043866  0.00756618 0.00984628
+ 0.00315388 0.00584713 0.01025011 0.00804123 0.00253247 0.01189517
+ 0.00857098 0.01285796 0.02978107 0.01249137 0.00729006 0.0040889
+ 0.02585961 0.00241818 0.0083407  0.01030999 0.02758921 0.0120494
+ 0.00292162 0.0066202  0.00399368 0.00725229 0.01065992]
+[[38, 0.07369258422488605], [30, 0.07315243695142835], [11, 0.06891278080387174], [86, 0.02978106818680478], [94, 0.027589212044823605], [90, 0.025859614877258377], [8, 0.023033129573076027], [73, 0.019273992776652125]]
+Length of all flags sequences to be estimated: 60672
+The time for adding the random flags: 30.712658882141113
+Time for finding non-repetitive 1.3828277587890625e-05
+gcc -O2 -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdefer-pop -fforward-propagate -fipa-pure-const -fipa-reference -fmove-loop-invariants -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -fthread-jumps -falign-labels -fcaller-saves -fcrossjumping -fdelete-null-pointer-checks -fdevirtualize-speculatively -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -fipa-cp -fipa-icf -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fschedule-insns2 -fstrict-aliasing -ftree-builtin-call-dce -ftree-switch-conversion -ftree-pre -fipa-ra -finline-functions -fpredictive-commoning -fgcse-after-reload -ftree-loop-vectorize -fsplit-paths -ftree-slp-vectorize -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:23.634395122528076selected flags:23.71750020980835 val:0.9964960435735168
+[0.9964960435735168]
+features
+[0.00953107 0.00355239 0.00508774 0.00418963 0.00447238 0.00278179
+ 0.00377206 0.00741265 0.03471862 0.00752504 0.00373576 0.0523702
+ 0.00277355 0.01404359 0.00274057 0.00055583 0.00339734 0.0158907
+ 0.00804044 0.00542298 0.01401212 0.00961699 0.00152742 0.00716395
+ 0.00535115 0.01060952 0.01011226 0.00891409 0.00100391 0.00476013
+ 0.08194914 0.00199781 0.01271171 0.00252339 0.00781673 0.00749917
+ 0.0060522  0.01210052 0.06787496 0.00670971 0.00370748 0.01664079
+ 0.00772007 0.00491362 0.00894166 0.00515387 0.0033445  0.00463707
+ 0.00305042 0.00464279 0.01145906 0.00524045 0.01251844 0.00910231
+ 0.00863927 0.00562702 0.00942065 0.01220618 0.00809157 0.00660711
+ 0.01001597 0.00187896 0.00906385 0.00228423 0.00772699 0.00224817
+ 0.0111209  0.00297394 0.00504781 0.00164934 0.00667834 0.00473007
+ 0.01725733 0.01522222 0.01651579 0.00616342 0.01035987 0.00856078
+ 0.00496311 0.00192566 0.00569703 0.01952483 0.00318568 0.02030187
+ 0.00470202 0.00577682 0.02406708 0.01692361 0.00693002 0.00758259
+ 0.01393369 0.00465562 0.01060524 0.00540662 0.02746724 0.01251019
+ 0.0055117  0.00727729 0.00413652 0.00672858 0.01670343]
+[[30, 0.08194914265597805], [38, 0.0678749585437633], [11, 0.05237020142337974], [8, 0.034718621311353004], [94, 0.027467237890225496], [86, 0.024067077319013284], [83, 0.020301871020266184], [81, 0.01952482583159627]]
+Length of all flags sequences to be estimated: 60160
+The time for adding the random flags: 31.146734714508057
+Time for finding non-repetitive 1.4543533325195312e-05
+gcc -O2 -fbranch-count-reg -fcombine-stack-adjustments -fcompare-elim -fdce -fforward-propagate -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-pure-const -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -ftree-bit-ccp -ftree-ccp -ftree-fre -ftree-phiprop -ftree-sra -ftree-ter -funit-at-a-time -fthread-jumps -falign-functions -falign-jumps -fcaller-saves -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -findirect-inlining -fipa-bit-cp -fipa-vrp -fipa-sra -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -fpartial-inlining -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-pre -finline-functions -fgcse-after-reload -ftree-loop-vectorize -fsplit-paths -ftree-slp-vectorize -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:19.503511905670166selected flags:23.494268655776978 val:0.8301391369709425
+[0.8301391369709425]
+features
+[0.00691102 0.01395268 0.00424177 0.00438185 0.00330501 0.00755805
+ 0.0106635  0.00237495 0.08583008 0.00521756 0.00278094 0.03865702
+ 0.00979803 0.00872521 0.00541204 0.00292599 0.00204692 0.01535431
+ 0.01383651 0.00559503 0.01037425 0.01771606 0.00492812 0.0028831
+ 0.00196959 0.00657201 0.00520303 0.00904768 0.00381401 0.00927859
+ 0.0359802  0.00836657 0.00721916 0.00297763 0.00316162 0.00764241
+ 0.00680036 0.01485581 0.06415627 0.00060841 0.00733824 0.01291802
+ 0.01092893 0.00584366 0.0046772  0.0080173  0.00691603 0.00187088
+ 0.00188073 0.01026397 0.00761877 0.00506709 0.01187148 0.00354403
+ 0.01488755 0.00473089 0.00806849 0.00138494 0.00615442 0.01139302
+ 0.00219685 0.00456634 0.01876842 0.00469099 0.01497946 0.00376369
+ 0.00556596 0.00305905 0.00285461 0.00234611 0.0089385  0.00709087
+ 0.01314657 0.0154818  0.01119017 0.00186371 0.0082809  0.00952515
+ 0.00675033 0.00222013 0.00942712 0.00763882 0.00389535 0.02501624
+ 0.00632158 0.00916285 0.03962309 0.00397163 0.01785315 0.00949684
+ 0.01423043 0.00298638 0.00871524 0.00417077 0.0308296  0.00646571
+ 0.00453509 0.00894043 0.00678326 0.00872559 0.00543226]
+[[8, 0.08583007919033314], [38, 0.0641562724082489], [86, 0.039623089194962054], [11, 0.038657021856539145], [30, 0.035980199521131156], [94, 0.03082959645623685], [83, 0.0250162400961297], [62, 0.01876841799000523]]
+Length of all flags sequences to be estimated: 59904
+The time for adding the random flags: 29.95256543159485
+Time for finding non-repetitive 8.821487426757812e-06
+gcc -O2 -fauto-inc-dec -fbranch-count-reg -fcompare-elim -fcprop-registers -fdce -fdefer-pop -fdelayed-branch -fforward-propagate -fguess-branch-probability -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-reference -fmerge-constants -fmove-loop-invariants -freorder-blocks -fsplit-wide-types -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dse -ftree-forwprop -ftree-sink -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -falign-jumps -falign-loops -falign-labels -fcaller-saves -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -fcode-hoisting -ftree-pre -ftree-vrp -finline-functions -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:22.0735080242157selected flags:20.510907411575317 val:1.07618388505613
+[1.07618388505613]
+features
+[0.01137792 0.01396646 0.00714613 0.01003669 0.00703403 0.00222872
+ 0.0072838  0.0010692  0.07972951 0.00507582 0.0024328  0.02720064
+ 0.01373659 0.01053823 0.00565162 0.00164354 0.00185068 0.00815536
+ 0.00947219 0.00291466 0.01066789 0.0091965  0.00508987 0.00610199
+ 0.0062094  0.00924337 0.00859385 0.0123007  0.00838288 0.00616315
+ 0.0552094  0.00349825 0.00969729 0.00168909 0.00575521 0.00847029
+ 0.00541381 0.02762956 0.05801355 0.0019194  0.00596271 0.00735562
+ 0.0113399  0.00427118 0.01021352 0.0104746  0.00761515 0.00397889
+ 0.00480352 0.0045592  0.00866332 0.00436399 0.01556943 0.00609201
+ 0.00714729 0.00814958 0.00562498 0.01508656 0.0035967  0.0077203
+ 0.00088661 0.00563357 0.01987564 0.00354197 0.00564146 0.00120988
+ 0.01058402 0.00241557 0.0027278  0.00659333 0.00986487 0.01164132
+ 0.02370709 0.0059626  0.0103125  0.00353589 0.00954063 0.0138171
+ 0.00442905 0.0028852  0.00791322 0.00527886 0.00248916 0.01312537
+ 0.00242303 0.00845377 0.03673631 0.00595316 0.02104987 0.0104747
+ 0.00373137 0.00179219 0.00514339 0.00335163 0.04040411 0.00737269
+ 0.00350954 0.00573678 0.00436161 0.01033878 0.0051759 ]
+[[8, 0.07972951160325162], [38, 0.05801355367878418], [30, 0.05520939669437352], [94, 0.04040411318810255], [86, 0.036736312687914184], [37, 0.027629555522441528], [11, 0.027200642526859678], [72, 0.023707085070559603]]
+Length of all flags sequences to be estimated: 59648
+The time for adding the random flags: 30.200583457946777
+Time for finding non-repetitive 1.6450881958007812e-05
+gcc -O2 -fdelayed-branch -fdse -fipa-profile -fmerge-constants -fshrink-wrap-separate -fsplit-wide-types -ftree-bit-ccp -ftree-ch -ftree-coalesce-vars -ftree-dominator-opts -ftree-dse -ftree-phiprop -ftree-sra -funit-at-a-time -falign-labels -fcrossjumping -fdevirtualize -fdevirtualize-speculatively -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -fipa-bit-cp -fipa-vrp -fipa-sra -flra-remat -fpeephole2 -freorder-blocks-algorithm=stc -frerun-cse-after-loop -fsched-interblock -fschedule-insns2 -fstrict-aliasing -fcode-hoisting -ftree-pre -finline-functions -funswitch-loops -fpredictive-commoning -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -fvect-cost-model -ftree-partial-pre -fpeel-loops -fcombine-stack-adjustments -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:24.380346536636353selected flags:21.39643669128418 val:1.1394582606629853
+[1.1394582606629853]
+features
+[0.01868519 0.0109845  0.00472997 0.00297249 0.00493683 0.00177645
+ 0.01915983 0.00423115 0.08942159 0.00835139 0.00320501 0.03987515
+ 0.00780479 0.01288407 0.00807463 0.00253493 0.0026773  0.01193948
+ 0.01220107 0.00403114 0.01068644 0.00827674 0.00374955 0.00741832
+ 0.00275251 0.00438657 0.00529362 0.00764189 0.01106028 0.00687842
+ 0.03041707 0.00543332 0.00698449 0.00307807 0.00694388 0.011127
+ 0.00452807 0.01912238 0.04322663 0.00320803 0.00440279 0.00587992
+ 0.00620572 0.00365113 0.00496993 0.01004512 0.00528038 0.00187825
+ 0.00443343 0.00263342 0.01116655 0.00957598 0.01593854 0.00640222
+ 0.00479007 0.00553272 0.0082632  0.00565121 0.00535426 0.00686971
+ 0.0037124  0.00319965 0.01788716 0.00456978 0.01700648 0.00091199
+ 0.00468323 0.00490039 0.00167314 0.00225662 0.00486975 0.01200587
+ 0.03107172 0.0075552  0.00907213 0.00521852 0.01016319 0.01017464
+ 0.00936133 0.00353388 0.01002495 0.00340095 0.00350404 0.01957317
+ 0.00486635 0.01584728 0.03757309 0.00676843 0.01644652 0.00964421
+ 0.01018194 0.00900092 0.00584577 0.00498689 0.03336652 0.00584243
+ 0.00500541 0.00430811 0.00562601 0.01595735 0.0067878 ]
+[[8, 0.08942158788143799], [38, 0.04322662718099379], [11, 0.0398751469277239], [86, 0.037573086506202474], [94, 0.03336651605499767], [72, 0.03107171918160975], [30, 0.030417065590726485], [83, 0.019573168768987844]]
+Length of all flags sequences to be estimated: 59136
+The time for adding the random flags: 29.912949800491333
+Time for finding non-repetitive 1.2636184692382812e-05
+gcc -O2 -fcompare-elim -fdefer-pop -fforward-propagate -fif-conversion2 -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dominator-opts -ftree-forwprop -ftree-fre -ftree-phiprop -funit-at-a-time -fthread-jumps -falign-jumps -falign-loops -falign-labels -fcaller-saves -fcse-follow-jumps -fcse-skip-blocks -fdevirtualize -fexpensive-optimizations -fgcse -finline-small-functions -findirect-inlining -fipa-cp -fipa-sra -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -freorder-blocks-algorithm=stc -freorder-functions -fsched-interblock -fsched-spec -fschedule-insns2 -fstrict-overflow -ftree-switch-conversion -ftree-tail-merge -ftree-pre -ftree-vrp -fipa-ra -finline-functions -funswitch-loops -fgcse-after-reload -ftree-loop-distribute-patterns -fsplit-paths -ftree-partial-pre -fpeel-loops -fcombine-stack-adjustments -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:23.825623750686646selected flags:21.90079140663147 val:1.0878887117966132
+[1.0878887117966132]
+features
+[0.02267315 0.00768729 0.01094815 0.009041   0.00461168 0.0043109
+ 0.01091005 0.00757904 0.06548118 0.00472121 0.00405162 0.03607916
+ 0.01130729 0.00792942 0.00169223 0.00294697 0.00616498 0.01440721
+ 0.01467335 0.00501602 0.02165415 0.01234202 0.00534271 0.00439513
+ 0.00478769 0.00713665 0.00661601 0.00991551 0.01244816 0.00691539
+ 0.0565867  0.00172656 0.00839512 0.00093048 0.00680605 0.00762177
+ 0.00703335 0.01853037 0.05616366 0.002986   0.00486109 0.00899128
+ 0.00589771 0.00355945 0.00802475 0.01121611 0.00280331 0.00362803
+ 0.00631177 0.004434   0.01564767 0.00484212 0.01855901 0.00482768
+ 0.00634219 0.0013417  0.01067118 0.00366259 0.0034742  0.01094227
+ 0.00460364 0.00391314 0.01573935 0.00227506 0.00839182 0.00269793
+ 0.00446253 0.00628656 0.00528199 0.00389986 0.00871019 0.00945028
+ 0.01821339 0.00268953 0.00631131 0.00498771 0.01002179 0.00981013
+ 0.00584537 0.00135992 0.01184673 0.01061137 0.00348944 0.0180274
+ 0.00280664 0.01092191 0.02634217 0.0094215  0.01219658 0.00985153
+ 0.01314956 0.00334824 0.00703149 0.00816809 0.03788179 0.00114069
+ 0.00415814 0.00446004 0.00381907 0.0098687  0.0059039 ]
+[[8, 0.06548118232079511], [30, 0.056586699300224606], [38, 0.05616365677189735], [94, 0.03788178586837114], [11, 0.0360791585549685], [86, 0.026342174213929273], [0, 0.022673150258309054], [20, 0.021654147244727973]]
+Length of all flags sequences to be estimated: 58880
+The time for adding the random flags: 30.012300491333008
+Time for finding non-repetitive 1.1444091796875e-05
+gcc -O2 -fcombine-stack-adjustments -fcprop-registers -fdefer-pop -fdelayed-branch -fforward-propagate -fguess-branch-probability -fif-conversion2 -fif-conversion -fipa-pure-const -fipa-reference -freorder-blocks -fshrink-wrap -fssa-backprop -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-phiprop -ftree-sink -ftree-pta -ftree-ter -fthread-jumps -falign-functions -fcaller-saves -fcrossjumping -fdevirtualize -fexpensive-optimizations -fgcse -finline-small-functions -fipa-cp -fipa-bit-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -foptimize-strlen -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fschedule-insns -fstrict-overflow -ftree-switch-conversion -ftree-tail-merge -ftree-pre -fipa-ra -finline-functions -funswitch-loops -ftree-loop-distribute-patterns -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:23.435970783233643selected flags:19.516225814819336 val:1.2008454403841706
+[1.2008454403841706]
+features
+[0.02928307 0.01021989 0.01601872 0.00854824 0.00318162 0.00418177
+ 0.02519319 0.00397348 0.0546564  0.00675355 0.00378839 0.01646966
+ 0.00593172 0.00708751 0.00165697 0.00224698 0.00404672 0.01155154
+ 0.01121305 0.00284343 0.01136798 0.00974442 0.00072371 0.00689292
+ 0.00523511 0.00514995 0.00216451 0.00785375 0.0105687  0.00857418
+ 0.06766152 0.0069475  0.00773403 0.00253023 0.00679826 0.00926702
+ 0.00290825 0.02779839 0.08508526 0.00207854 0.00641886 0.0124517
+ 0.00788279 0.00335322 0.00502098 0.00794465 0.00455148 0.00167305
+ 0.00452278 0.00349435 0.01306024 0.00320369 0.02075724 0.00714462
+ 0.00123764 0.00246111 0.00615811 0.00834947 0.00164526 0.00687423
+ 0.00103154 0.00723221 0.01368443 0.00368994 0.02304362 0.00342846
+ 0.00441578 0.00344731 0.00361521 0.00318506 0.00721094 0.01397183
+ 0.02627188 0.00725683 0.00932685 0.00362507 0.01743391 0.00783582
+ 0.00351544 0.00223385 0.01015367 0.00531777 0.00271112 0.01174098
+ 0.00287839 0.00864947 0.02701634 0.00990998 0.01482973 0.00637453
+ 0.01393924 0.00247056 0.00318006 0.00345373 0.02659664 0.00493641
+ 0.00290014 0.00624596 0.00651531 0.0127851  0.00780327]
+[[38, 0.08508525750561034], [30, 0.06766151787954806], [8, 0.0546563965328407], [0, 0.02928306678049274], [37, 0.027798393824753572], [86, 0.02701633614773934], [94, 0.026596643882469895], [72, 0.026271880525077885]]
+Length of all flags sequences to be estimated: 58368
+The time for adding the random flags: 29.785932540893555
+Time for finding non-repetitive 1.0728836059570312e-05
+gcc -O2 -fbranch-count-reg -fcombine-stack-adjustments -fcompare-elim -fdefer-pop -fdelayed-branch -fforward-propagate -fif-conversion -finline-functions-called-once -fmerge-constants -freorder-blocks -fshrink-wrap -fsplit-wide-types -fssa-backprop -ftree-bit-ccp -ftree-ccp -ftree-coalesce-vars -ftree-dce -ftree-dse -ftree-forwprop -ftree-phiprop -ftree-sink -ftree-pta -funit-at-a-time -falign-loops -falign-labels -fdevirtualize -fdevirtualize-speculatively -fgcse-lm -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-vrp -fipa-icf -foptimize-sibling-calls -fpeephole2 -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fschedule-insns -fschedule-insns2 -ftree-pre -ftree-slp-vectorize -ftree-partial-pre -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:21.723352193832397selected flags:22.787177562713623 val:0.9533147373801155
+[0.9533147373801155]
+features
+[0.02115739 0.01558564 0.00934141 0.00909409 0.00562477 0.00338412
+ 0.01888861 0.00316435 0.05144576 0.00556715 0.00602003 0.01831697
+ 0.00966584 0.00505596 0.00183069 0.00446272 0.00194087 0.01034095
+ 0.01643431 0.00256461 0.00705038 0.00718608 0.00485893 0.00354965
+ 0.00345007 0.00760165 0.00509139 0.00853816 0.0207963  0.00458079
+ 0.06670115 0.00616838 0.01002028 0.00098032 0.00339305 0.01274262
+ 0.00570083 0.01847111 0.06347457 0.00236096 0.00664205 0.01460084
+ 0.00936284 0.00395342 0.00685538 0.0087549  0.00460735 0.00344778
+ 0.00887228 0.00646668 0.00868294 0.00112503 0.01073324 0.00224097
+ 0.00669313 0.00731752 0.01879427 0.00206628 0.00988134 0.00895598
+ 0.00327652 0.00393387 0.01811758 0.0054463  0.02021374 0.002781
+ 0.01454387 0.00370351 0.00237893 0.00331143 0.00983703 0.01273253
+ 0.0368973  0.00626895 0.00760019 0.00300577 0.00541175 0.00507537
+ 0.00277863 0.00704565 0.0072868  0.00919388 0.00223585 0.02076873
+ 0.00326541 0.01543864 0.02745142 0.00492505 0.012897   0.01023376
+ 0.01437718 0.00100473 0.00638483 0.00550012 0.02186594 0.00341764
+ 0.00992786 0.00075025 0.00249068 0.00812894 0.00543822]
+[[30, 0.06670115461945764], [38, 0.06347457224111683], [8, 0.05144575937901117], [72, 0.036897296483788714], [86, 0.027451423767633917], [94, 0.021865944726347022], [0, 0.021157391683154753], [28, 0.020796298310021465]]
+Length of all flags sequences to be estimated: 58112
+The time for adding the random flags: 29.292384386062622
+Time for finding non-repetitive 1.6450881958007812e-05
+gcc -O2 -fdce -fdelayed-branch -fforward-propagate -fguess-branch-probability -fif-conversion -finline-functions-called-once -fipa-reference -fssa-backprop -ftree-ch -ftree-dominator-opts -ftree-phiprop -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -falign-functions -falign-labels -fcaller-saves -fcse-follow-jumps -fdelete-null-pointer-checks -fdevirtualize -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -fipa-sra -fipa-icf -foptimize-sibling-calls -freorder-blocks-algorithm=stc -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -ftree-switch-conversion -funswitch-loops -fgcse-after-reload -ftree-loop-distribute-patterns -fsplit-paths -fpeel-loops -fcombine-stack-adjustments -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:20.254696369171143selected flags:17.811891078948975 val:1.1371446344127494
+[1.1371446344127494]
+features
+[0.01673148 0.01960179 0.01027968 0.0048793  0.00862756 0.00666173
+ 0.02171538 0.00303003 0.0682296  0.00506199 0.00809502 0.01840737
+ 0.00696932 0.00602338 0.00513131 0.00524735 0.00165249 0.00838403
+ 0.01257382 0.00295361 0.00952447 0.00922043 0.00429054 0.0067206
+ 0.00418415 0.00544108 0.00804656 0.0125486  0.01350827 0.00704395
+ 0.05123398 0.00231449 0.00579191 0.00200588 0.00814292 0.00733003
+ 0.00400835 0.0095393  0.0627417  0.00374137 0.00490681 0.0099173
+ 0.0127648  0.00300931 0.00681788 0.00994703 0.00439782 0.00180637
+ 0.00254932 0.00400041 0.00875118 0.0050963  0.01078847 0.00263792
+ 0.00548236 0.00439127 0.01619303 0.00326639 0.00261611 0.01391309
+ 0.0019381  0.00412497 0.02085308 0.00136201 0.01828621 0.00183525
+ 0.00354907 0.00390228 0.00443103 0.0025804  0.00905336 0.01172604
+ 0.03932736 0.00706935 0.00819878 0.00739361 0.00917603 0.00664904
+ 0.00919578 0.0031064  0.00807443 0.00266672 0.00727198 0.03006043
+ 0.00267167 0.01078432 0.03526794 0.00592687 0.01481512 0.00483411
+ 0.01503928 0.00755919 0.00504594 0.00312124 0.02605921 0.00528459
+ 0.00169887 0.0047044  0.00562319 0.01044287 0.00840147]
+[[8, 0.06822959543006239], [38, 0.06274170282870609], [30, 0.051233975926935495], [72, 0.039327355844682096], [86, 0.03526794312995054], [83, 0.0300604312213373], [94, 0.02605920592070834], [6, 0.021715383838623765]]
+Length of all flags sequences to be estimated: 57600
+The time for adding the random flags: 29.58281183242798
+Time for finding non-repetitive 1.8358230590820312e-05
+gcc -O2 -fcompare-elim -fdefer-pop -fforward-propagate -fguess-branch-probability -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-profile -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-coalesce-vars -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-phiprop -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -fthread-jumps -falign-functions -fcaller-saves -fcrossjumping -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fgcse -fgcse-lm -finline-small-functions -findirect-inlining -fipa-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-switch-conversion -fcode-hoisting -ftree-pre -finline-functions -funswitch-loops -fgcse-after-reload -ftree-loop-distribute-patterns -ftree-slp-vectorize -fauto-inc-dec -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:22.43100929260254selected flags:20.647402048110962 val:1.0863841000594436
+[1.0863841000594436]
+features
+[0.01776652 0.01100628 0.00569743 0.0058561  0.01495134 0.00424111
+ 0.01503424 0.00222534 0.06506109 0.00560411 0.00361053 0.00963221
+ 0.00584632 0.00875365 0.0027632  0.00436733 0.00157418 0.01056981
+ 0.00982471 0.00090227 0.01186717 0.00846819 0.0025947  0.00929154
+ 0.00342641 0.00304709 0.00429629 0.00666369 0.00953163 0.00702941
+ 0.06389024 0.00555165 0.00599257 0.00216604 0.01015944 0.00752799
+ 0.00295183 0.00870021 0.04201206 0.00318624 0.00784015 0.00413417
+ 0.00800323 0.00567987 0.00631671 0.00538745 0.00555465 0.00297234
+ 0.00148876 0.00425468 0.01561741 0.00462211 0.01137918 0.00366863
+ 0.00423238 0.0062394  0.00726023 0.00687    0.01035624 0.01406951
+ 0.00329641 0.00584309 0.0233684  0.00143154 0.03312898 0.00744693
+ 0.00517154 0.00257402 0.00313162 0.00249344 0.00704844 0.01739337
+ 0.0352045  0.00686075 0.00562883 0.0071668  0.01086222 0.00640651
+ 0.00350847 0.0045856  0.02038597 0.00520156 0.00424952 0.02121086
+ 0.00548974 0.00980422 0.03801586 0.00439237 0.01895487 0.00272994
+ 0.01275794 0.00652532 0.00220905 0.00574647 0.03961448 0.01161622
+ 0.00686269 0.00759412 0.00259522 0.0136593  0.00824355]
+[[8, 0.06506109089255495], [30, 0.06389023793788912], [38, 0.04201205568319801], [94, 0.03961448488509458], [86, 0.038015862874527157], [72, 0.03520450219850949], [64, 0.033128976422394256], [62, 0.023368398011487344]]
+Length of all flags sequences to be estimated: 57088
+The time for adding the random flags: 29.12217879295349
+Time for finding non-repetitive 2.0742416381835938e-05
+gcc -O2 -fbranch-count-reg -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdce -fdefer-pop -fforward-propagate -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-profile -fipa-reference -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-coalesce-vars -ftree-dce -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -falign-functions -falign-jumps -falign-loops -falign-labels -fcaller-saves -fcrossjumping -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-strlen -fpartial-inlining -freorder-blocks-algorithm=stc -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstrict-aliasing -ftree-builtin-call-dce -ftree-pre -finline-functions -funswitch-loops -fgcse-after-reload -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:24.247434616088867selected flags:21.72792911529541 val:1.1159570011216506
+[1.1159570011216506]
+features
+[0.01558198 0.00904285 0.00713715 0.01076705 0.00667855 0.00682952
+ 0.00854589 0.00763958 0.04670366 0.00673065 0.00440218 0.01616775
+ 0.00739422 0.00902252 0.00738158 0.00341233 0.00340198 0.02253078
+ 0.01391488 0.00330354 0.01047323 0.01446603 0.00478698 0.00810698
+ 0.00469679 0.01116558 0.00429633 0.00275827 0.00916292 0.00556686
+ 0.06379828 0.00539989 0.00661238 0.00225534 0.00348927 0.00194373
+ 0.00681498 0.01057591 0.08335745 0.0030768  0.00644229 0.01790474
+ 0.00713121 0.00740528 0.0060012  0.01242106 0.00486537 0.00073992
+ 0.0050464  0.00188561 0.01000216 0.00882533 0.01250266 0.0033327
+ 0.00448331 0.00293903 0.0091517  0.00525934 0.00700698 0.01032177
+ 0.00328235 0.00446564 0.02015488 0.00461676 0.02932607 0.00369745
+ 0.00990064 0.00324169 0.00418504 0.00104498 0.00543389 0.01166365
+ 0.0262088  0.00396346 0.00848582 0.0034642  0.00712764 0.00889289
+ 0.00337416 0.0050176  0.00796906 0.01071354 0.00165013 0.01782917
+ 0.00276517 0.0084456  0.02688148 0.00366475 0.01578662 0.00905828
+ 0.01749931 0.00376773 0.0053465  0.00332242 0.04606095 0.00605393
+ 0.00504912 0.00446775 0.00245626 0.00419326 0.0064106 ]
+[[38, 0.08335744820833696], [30, 0.06379828138217315], [8, 0.046703664711555834], [94, 0.04606094800700438], [64, 0.029326074668842402], [86, 0.026881480847673337], [72, 0.02620880296386021], [17, 0.02253077894380613]]
+Length of all flags sequences to be estimated: 56832
+The time for adding the random flags: 29.50925898551941
+Time for finding non-repetitive 2.193450927734375e-05
+gcc -O2 -fauto-inc-dec -fbranch-count-reg -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdce -fdefer-pop -fdelayed-branch -fdse -fforward-propagate -fguess-branch-probability -finline-functions-called-once -fipa-pure-const -fipa-profile -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-dce -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -ftree-ter -funit-at-a-time -falign-functions -falign-loops -falign-labels -fcaller-saves -fcse-skip-blocks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -findirect-inlining -fipa-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -fcode-hoisting -ftree-pre -fipa-ra -finline-functions -funswitch-loops -fpredictive-commoning -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -ftree-slp-vectorize -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/linear-algebra/solvers ../polybench/utilities/polybench.c ../polybench/linear-algebra/solvers/cholesky/cholesky.c -lm -DPOLYBENCH_TIME -o cholesky_time
+./cholesky_time
+0
+baseline:22.359736680984497selected flags:22.364656448364258 val:0.9997800204357657
+[0.9997800204357657]
+Total running time 4329.320909500122
+best seq: ('-fbranch-count-reg', '-fcompare-elim', '-fdce', '-fdelayed-branch', '-fdse', '-fif-conversion2', '-finline-functions-called-once', '-fipa-reference', '-fmerge-constants', '-fmove-loop-invariants', '-fshrink-wrap', '-fshrink-wrap-separate', '-fsplit-wide-types', '-fssa-phiopt', '-ftree-bit-ccp', '-ftree-ccp', '-ftree-ch', '-ftree-coalesce-vars', '-ftree-copy-prop', '-ftree-dce', '-ftree-dominator-opts', '-ftree-dse', '-ftree-forwprop', '-ftree-fre', '-ftree-phiprop', '-ftree-sink', '-ftree-sra', '-ftree-pta', '-ftree-ter', '-funit-at-a-time', '-falign-functions', '-falign-labels', '-fcse-skip-blocks', '-fexpensive-optimizations', '-fgcse', '-fgcse-lm', '-finline-small-functions', '-fipa-cp', '-fipa-bit-cp', '-fipa-sra', '-fipa-icf', '-fisolate-erroneous-paths-dereference', '-flra-remat', '-foptimize-sibling-calls', '-fpeephole2', '-freorder-blocks-algorithm=stc', '-freorder-blocks-and-partition', '-fsched-spec', '-fschedule-insns', '-fschedule-insns2', '-fstrict-aliasing', '-fstrict-overflow', '-ftree-builtin-call-dce', '-ftree-switch-conversion', '-ftree-tail-merge', '-ftree-pre', '-ftree-vrp', '-fipa-ra', '-finline-functions', '-funswitch-loops', '-fgcse-after-reload', '-ftree-slp-vectorize', '-fvect-cost-model', '-ftree-partial-pre', '-fpeel-loops', '-fauto-inc-dec') time: [35.41186833381653, 75.16365003585815, 107.97494506835938, 185.9922525882721, 262.0025577545166, 334.6649112701416, 402.74473786354065, 473.7126543521881, 548.4239957332611, 621.5886898040771, 692.1523001194, 761.4556677341461, 840.3666763305664, 910.1254379749298, 983.7414631843567, 1055.1169829368591, 1129.709426164627, 1203.6369421482086, 1276.3018417358398, 1352.0320632457733, 1423.3351819515228, 1498.2525491714478, 1567.647916316986, 1634.4332482814789, 1709.377609014511, 1785.9825162887573, 1854.5811400413513, 1927.0554466247559, 1997.1475808620453, 2073.444515943527, 2148.64075756073, 2222.258557319641, 2298.6345953941345, 2372.5659885406494, 2440.9491000175476, 2508.134923219681, 2578.135048866272, 2651.5457208156586, 2724.3759100437164, 2794.6274359226227, 2865.1723976135254, 2937.8957104682922, 3015.5115592479706, 3090.3981602191925, 3164.4937767982483, 3242.001512527466, 3318.148989200592, 3393.1568143367767, 3469.4986000061035, 3542.935690879822, 3621.8224618434906, 3695.163987159729, 3768.349191427231, 3844.436236858368, 3920.557107448578, 3993.680409193039, 4067.8650834560394, 4135.889974832535, 4208.478318929672, 4284.344989538193]

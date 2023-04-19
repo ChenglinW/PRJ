@@ -1,0 +1,1803 @@
+gcc -O2 -fipa-cp-clone -fgcse-lm -ftree-vrp -fbranch-count-reg -fsplit-paths -fdce -fif-conversion2 -fdefer-pop -fipa-profile -fshrink-wrap-separate -fdelayed-branch -ftree-slp-vectorize -fcse-skip-blocks -fforward-propagate -fipa-pure-const -fipa-reference -fmove-loop-invariants -fssa-phiopt -freorder-blocks-and-partition -fschedule-insns -fcaller-saves -freorder-blocks -fsplit-wide-types -fhoist-adjacent-loads -ftree-tail-merge -ftree-ch -fgcse-after-reload -ftree-coalesce-vars -ftree-dce -ftree-dominator-opts -fcse-follow-jumps -ftree-pta -fcode-hoisting -ftree-sink -ftree-slsr -falign-labels -ftree-switch-conversion -ftree-ter -falign-functions -finline-functions -fschedule-insns2 -falign-loops -fstore-merging -fdevirtualize -fgcse -fpeephole2 -freorder-blocks-algorithm=stc -fsched-interblock -fsched-spec -fstrict-aliasing -ftree-builtin-call-dce -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.88282585144043selected flags:4.845452547073364 val:1.0077130678721926
+[1.0077130678721926]
+gcc -O2 -fipa-cp-clone -frerun-cse-after-loop -fbranch-count-reg -fipa-icf -fpredictive-commoning -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fstore-merging -ftree-sink -fdce -ftree-ch -foptimize-sibling-calls -fpeel-loops -fdefer-pop -fpeephole2 -fdelayed-branch -fpartial-inlining -ftree-slp-vectorize -fstrict-overflow -fdelete-null-pointer-checks -fsplit-wide-types -fforward-propagate -finline-functions-called-once -fipa-pure-const -ftree-vrp -funswitch-loops -freorder-blocks-algorithm=stc -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap -ftree-bit-ccp -fstrict-aliasing -ftree-ccp -ftree-builtin-call-dce -ftree-sra -ftree-coalesce-vars -ftree-dce -fcode-hoisting -flra-remat -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-pta -fsplit-paths -falign-loops -fgcse-lm -fdevirtualize -fdevirtualize-speculatively -findirect-inlining -fipa-bit-cp -fipa-sra -foptimize-strlen -freorder-functions -fgcse-after-reload -fsched-interblock -fschedule-insns -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.887706756591797selected flags:4.721871852874756 val:1.0351205854127696
+[1.0351205854127696]
+features
+[0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.0625     0.02083333
+ 0.         0.         0.         0.         0.08333333 0.04166667
+ 0.         0.         0.         0.         0.08333333 0.
+ 0.         0.         0.0625     0.         0.         0.
+ 0.         0.02083333 0.02083333 0.         0.         0.0625
+ 0.         0.         0.         0.         0.04166667 0.04166667
+ 0.04166667 0.         0.02083333 0.04166667 0.         0.
+ 0.         0.         0.02083333 0.         0.02083333 0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.0625
+ 0.04166667 0.02083333 0.         0.         0.         0.04166667
+ 0.         0.         0.02083333 0.         0.         0.04166667
+ 0.0625     0.         0.         0.         0.         0.
+ 0.02083333 0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.        ]
+[[22, 0.08333333333333334], [28, 0.08333333333333334], [16, 0.06250000000000001], [32, 0.06250000000000001], [41, 0.06250000000000001], [71, 0.06250000000000001], [84, 0.06250000000000001], [23, 0.04166666666666667]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 31.000431776046753
+Time for finding non-repetitive 3.337860107421875e-06
+gcc -O2 -fcombine-stack-adjustments -fcompare-elim -fdelayed-branch -fguess-branch-probability -fipa-reference -freorder-blocks -fssa-backprop -ftree-dce -ftree-dse -ftree-fre -fcrossjumping -fdevirtualize -fdevirtualize-speculatively -fhoist-adjacent-loads -fipa-vrp -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fschedule-insns -ftree-loop-vectorize -fsplit-paths -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.763670921325684selected flags:4.481902837753296 val:1.0628679589389836
+[1.0628679589389836]
+features
+[0.01123596 0.         0.02815898 0.02538454 0.         0.
+ 0.03093342 0.01123596 0.01969747 0.         0.         0.01123596
+ 0.01955928 0.         0.01123596 0.01123596 0.         0.02815898
+ 0.         0.01692302 0.00554889 0.04494382 0.01123596 0.01123596
+ 0.01123596 0.0140104  0.01123596 0.01123596 0.00277444 0.
+ 0.         0.01692302 0.0140104  0.01123596 0.         0.02247191
+ 0.         0.02247191 0.01123596 0.         0.01123596 0.01955928
+ 0.         0.         0.         0.         0.0140104  0.
+ 0.01678484 0.         0.00832333 0.00277444 0.01123596 0.
+ 0.01123596 0.         0.         0.00846151 0.01123596 0.
+ 0.02247191 0.         0.02247191 0.00846151 0.01123596 0.
+ 0.         0.01123596 0.01123596 0.01123596 0.01123596 0.01123596
+ 0.02524635 0.02815898 0.         0.         0.03939493 0.01678484
+ 0.01969747 0.00277444 0.02247191 0.0140104  0.01123596 0.
+ 0.01678484 0.01678484 0.01969747 0.         0.01969747 0.
+ 0.         0.         0.         0.02815898 0.00846151 0.
+ 0.01969747 0.00846151 0.         0.         0.        ]
+[[21, 0.0449438202247191], [76, 0.03939493385164357], [6, 0.030933421982001563], [2, 0.02815897879546379], [17, 0.02815897879546379], [73, 0.02815897879546379], [93, 0.02815897879546379], [3, 0.02538453560892602]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 31.1806640625
+Time for finding non-repetitive 3.337860107421875e-06
+gcc -O2 -fauto-inc-dec -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdefer-pop -fdelayed-branch -fdse -fforward-propagate -fguess-branch-probability -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-profile -fipa-reference -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-pta -ftree-ter -funit-at-a-time -fthread-jumps -falign-functions -falign-jumps -falign-loops -falign-labels -fcaller-saves -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -fcode-hoisting -ftree-pre -ftree-vrp -fipa-ra -finline-functions -funswitch-loops -fpredictive-commoning -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.607607126235962selected flags:4.666536092758179 val:0.9873720109839788
+[0.9873720109839788]
+features
+[0.00139076 0.         0.00467284 0.00364572 0.0193875  0.02129225
+ 0.01030928 0.03388915 0.02858182 0.00246753 0.02312913 0.01030928
+ 0.0082158  0.00936036 0.00131735 0.00729143 0.00546817 0.00364572
+ 0.01030928 0.00546817 0.02611099 0.01030928 0.0100577  0.01697284
+ 0.01030928 0.00467284 0.         0.00845626 0.01056085 0.03109264
+ 0.00563644 0.00364572 0.01996001 0.00364572 0.         0.
+ 0.00805439 0.02061856 0.00304469 0.00094892 0.00784174 0.01871886
+ 0.00891851 0.         0.01447824 0.         0.03190714 0.
+ 0.00868113 0.01102304 0.         0.         0.         0.02072557
+ 0.01876926 0.00620138 0.01871886 0.01002555 0.00908527 0.00936036
+ 0.01966963 0.00546817 0.         0.         0.         0.
+ 0.         0.01577745 0.         0.00743028 0.00185301 0.02614914
+ 0.01196427 0.01030928 0.00189969 0.01030928 0.         0.01180373
+ 0.02397405 0.00119539 0.00700264 0.01170004 0.         0.02061856
+ 0.01882472 0.01689943 0.02259862 0.00546817 0.05031387 0.00914604
+ 0.01335397 0.01398715 0.01651066 0.00364572 0.00189969 0.
+ 0.         0.00375271 0.02446115 0.00546817 0.00784174]
+[[88, 0.050313874819059905], [7, 0.03388915436359977], [46, 0.03190714224641622], [29, 0.031092642503694184], [8, 0.028581820897385965], [71, 0.026149140368477673], [20, 0.02611098580577879], [98, 0.024461154810569652]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 31.010621547698975
+Time for finding non-repetitive 3.814697265625e-06
+gcc -O2 -fauto-inc-dec -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdse -finline-functions-called-once -fipa-reference -fmerge-constants -ftree-ch -ftree-copy-prop -ftree-fre -ftree-slsr -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -fcrossjumping -fdelete-null-pointer-checks -fhoist-adjacent-loads -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -fpartial-inlining -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -fcode-hoisting -finline-functions -ftree-loop-vectorize -fsplit-paths -ftree-slp-vectorize -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.975895404815674selected flags:4.634311676025391 val:1.0737075433569547
+[1.0737075433569547]
+features
+[1.16446889e-02 5.46155191e-03 2.06163622e-02 0.00000000e+00
+ 8.45138639e-03 1.17430313e-02 1.58992190e-02 1.79069543e-02
+ 8.08179012e-03 7.13863227e-03 3.01947285e-02 0.00000000e+00
+ 5.54973058e-04 1.00000000e-02 3.34521763e-03 5.47825902e-03
+ 2.62713881e-02 1.08358209e-02 1.60535477e-04 1.65821237e-02
+ 2.21430569e-02 0.00000000e+00 6.91575150e-03 2.66536335e-02
+ 1.45759164e-04 1.49420162e-03 8.57084791e-03 3.07179090e-03
+ 0.00000000e+00 1.84298250e-02 6.22409448e-04 1.70348112e-02
+ 1.63110688e-02 1.28984342e-02 9.09719980e-03 1.10364336e-02
+ 8.32776272e-03 1.22059679e-02 2.34631643e-02 3.00443822e-02
+ 1.84615908e-02 1.28066853e-02 0.00000000e+00 0.00000000e+00
+ 1.17772040e-02 8.32776272e-03 7.78735599e-03 6.60061692e-03
+ 2.19429015e-03 1.21930860e-02 1.34354473e-02 1.47994581e-02
+ 0.00000000e+00 2.75842216e-03 1.31436470e-04 0.00000000e+00
+ 1.00000000e-02 1.43821852e-02 1.22764748e-02 5.34054229e-03
+ 1.05894892e-02 1.25099597e-02 1.70705634e-03 1.92288141e-02
+ 8.47756578e-05 2.17025011e-04 4.07669939e-03 1.42037165e-02
+ 0.00000000e+00 4.46909234e-03 1.14498558e-02 7.36595684e-03
+ 8.41941788e-03 5.06621450e-03 3.37380287e-02 2.71060609e-03
+ 3.56570616e-02 6.97153010e-03 5.19133132e-03 5.46155191e-03
+ 2.99437517e-02 6.99195873e-03 2.33343767e-03 2.66020954e-02
+ 3.76499933e-03 9.07960504e-03 1.69076553e-02 9.90551040e-03
+ 1.96588863e-02 5.46155191e-03 2.37559889e-04 2.23612229e-02
+ 1.17070563e-02 9.49988525e-03 0.00000000e+00 5.12894781e-04
+ 2.00295342e-02 1.45759164e-04 5.46155191e-03 7.25635860e-03
+ 1.09148204e-02]
+[[76, 0.035657061583703825], [74, 0.033738028669722], [10, 0.03019472854748565], [39, 0.030044382172287623], [80, 0.0299437517327738], [23, 0.026653633502939214], [83, 0.026602095362948646], [16, 0.02627138808585136]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 30.80125379562378
+Time for finding non-repetitive 3.5762786865234375e-06
+gcc -O2 -fauto-inc-dec -fcombine-stack-adjustments -fcompare-elim -fdelayed-branch -fdse -fguess-branch-probability -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-reference -freorder-blocks -fshrink-wrap-separate -fssa-phiopt -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop -ftree-dominator-opts -ftree-forwprop -ftree-fre -ftree-sink -ftree-slsr -ftree-sra -funit-at-a-time -falign-jumps -falign-loops -fcrossjumping -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fgcse -fhoist-adjacent-loads -finline-small-functions -fipa-cp -fipa-bit-cp -fipa-vrp -fipa-icf -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -fpeephole2 -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -fcode-hoisting -ftree-vrp -fipa-ra -funswitch-loops -fpredictive-commoning -ftree-loop-vectorize -fsplit-paths -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.603735685348511selected flags:4.5348381996154785 val:1.0151929314123873
+[1.0151929314123873]
+features
+[9.32425214e-03 1.00000000e-02 8.93544383e-03 7.98873444e-03
+ 5.73426798e-03 6.31532498e-03 4.19938435e-03 1.44389963e-02
+ 4.26352217e-03 2.51862718e-04 1.18361400e-02 6.01080309e-04
+ 2.90279659e-02 1.97089805e-02 2.83570726e-04 1.92877216e-02
+ 1.67772461e-02 2.66189528e-03 1.54794762e-02 1.15269904e-02
+ 3.95015772e-03 0.00000000e+00 1.17826208e-02 2.80452305e-03
+ 2.40736903e-02 1.81632579e-02 5.12710757e-03 1.03782172e-02
+ 5.82760973e-03 2.80161628e-02 7.68292321e-03 1.71810596e-02
+ 1.03223750e-02 3.82322009e-02 1.47493372e-02 8.61530139e-03
+ 1.79358601e-02 4.88864036e-03 2.44052294e-02 2.47750069e-02
+ 2.25642121e-03 2.42782460e-02 1.67910900e-04 9.93888029e-03
+ 3.93708554e-03 3.48895237e-04 7.85967213e-03 1.39105463e-02
+ 6.18697167e-03 3.12211316e-03 5.13132468e-03 2.20465494e-02
+ 1.21315057e-04 3.89209316e-03 1.77318240e-02 1.04895586e-02
+ 3.81302029e-03 1.18871960e-03 1.45593448e-04 1.25254372e-02
+ 2.76010550e-02 6.26402064e-03 5.19395898e-05 1.00000000e-02
+ 1.73233492e-02 1.50463867e-03 2.05228021e-02 6.14631097e-03
+ 1.03510000e-02 2.14607798e-02 2.04175936e-04 0.00000000e+00
+ 4.15383311e-02 6.09557996e-03 2.43336879e-02 5.79853279e-03
+ 8.39148922e-03 2.16784992e-02 1.78731545e-02 1.81280046e-03
+ 0.00000000e+00 3.96576847e-03 3.12294552e-03 2.00682124e-03
+ 1.30550266e-02 7.64706876e-03 3.35151105e-03 0.00000000e+00
+ 9.91580563e-03 3.04027604e-03 2.42153804e-04 1.93616929e-02
+ 9.79956470e-03 3.94336783e-03 9.31159724e-03 5.77290974e-03
+ 7.51465817e-03 7.02537528e-03 1.39047515e-02 5.16267154e-04
+ 9.03976370e-04]
+[[72, 0.04153833110353642], [33, 0.03823220089575288], [12, 0.029027965923100724], [29, 0.028016162782434614], [60, 0.02760105500095695], [39, 0.024775006939300057], [38, 0.024405229387212967], [74, 0.02433368785023707]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 31.103065967559814
+Time for finding non-repetitive 3.814697265625e-06
+gcc -O2 -fauto-inc-dec -fbranch-count-reg -fcombine-stack-adjustments -fcompare-elim -fdce -fdefer-pop -fdse -finline-functions-called-once -fipa-reference -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -fssa-backprop -ftree-copy-prop -ftree-fre -ftree-phiprop -ftree-slsr -ftree-sra -ftree-ter -funit-at-a-time -falign-labels -fcaller-saves -fcse-follow-jumps -fdelete-null-pointer-checks -fdevirtualize -fexpensive-optimizations -findirect-inlining -fipa-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -fpartial-inlining -freorder-blocks-algorithm=stc -freorder-functions -frerun-cse-after-loop -fsched-interblock -fschedule-insns2 -fstore-merging -ftree-pre -ftree-vrp -fpredictive-commoning -ftree-loop-vectorize -fsplit-paths -ftree-partial-pre -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.715597629547119selected flags:4.916909456253052 val:0.9590572434784383
+[0.9590572434784383]
+features
+[5.32043775e-03 0.00000000e+00 1.03470382e-02 3.78453403e-04
+ 0.00000000e+00 1.64958540e-02 2.00856946e-02 2.70661123e-02
+ 7.66619650e-03 4.17540848e-04 9.35550019e-04 1.58871890e-03
+ 6.86814793e-03 3.81608320e-03 4.59750349e-04 8.96819888e-03
+ 0.00000000e+00 0.00000000e+00 1.19230437e-02 4.24359967e-04
+ 1.06825686e-02 1.82376496e-02 3.98144673e-02 2.39037055e-02
+ 2.76905391e-02 7.55171008e-04 8.09371271e-03 9.74876452e-04
+ 1.72465829e-03 0.00000000e+00 7.60996851e-03 1.56460912e-02
+ 4.93014432e-03 1.74056728e-02 2.26358867e-03 8.37479239e-04
+ 1.31971867e-02 8.02576573e-03 8.38594496e-04 0.00000000e+00
+ 3.26584409e-03 3.27547190e-02 0.00000000e+00 7.98672913e-04
+ 4.81354556e-03 0.00000000e+00 8.40801032e-03 4.45953537e-02
+ 3.71169086e-02 1.54527406e-02 1.04301172e-02 6.98763397e-03
+ 4.80302468e-03 1.77421621e-02 1.54204276e-02 2.32119084e-02
+ 1.47749740e-03 4.47214180e-03 1.57236674e-02 9.82168861e-04
+ 1.47014406e-02 3.97125832e-02 4.57692215e-03 0.00000000e+00
+ 1.89010727e-02 1.40246875e-03 4.61330112e-03 8.89755019e-04
+ 0.00000000e+00 2.47802597e-03 2.42952347e-03 6.83977308e-03
+ 1.46684879e-02 3.14712157e-05 7.35548996e-03 2.82838090e-03
+ 1.32666747e-02 4.51136639e-03 6.35555197e-03 2.49094474e-02
+ 3.97937583e-02 3.60707556e-03 7.12759302e-03 3.01917153e-03
+ 6.13087809e-03 5.54793836e-03 1.19258233e-03 2.89876153e-02
+ 3.45895731e-02 1.37149255e-02 1.49429133e-02 1.47450690e-03
+ 4.39713963e-02 1.60752603e-03 7.67225428e-03 1.65670626e-03
+ 9.42101595e-03 1.99936368e-02 7.97611101e-03 3.42833579e-04
+ 2.90868708e-03]
+[[47, 0.04459535366683985], [92, 0.043971396328581], [22, 0.03981446730663408], [80, 0.03979375829253145], [61, 0.03971258315344872], [48, 0.03711690863362158], [88, 0.03458957309507054], [41, 0.03275471899714471]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 30.91446042060852
+Time for finding non-repetitive 8.106231689453125e-06
+gcc -O2 -fcombine-stack-adjustments -fcprop-registers -fdse -fif-conversion -fmerge-constants -fsplit-wide-types -fssa-backprop -ftree-coalesce-vars -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-fre -funit-at-a-time -fcaller-saves -fcrossjumping -finline-small-functions -fipa-bit-cp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-spec -fschedule-insns2 -fstore-merging -fstrict-overflow -ftree-builtin-call-dce -ftree-pre -finline-functions -ftree-loop-distribute-patterns -fsplit-paths -ftree-partial-pre -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.594942569732666selected flags:4.78116774559021 val:0.9610502735384459
+[0.9610502735384459]
+features
+[0.00000000e+00 1.44340468e-02 2.71395259e-03 0.00000000e+00
+ 2.55610894e-03 1.18510374e-02 9.66095247e-03 9.80002227e-04
+ 2.88043809e-03 0.00000000e+00 7.63306483e-04 4.20163068e-03
+ 2.54369114e-03 1.50750245e-02 1.37027321e-03 6.03218294e-03
+ 1.64045087e-03 8.50104329e-03 3.53457854e-03 3.99321301e-04
+ 0.00000000e+00 3.75148896e-03 3.38196657e-03 4.37223211e-02
+ 4.12559253e-02 2.52929819e-03 9.64503274e-03 3.01540584e-03
+ 8.18448642e-04 2.22011495e-02 3.23852066e-04 1.91627172e-02
+ 3.65632593e-02 9.13432500e-03 4.81404348e-03 0.00000000e+00
+ 6.38099285e-03 1.26806484e-03 3.74396531e-03 8.11514702e-03
+ 2.32435010e-02 5.29760352e-03 1.39746291e-03 1.51899134e-03
+ 0.00000000e+00 0.00000000e+00 8.22480268e-04 8.75145901e-03
+ 7.92915647e-02 7.74210949e-03 6.83403632e-03 1.33076620e-02
+ 3.34152794e-03 3.08371683e-06 1.50016438e-02 1.40896903e-02
+ 4.56643397e-05 1.95392967e-03 8.56304682e-03 1.47992891e-02
+ 7.08954610e-03 1.61203635e-02 6.25529325e-03 2.97309821e-03
+ 1.94356801e-02 7.49656982e-04 1.38623861e-02 1.22081963e-03
+ 3.10117250e-03 3.33707154e-03 1.52367308e-03 6.27088693e-03
+ 3.40708638e-04 0.00000000e+00 6.53810579e-03 3.03607457e-03
+ 3.13415329e-03 1.61288770e-04 3.94730302e-03 1.30162695e-01
+ 8.06594979e-02 1.91258052e-03 1.97651602e-04 1.77565339e-03
+ 5.30328464e-04 2.84551257e-03 1.86599736e-03 9.43210324e-02
+ 1.83132972e-02 5.25346472e-05 6.60599806e-03 5.16023764e-03
+ 9.94568001e-03 0.00000000e+00 6.52542314e-05 1.65515054e-02
+ 7.40113194e-04 5.44252460e-03 5.05422124e-04 8.00143620e-03
+ 2.77574135e-04]
+[[79, 0.13016269492823385], [87, 0.09432103237892528], [80, 0.08065949791686271], [48, 0.07929156470181327], [23, 0.043722321094352735], [24, 0.04125592529885232], [32, 0.03656325926086785], [40, 0.02324350095525563]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 31.4689359664917
+Time for finding non-repetitive 7.867813110351562e-06
+gcc -O2 -fbranch-count-reg -fcombine-stack-adjustments -fcprop-registers -fforward-propagate -fguess-branch-probability -finline-functions-called-once -fipa-reference -fmerge-constants -freorder-blocks -ftree-ccp -ftree-copy-prop -ftree-dce -ftree-forwprop -ftree-sink -ftree-slsr -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -falign-functions -falign-loops -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -finline-small-functions -fipa-vrp -fipa-sra -fisolate-erroneous-paths-dereference -flra-remat -fpartial-inlining -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fstore-merging -fstrict-aliasing -ftree-builtin-call-dce -ftree-switch-conversion -fcode-hoisting -fipa-ra -finline-functions -funswitch-loops -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fauto-inc-dec -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.589024782180786selected flags:5.243279695510864 val:0.8752202912443845
+[0.8752202912443845]
+features
+[2.19109794e-03 8.34174138e-05 4.77958310e-02 5.98818168e-04
+ 1.43786545e-03 4.59956802e-03 0.00000000e+00 4.78773682e-03
+ 4.19027235e-03 2.54675828e-02 1.18472115e-02 1.48471788e-03
+ 0.00000000e+00 7.99729570e-04 1.09509518e-04 7.61961160e-03
+ 1.68363700e-03 4.60608279e-05 1.36796049e-02 2.27072873e-03
+ 6.83902642e-04 0.00000000e+00 2.77330387e-04 2.85513272e-02
+ 2.29187023e-02 2.04141135e-03 0.00000000e+00 1.58048247e-03
+ 7.73089542e-03 5.26351414e-03 1.95594765e-04 1.91957164e-02
+ 2.47824629e-02 4.88581441e-03 3.78650223e-05 1.27897246e-02
+ 0.00000000e+00 2.17114249e-03 2.04166630e-04 2.64320596e-03
+ 1.20495611e-02 1.70470748e-02 4.84831310e-04 1.32285671e-04
+ 8.68538648e-03 2.16765379e-03 3.41585690e-03 5.68817667e-04
+ 4.92750760e-02 9.18202147e-04 3.94777085e-02 2.56578700e-03
+ 3.87223615e-07 3.72164645e-03 2.96583219e-02 6.11576079e-06
+ 5.69402492e-04 1.03675600e-03 8.74140014e-03 2.16154477e-02
+ 8.44597127e-03 6.97686191e-03 1.24079934e-03 4.01182409e-07
+ 2.74992823e-02 7.23571287e-03 2.84793850e-02 6.14369132e-04
+ 4.78121752e-03 2.18771322e-03 0.00000000e+00 6.31639529e-03
+ 9.52656985e-03 2.42473877e-03 1.59076631e-03 7.06576651e-04
+ 1.26642041e-02 5.30658756e-05 1.30153516e-03 3.59851704e-02
+ 1.33857854e-01 4.19954299e-03 7.93807384e-03 5.72168722e-04
+ 4.69360866e-04 2.61734444e-03 1.21934128e-04 3.90172559e-02
+ 7.15999050e-03 9.48688867e-03 1.42256298e-03 1.87549102e-03
+ 2.39328503e-03 1.02873190e-01 1.12399934e-03 2.83280405e-02
+ 0.00000000e+00 2.50975806e-02 2.47453361e-03 1.62346260e-03
+ 5.32724110e-04]
+[[80, 0.13385785424589344], [93, 0.1028731899696108], [48, 0.049275076016672914], [2, 0.04779583100845722], [50, 0.03947770848466486], [87, 0.039017255931994156], [79, 0.03598517037690822], [54, 0.029658321859558662]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 31.295475482940674
+Time for finding non-repetitive 5.4836273193359375e-06
+gcc -O2 -fcprop-registers -fdefer-pop -fguess-branch-probability -fif-conversion2 -fipa-pure-const -fipa-profile -fmove-loop-invariants -freorder-blocks -fshrink-wrap-separate -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-copy-prop -ftree-dce -ftree-dse -ftree-fre -ftree-phiprop -ftree-slsr -ftree-sra -ftree-ter -falign-jumps -fcrossjumping -fdelete-null-pointer-checks -fdevirtualize-speculatively -fgcse -fgcse-lm -fipa-bit-cp -fipa-sra -fisolate-erroneous-paths-dereference -flra-remat -fpartial-inlining -freorder-blocks-algorithm=stc -freorder-functions -fsched-interblock -fsched-spec -fschedule-insns -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -fcode-hoisting -ftree-vrp -fipa-ra -finline-functions -funswitch-loops -fpredictive-commoning -ftree-loop-vectorize -fsplit-paths -ftree-slp-vectorize -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.561392784118652selected flags:4.452436685562134 val:1.0244711168852394
+[1.0244711168852394]
+features
+[6.05438560e-07 3.02158356e-05 7.71159033e-02 7.22215149e-03
+ 1.31640327e-02 1.44934397e-03 1.95082215e-06 6.96512821e-03
+ 1.91397685e-04 5.69748890e-03 9.71362120e-03 8.74339357e-05
+ 2.73416065e-03 1.02671243e-02 1.21471609e-03 1.67728435e-03
+ 7.61538221e-03 2.63081492e-03 2.14156224e-02 9.08454973e-04
+ 2.31507654e-04 7.68749042e-03 3.39290053e-03 4.43133868e-02
+ 2.49137503e-02 2.60927494e-03 1.51315725e-03 3.89309563e-03
+ 1.07635149e-03 3.01083925e-03 1.33919085e-03 1.02821379e-02
+ 8.59573644e-04 3.84540220e-03 1.18575527e-02 1.00354058e-02
+ 2.79828176e-05 7.66816005e-03 4.51004402e-04 5.09878806e-04
+ 2.07343704e-02 3.32517730e-04 1.50750675e-02 9.56308930e-05
+ 1.58604189e-02 1.38255148e-03 6.38782498e-04 6.74193162e-03
+ 3.01208962e-02 2.88325729e-06 3.10882319e-02 2.50136079e-03
+ 1.36018736e-04 3.44199977e-03 4.07137655e-04 6.59483654e-03
+ 1.32538624e-03 1.53917646e-03 3.30465370e-03 0.00000000e+00
+ 6.09370217e-03 1.14608691e-03 2.56749013e-03 2.92072052e-03
+ 2.39907576e-03 4.13812039e-03 1.53997266e-02 2.41331784e-03
+ 4.24847476e-04 3.26320700e-04 8.72336659e-04 1.96456349e-03
+ 2.54300102e-03 4.42773764e-03 1.62755258e-02 2.16969308e-02
+ 1.00424244e-02 1.67456482e-03 1.66351240e-03 3.84023570e-02
+ 2.01643473e-01 1.62657445e-03 2.23597505e-05 1.66900696e-03
+ 1.66005483e-03 2.41617662e-03 1.91261948e-03 2.94229894e-02
+ 7.26077357e-04 1.64196709e-03 2.03408182e-03 5.53262056e-03
+ 9.08743026e-03 1.18300824e-01 3.91469699e-04 2.24964480e-02
+ 3.20591250e-03 5.92788562e-04 7.83485696e-04 6.35031337e-03
+ 1.46234825e-04]
+[[80, 0.20164347308558528], [93, 0.11830082397589917], [2, 0.07711590331401258], [23, 0.04431338682098134], [79, 0.03840235703502372], [50, 0.03108823185481352], [48, 0.030120896238817564], [87, 0.029422989449149936]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 32.676032304763794
+Time for finding non-repetitive 2.09808349609375e-05
+gcc -O2 -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdce -fdelayed-branch -fdse -fforward-propagate -fipa-pure-const -fipa-reference -fmerge-constants -fmove-loop-invariants -fshrink-wrap -fshrink-wrap-separate -fssa-backprop -ftree-bit-ccp -ftree-coalesce-vars -ftree-copy-prop -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-slsr -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -fthread-jumps -falign-functions -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize-speculatively -fexpensive-optimizations -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-bit-cp -fipa-vrp -fipa-sra -fisolate-erroneous-paths-dereference -flra-remat -fpartial-inlining -fpeephole2 -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -fcode-hoisting -ftree-vrp -fipa-ra -finline-functions -funswitch-loops -fgcse-after-reload -ftree-loop-vectorize -ftree-slp-vectorize -ftree-partial-pre -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.7590320110321045selected flags:5.105019569396973 val:0.9322260074302247
+[0.9322260074302247]
+features
+[1.36176997e-02 0.00000000e+00 4.63297053e-02 1.20738089e-03
+ 4.52677256e-03 1.34827430e-03 2.74203319e-02 5.35124859e-03
+ 2.08986711e-03 2.50152039e-03 2.73483112e-02 1.93879743e-04
+ 4.10776280e-03 4.58548363e-05 1.47798464e-03 2.81143298e-03
+ 1.42944994e-04 2.46219259e-03 4.26667089e-02 1.58066615e-03
+ 1.68724827e-04 7.62629396e-03 7.61971750e-05 1.61810604e-02
+ 6.93164674e-02 2.39873921e-03 3.48542879e-03 5.85077732e-03
+ 1.48857816e-02 9.61011524e-03 1.78446851e-05 7.42172099e-04
+ 4.60210824e-03 4.98231244e-04 1.01524316e-02 6.82425041e-03
+ 3.52566313e-05 5.33269131e-04 2.76352545e-04 3.82388611e-03
+ 1.54363106e-02 6.30808571e-05 8.71725947e-04 8.99529247e-05
+ 1.21170202e-02 2.79665113e-03 3.34765603e-03 1.44306188e-06
+ 1.05497672e-02 7.44368087e-03 1.12632869e-02 8.04862643e-03
+ 1.45388937e-05 3.31039256e-03 6.33191554e-04 2.11676697e-02
+ 3.32185593e-03 2.55211644e-04 6.72224223e-03 6.11153317e-02
+ 2.48817946e-02 1.95685632e-03 1.09198651e-02 2.13534241e-03
+ 2.13619167e-02 2.46041149e-03 1.88813929e-02 6.67150618e-04
+ 2.02219652e-03 1.38243703e-03 1.35697801e-03 3.06120560e-03
+ 2.70716884e-04 1.44556900e-03 1.63363029e-03 8.54618831e-03
+ 2.12778864e-03 1.27511506e-04 2.26282083e-03 1.95597937e-02
+ 8.94902494e-02 5.89405905e-04 1.53253593e-03 4.21031253e-05
+ 1.86314674e-03 1.23494763e-03 9.79844350e-06 3.48103943e-02
+ 1.05521888e-02 1.33436435e-04 1.65651786e-03 4.19661332e-03
+ 4.09239384e-04 1.79166536e-01 1.33734677e-03 3.76124690e-03
+ 3.83463806e-03 1.37139261e-03 9.33765641e-04 2.06427818e-02
+ 2.46458401e-03]
+[[93, 0.17916653599070823], [80, 0.0894902493560991], [24, 0.06931646740016435], [59, 0.0611153316964041], [2, 0.04632970527871425], [18, 0.04266670887273869], [87, 0.034810394254345435], [6, 0.02742033192917572]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 31.90618395805359
+Time for finding non-repetitive 4.76837158203125e-06
+gcc -O2 -fcombine-stack-adjustments -fcprop-registers -fdse -fforward-propagate -fif-conversion -finline-functions-called-once -fipa-profile -fipa-reference -fmerge-constants -freorder-blocks -fshrink-wrap -fssa-backprop -ftree-ccp -ftree-dse -ftree-phiprop -ftree-sra -ftree-pta -ftree-ter -fthread-jumps -falign-labels -fcaller-saves -fcrossjumping -fcse-follow-jumps -fhoist-adjacent-loads -finline-small-functions -fipa-cp -flra-remat -fpeephole2 -frerun-cse-after-loop -fsched-spec -fcode-hoisting -fipa-ra -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -fauto-inc-dec -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.432220220565796selected flags:4.840343236923218 val:0.9156830422181286
+[0.9156830422181286]
+features
+[9.46669777e-03 1.29773112e-03 2.32895781e-02 2.42176282e-03
+ 1.35551737e-02 2.24806966e-03 7.40781806e-04 2.12161355e-03
+ 1.56982832e-03 1.42573095e-03 4.05559626e-02 2.46381915e-04
+ 1.44334013e-03 1.35415964e-03 1.23108555e-02 1.84616138e-03
+ 6.96900398e-04 1.84723360e-03 1.71938110e-02 1.28305751e-03
+ 9.49357633e-04 2.36208519e-02 2.25386861e-03 9.49424395e-03
+ 6.46874783e-02 2.73757594e-03 2.51198181e-03 5.40902596e-04
+ 1.81856812e-02 1.79263104e-02 8.85839960e-05 3.61560996e-03
+ 4.39350254e-03 6.25223260e-04 3.34015648e-03 1.09939949e-02
+ 2.35500000e-02 1.42429496e-03 7.03747391e-04 1.33865378e-02
+ 2.40798357e-02 2.46280922e-02 1.61237201e-03 0.00000000e+00
+ 5.21675307e-04 8.87511575e-03 2.05898762e-03 2.03087672e-03
+ 7.29415495e-02 1.01690838e-02 7.90335110e-02 7.15433439e-04
+ 2.76296165e-04 1.19911562e-03 3.27712107e-03 1.85822445e-02
+ 2.04270770e-03 1.94869599e-04 5.78353282e-03 9.46228429e-02
+ 8.00934903e-03 8.54072804e-03 1.77028108e-03 3.02989020e-03
+ 8.69867408e-04 5.33475059e-03 1.14741493e-03 3.99445335e-03
+ 1.79888196e-03 1.59830302e-03 1.98971807e-04 4.40204486e-03
+ 1.85992489e-03 1.98092070e-03 1.17599583e-03 2.52145118e-02
+ 3.21217146e-04 2.44619375e-04 1.11586447e-02 1.67502382e-02
+ 3.45645020e-02 3.42563194e-05 3.00097036e-04 3.95415837e-04
+ 5.45323699e-03 1.76151970e-03 3.95387360e-03 1.33991567e-02
+ 1.26730773e-03 1.80245689e-03 2.58469767e-03 1.17293705e-03
+ 4.94941545e-03 1.18209840e-01 1.30196839e-03 1.03972462e-02
+ 1.85243616e-04 3.11196972e-03 5.37380320e-05 5.10867652e-04
+ 5.99246461e-04]
+[[93, 0.11820983950855482], [59, 0.09462284290369316], [50, 0.07903351101081192], [48, 0.07294154948111894], [24, 0.06468747825249302], [10, 0.04055596259926176], [80, 0.03456450195574979], [75, 0.02521451184836202]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 31.460814952850342
+Time for finding non-repetitive 5.9604644775390625e-06
+gcc -O2 -fauto-inc-dec -fcompare-elim -fcprop-registers -fguess-branch-probability -fif-conversion -fipa-reference -freorder-blocks -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ch -ftree-copy-prop -ftree-dominator-opts -ftree-forwprop -ftree-sra -ftree-pta -falign-labels -fcrossjumping -fdelete-null-pointer-checks -fdevirtualize -fhoist-adjacent-loads -fipa-cp -fipa-vrp -fipa-sra -flra-remat -fpeephole2 -freorder-blocks-algorithm=stc -ftree-builtin-call-dce -ftree-vrp -fgcse-after-reload -ftree-loop-vectorize -ftree-slp-vectorize -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.514171123504639selected flags:4.5001184940338135 val:1.003122724321472
+[1.003122724321472]
+features
+[2.81895928e-02 3.50901826e-03 1.22030864e-02 9.03200202e-03
+ 1.00716945e-03 1.43512634e-02 8.94070366e-03 1.45403505e-03
+ 9.73685989e-04 3.09636395e-03 8.82044941e-02 8.10812209e-03
+ 2.80619378e-03 9.64879627e-04 7.31014552e-04 9.28186990e-04
+ 5.98518196e-04 3.47432536e-03 7.34140426e-02 8.81404320e-04
+ 1.86569696e-03 6.03858689e-02 8.54684502e-03 1.53627972e-02
+ 2.47218009e-02 1.35616247e-03 1.35601727e-03 5.27099836e-03
+ 5.46549005e-02 1.31572126e-02 2.12920763e-04 5.25931212e-03
+ 7.48796184e-03 4.97606211e-03 3.39931054e-04 1.27505668e-02
+ 1.87320568e-02 1.26962039e-04 1.09373148e-03 1.39642492e-02
+ 7.93611062e-03 1.58853601e-02 1.86419885e-03 8.65122940e-03
+ 5.60604936e-03 1.62157419e-05 1.63212173e-03 3.52343508e-03
+ 2.55963167e-02 5.63367955e-04 4.68424159e-02 4.56569540e-04
+ 2.19327270e-03 1.58478721e-03 5.23443267e-03 1.05626157e-03
+ 2.29940843e-03 6.07316422e-04 3.92873749e-03 6.78237440e-02
+ 2.68059007e-04 4.22473910e-03 2.10660516e-03 1.73146910e-03
+ 6.50087415e-04 1.80528512e-02 1.06200775e-02 2.13802527e-03
+ 2.69320587e-03 2.95339756e-03 2.68025465e-04 4.31815231e-03
+ 2.94663337e-03 2.07725684e-04 6.86416219e-03 4.80412462e-02
+ 3.22231705e-03 1.12240443e-03 2.40621742e-03 9.75154854e-03
+ 5.14135490e-02 9.92020633e-04 1.56299204e-03 7.31907906e-04
+ 2.53994715e-04 1.27277959e-03 9.53953262e-04 8.58665457e-03
+ 6.93017883e-03 3.67252665e-03 1.08168870e-02 3.70973959e-03
+ 1.59988367e-03 3.45708329e-02 3.36253103e-04 1.46792527e-02
+ 2.43531684e-03 2.63238840e-03 1.83933087e-03 7.89617278e-03
+ 7.34926779e-04]
+[[10, 0.0882044941378446], [18, 0.07341404255068534], [59, 0.06782374396626066], [21, 0.06038586886772308], [28, 0.054654900538572915], [80, 0.05141354895143843], [75, 0.048041246235029506], [50, 0.04684241593970826]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 31.172322034835815
+Time for finding non-repetitive 6.198883056640625e-06
+gcc -O2 -fcombine-stack-adjustments -fguess-branch-probability -fipa-reference -fmerge-constants -fshrink-wrap -fshrink-wrap-separate -fssa-backprop -ftree-bit-ccp -ftree-ch -ftree-dce -ftree-forwprop -ftree-fre -ftree-slsr -ftree-pta -ftree-ter -falign-functions -fdevirtualize -fgcse-lm -fipa-vrp -fipa-sra -fisolate-erroneous-paths-dereference -foptimize-strlen -fpartial-inlining -fpeephole2 -freorder-blocks-algorithm=stc -freorder-functions -fsched-interblock -fsched-spec -fstrict-overflow -fipa-ra -finline-functions -fpeel-loops -fbranch-count-reg -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.568852663040161selected flags:4.744089365005493 val:0.963062099281275
+[0.963062099281275]
+features
+[3.03786819e-02 1.24488716e-03 3.87725421e-02 2.46264594e-02
+ 1.09309309e-02 1.07404255e-03 8.87025406e-03 7.02437128e-04
+ 8.42945754e-03 6.45122292e-03 6.99560952e-02 2.44493336e-03
+ 3.23549428e-03 4.41538082e-03 6.92867252e-03 1.98261930e-03
+ 5.75086541e-04 2.16337580e-03 7.13273250e-02 1.08004919e-03
+ 1.92329022e-03 1.10934281e-01 1.31835762e-03 5.82395480e-03
+ 7.15107738e-02 6.68111538e-03 1.68118420e-03 6.20098288e-03
+ 2.63664610e-02 6.49643905e-03 3.70932382e-04 6.72819861e-03
+ 4.06856479e-03 3.87921930e-03 5.66723626e-03 9.41401687e-03
+ 3.99580558e-03 1.91192581e-03 1.84755018e-03 1.48458845e-02
+ 6.41212139e-03 2.02487997e-02 1.37826479e-04 2.31439199e-03
+ 5.39815664e-03 1.31017607e-03 5.76173400e-03 1.30957737e-03
+ 1.80584427e-02 1.16240584e-02 1.75046050e-02 1.12318894e-03
+ 3.65258080e-03 3.09409202e-03 3.16038830e-03 1.62607505e-03
+ 1.08354562e-04 1.31232399e-03 1.65321766e-02 2.78278112e-02
+ 9.16708027e-03 5.94231481e-03 2.34356684e-03 1.06137172e-03
+ 3.37564708e-03 2.76163454e-03 2.62343457e-02 2.88015172e-03
+ 9.38435010e-04 5.81193661e-06 7.22346994e-05 2.36020144e-03
+ 3.12689413e-03 2.40782382e-03 1.91161951e-03 7.38389636e-02
+ 8.10850848e-04 2.71922625e-03 8.36674179e-03 4.30090505e-03
+ 1.60624548e-02 1.16350607e-03 8.41237141e-04 7.63144090e-04
+ 1.92864131e-04 3.05937643e-04 4.39640001e-03 7.41009963e-03
+ 1.48108716e-02 1.43626137e-02 5.61087826e-04 5.48588450e-04
+ 2.31947021e-03 1.97844753e-02 7.12838147e-03 3.98460465e-03
+ 1.21383436e-03 1.11538539e-02 9.04721582e-04 1.57166445e-03
+ 1.21365414e-04]
+[[21, 0.11093428079601682], [75, 0.07383896359472485], [24, 0.07151077377674264], [18, 0.07132732500452577], [10, 0.06995609520646383], [2, 0.03877254205870819], [0, 0.03037868185563111], [59, 0.02782781124949582]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 31.128740549087524
+Time for finding non-repetitive 7.3909759521484375e-06
+gcc -O2 -fcompare-elim -finline-functions-called-once -fipa-profile -fipa-reference -fmerge-constants -fmove-loop-invariants -fshrink-wrap-separate -ftree-dse -ftree-fre -ftree-phiprop -ftree-sink -ftree-slsr -ftree-sra -ftree-ter -funit-at-a-time -falign-loops -fcse-follow-jumps -fcse-skip-blocks -fdevirtualize-speculatively -fgcse -fhoist-adjacent-loads -fipa-icf -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -freorder-blocks-algorithm=stc -frerun-cse-after-loop -fschedule-insns2 -fstore-merging -fstrict-aliasing -finline-functions -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:5.020962238311768selected flags:4.758111953735352 val:1.0552425598918633
+[1.0552425598918633]
+features
+[4.58819268e-02 1.53570722e-02 3.40642459e-02 1.55782290e-02
+ 3.22460803e-03 2.47660384e-03 1.05909266e-03 1.18829863e-03
+ 1.45785230e-03 1.60977253e-02 1.07499665e-01 1.11525381e-02
+ 2.10483851e-03 1.14626402e-03 6.07035374e-04 3.12336709e-03
+ 3.59494459e-04 3.22806526e-03 4.83593458e-02 4.54213825e-04
+ 2.29621828e-03 1.16122969e-01 1.31759641e-03 7.72358232e-03
+ 7.21756247e-02 1.61782638e-03 1.37956704e-04 4.08749963e-03
+ 1.74549161e-02 2.68632210e-03 1.12380123e-03 2.95734922e-03
+ 9.08854717e-03 2.39726753e-03 8.95617239e-03 1.43420204e-02
+ 2.85859664e-03 1.48423021e-05 2.40255691e-03 6.33114586e-03
+ 8.26793546e-03 8.36761870e-03 1.67579419e-03 2.40097286e-03
+ 4.05311777e-02 1.83070077e-05 1.63333059e-03 8.88802971e-03
+ 2.32507232e-02 6.92425095e-03 1.15756523e-02 1.17528738e-03
+ 2.20664716e-03 2.23201677e-03 2.78021105e-03 4.88804557e-03
+ 4.54728637e-03 4.19576214e-03 9.12223018e-03 4.70865340e-02
+ 9.82326666e-03 4.50588679e-03 7.55080082e-04 1.17015515e-03
+ 4.58262766e-03 8.37721089e-03 1.42716645e-02 1.26619072e-03
+ 2.55693954e-03 2.87002474e-03 5.73258146e-04 8.55819287e-03
+ 8.59110970e-03 6.69517555e-05 1.21690783e-03 1.10167660e-02
+ 7.86617034e-03 6.94346187e-03 7.01294336e-04 5.37306491e-03
+ 2.05701375e-02 1.58715693e-03 4.16093124e-03 1.20509162e-03
+ 4.59395127e-03 2.55210432e-03 4.08057632e-03 6.43000132e-03
+ 1.90155993e-02 1.61417824e-02 3.27081833e-03 2.68542418e-03
+ 2.82934190e-03 1.25976188e-02 1.52299517e-03 3.60188936e-03
+ 4.74753666e-03 3.14208735e-03 5.13916590e-04 8.14336552e-05
+ 1.30227440e-03]
+[[21, 0.1161229693426945], [10, 0.10749966485416607], [24, 0.07217562465035687], [18, 0.048359345818673], [59, 0.04708653402237158], [0, 0.04588192675918906], [44, 0.04053117774356229], [2, 0.03406424591765445]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 31.378324508666992
+Time for finding non-repetitive 6.67572021484375e-06
+gcc -O2 -fmerge-constants -ftree-copy-prop -ftree-dse -ftree-slsr -funit-at-a-time -fthread-jumps -fcse-follow-jumps -fdelete-null-pointer-checks -fdevirtualize-speculatively -fgcse -fhoist-adjacent-loads -fipa-bit-cp -fipa-icf -fisolate-erroneous-paths-dereference -fpartial-inlining -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fschedule-insns -ftree-builtin-call-dce -finline-functions -ftree-loop-vectorize -ftree-slp-vectorize -fipa-reference -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.534914016723633selected flags:4.710826635360718 val:0.9626578024933803
+[0.9626578024933803]
+features
+[1.26999675e-01 2.48465130e-02 2.36638816e-02 3.81670835e-03
+ 1.30940881e-02 4.88966323e-04 8.46325272e-04 3.92992864e-03
+ 1.69809362e-03 2.95623184e-03 6.76980935e-02 4.09546333e-03
+ 2.19134616e-03 7.76863391e-03 2.22994210e-03 2.71823564e-03
+ 1.04648344e-03 3.86767743e-03 4.75313294e-02 2.06842440e-03
+ 5.12873853e-04 8.33190022e-02 7.69842387e-04 8.55248085e-03
+ 1.77982954e-02 4.29219697e-03 3.79618720e-03 9.66621156e-04
+ 2.81046375e-03 5.73292358e-04 3.30678558e-03 9.60078339e-03
+ 5.61703532e-03 2.47436992e-03 6.39765378e-03 1.03282869e-02
+ 9.33067651e-04 6.89138301e-03 1.30437714e-03 9.32953370e-03
+ 1.33037880e-02 5.88521100e-03 8.58560829e-05 3.86721360e-02
+ 1.69346527e-02 1.26785482e-03 3.44934104e-03 5.95694672e-03
+ 3.75623659e-02 2.26493790e-03 2.18336966e-02 1.67186794e-03
+ 1.20143985e-03 4.43464300e-03 7.95212950e-03 1.33101694e-03
+ 2.55986247e-03 1.99908786e-05 8.74500001e-03 2.19035535e-02
+ 8.63110904e-04 1.90701056e-02 1.17450802e-03 7.18475532e-04
+ 1.95551821e-03 1.10613873e-02 4.42214276e-02 1.10033171e-02
+ 1.07627028e-02 2.25669308e-04 3.68674637e-03 3.61653197e-03
+ 4.98043100e-03 1.02865385e-02 1.46470784e-03 2.57932764e-02
+ 5.09412709e-03 1.30086856e-03 1.09862659e-03 7.46086357e-03
+ 4.82352176e-03 1.05813909e-02 1.32048180e-03 7.66555080e-03
+ 2.49179931e-03 5.40638543e-05 3.63272845e-03 3.98155998e-03
+ 1.64320751e-02 1.28826976e-02 4.45462133e-03 2.36685915e-03
+ 7.09142250e-03 1.90187948e-02 6.89007913e-06 1.44573448e-03
+ 1.27987363e-02 1.47188433e-03 8.82098839e-04 1.85862257e-04
+ 4.05421959e-04]
+[[0, 0.1269996749168785], [21, 0.08331900219070298], [10, 0.06769809347634576], [18, 0.04753132939907461], [66, 0.04422142757263217], [43, 0.03867213601287232], [48, 0.03756236589317941], [75, 0.025793276398081474]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 31.68662667274475
+Time for finding non-repetitive 7.3909759521484375e-06
+gcc -O2 -fauto-inc-dec -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdelayed-branch -fforward-propagate -fguess-branch-probability -fipa-pure-const -fipa-profile -fipa-reference -fmerge-constants -fshrink-wrap-separate -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-coalesce-vars -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-sra -ftree-pta -ftree-ter -falign-functions -falign-jumps -falign-loops -fcrossjumping -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -fipa-sra -fipa-icf -foptimize-strlen -fpartial-inlining -fsched-interblock -fstrict-aliasing -fstrict-overflow -ftree-pre -fipa-ra -finline-functions -funswitch-loops -fgcse-after-reload -ftree-loop-vectorize -fsplit-paths -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.621943235397339selected flags:5.003743648529053 val:0.9236970476607147
+[0.9236970476607147]
+features
+[4.50756376e-02 1.22258091e-02 1.53922179e-02 1.61647729e-02
+ 3.51866261e-03 8.55725201e-03 6.59150410e-04 6.57253044e-04
+ 7.95081778e-04 1.63769180e-03 1.33996058e-01 2.05209920e-03
+ 4.88393025e-03 1.03905842e-03 2.74243453e-03 2.30973984e-03
+ 4.23269710e-03 3.05604862e-03 5.65858186e-02 4.01858335e-03
+ 4.38682949e-03 5.40526595e-02 3.11549690e-03 1.10493031e-02
+ 2.09659539e-02 1.77480085e-03 2.20160258e-03 1.52314298e-03
+ 1.79710158e-02 3.43845925e-03 2.34914130e-03 7.72729911e-03
+ 3.17003940e-03 5.57416300e-03 2.07459533e-03 7.37032696e-03
+ 1.06198179e-03 8.62603215e-04 6.84356602e-03 2.07959678e-02
+ 1.90645278e-02 3.06282779e-03 2.62031454e-03 1.71731961e-02
+ 6.27495362e-02 2.23043630e-03 1.21847894e-04 2.62003527e-03
+ 1.20084368e-02 1.16836744e-02 2.30687837e-02 3.37455314e-03
+ 1.92786243e-03 7.48932593e-03 1.01849402e-03 6.14763642e-05
+ 8.56619914e-03 1.51244893e-03 7.09189212e-03 9.94485828e-02
+ 8.41939310e-04 4.49650984e-03 3.84679059e-03 3.75406977e-04
+ 2.62586039e-03 7.25828182e-03 2.49164678e-02 1.56764387e-03
+ 1.40012012e-03 1.80793909e-03 9.55549526e-04 1.20592681e-03
+ 5.47733101e-03 3.18982026e-03 2.92743356e-03 9.47199712e-03
+ 1.34732126e-02 4.20420503e-03 6.23373462e-03 5.33000419e-03
+ 4.04851239e-03 1.61525961e-02 1.40397184e-03 1.95486757e-03
+ 1.09876444e-03 1.36147446e-03 1.60417196e-03 1.50653019e-02
+ 1.04687144e-02 2.45475900e-03 1.53086574e-03 2.06253353e-03
+ 2.91456373e-03 3.54906956e-02 9.19677692e-04 2.71415024e-03
+ 7.15219762e-03 3.28870491e-03 1.60847602e-03 8.78701542e-05
+ 2.07558925e-04]
+[[10, 0.1339960581683295], [59, 0.09944858275459889], [44, 0.0627495361621247], [18, 0.05658581858818639], [21, 0.05405265953473827], [0, 0.04507563763179118], [93, 0.03549069561977518], [66, 0.024916467816861423]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 31.562294960021973
+Time for finding non-repetitive 7.152557373046875e-06
+gcc -O2 -fauto-inc-dec -fcombine-stack-adjustments -fcompare-elim -fdce -fguess-branch-probability -fipa-pure-const -fipa-profile -fipa-reference -fmerge-constants -fshrink-wrap-separate -fsplit-wide-types -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-copy-prop -ftree-dce -ftree-dse -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -ftree-ter -fcse-skip-blocks -fdevirtualize -fexpensive-optimizations -fgcse -fhoist-adjacent-loads -fipa-sra -fipa-icf -foptimize-strlen -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -ftree-builtin-call-dce -ftree-switch-conversion -ftree-vrp -finline-functions -funswitch-loops -fpredictive-commoning -fgcse-after-reload -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.728079557418823selected flags:5.014094591140747 val:0.9429577905795246
+[0.9429577905795246]
+features
+[1.74482845e-02 5.65936301e-02 2.02362958e-03 4.42237527e-02
+ 7.86530099e-03 1.03424557e-04 5.67797764e-03 3.82116383e-03
+ 9.92201701e-04 1.27465731e-03 1.16433879e-01 5.17244617e-05
+ 3.20831205e-03 3.78777978e-04 1.10367501e-02 4.12104699e-03
+ 7.86650156e-04 1.74891210e-03 5.24558351e-02 2.54894970e-03
+ 3.32498885e-03 2.24075640e-02 5.01755535e-03 1.24897532e-02
+ 1.82755204e-02 3.54632181e-03 3.54526627e-03 1.49549110e-02
+ 3.47155272e-03 4.32969054e-04 2.78167467e-03 4.74573847e-03
+ 2.38266226e-03 1.31813084e-02 4.43996964e-03 1.28741532e-02
+ 1.98937931e-03 1.41679925e-03 6.17364342e-03 1.60363017e-02
+ 7.04938040e-03 7.59367580e-03 3.03665542e-03 1.69667740e-02
+ 3.08035217e-02 4.18810549e-04 3.91656992e-03 1.89005730e-03
+ 6.11957639e-03 1.11971075e-02 7.47374591e-03 2.07960992e-03
+ 9.93219901e-04 8.78655455e-03 5.76553007e-03 3.18537012e-03
+ 8.83741337e-04 4.70970761e-04 1.43942321e-02 4.56509106e-02
+ 5.43908475e-05 6.68806801e-03 7.74540262e-03 4.31962029e-03
+ 2.00526542e-02 7.93467898e-03 1.35496079e-02 8.41987691e-03
+ 6.13822472e-03 1.60216622e-03 2.55059786e-03 1.49320729e-03
+ 9.77078794e-03 1.44135560e-02 3.05448464e-03 3.79643586e-03
+ 1.27036595e-02 2.39893819e-04 2.74615632e-03 1.35315457e-02
+ 4.27718812e-03 8.42306367e-03 6.53914597e-04 7.41300704e-03
+ 1.60163782e-04 1.16247558e-04 1.19068702e-02 1.52963312e-02
+ 9.40226780e-03 1.85739976e-02 4.76443755e-03 2.21161942e-03
+ 2.93715200e-03 9.00512072e-02 9.21327457e-03 1.18803119e-03
+ 3.24368543e-03 5.24726110e-04 6.22670817e-04 2.05393681e-04
+ 3.05082675e-03]
+[[10, 0.11643387900671236], [93, 0.09005120722441771], [1, 0.056593630126017216], [18, 0.05245583509674422], [59, 0.04565091058540926], [3, 0.04422375274725211], [44, 0.03080352174649693], [21, 0.022407564040690844]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 31.900558710098267
+Time for finding non-repetitive 7.152557373046875e-06
+gcc -O2 -fbranch-count-reg -fcompare-elim -fcprop-registers -fdce -fdse -fforward-propagate -fguess-branch-probability -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-profile -fmerge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap-separate -ftree-ccp -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-slsr -ftree-sra -funit-at-a-time -falign-loops -fcrossjumping -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize-speculatively -fexpensive-optimizations -fhoist-adjacent-loads -fipa-bit-cp -fipa-vrp -fipa-icf -fisolate-erroneous-paths-dereference -foptimize-sibling-calls -fpartial-inlining -freorder-blocks-algorithm=stc -frerun-cse-after-loop -fsched-spec -fschedule-insns -fstrict-aliasing -ftree-builtin-call-dce -fcode-hoisting -fipa-ra -finline-functions -funswitch-loops -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:5.111757040023804selected flags:5.402905464172363 val:0.9461126192047562
+[0.9461126192047562]
+features
+[2.33979555e-02 1.20176606e-02 2.13529478e-02 3.10461423e-02
+ 9.31303477e-03 1.66582715e-03 9.28004863e-03 3.42068508e-03
+ 4.48313858e-03 5.57320370e-03 1.55239780e-01 1.30624362e-04
+ 8.39162283e-03 4.09669432e-03 7.42011037e-03 8.06629299e-03
+ 9.53176716e-03 8.49296073e-04 8.05264202e-02 1.75087467e-04
+ 3.20144566e-03 1.76499860e-02 1.33447663e-02 2.01432616e-02
+ 1.13496870e-02 4.17908526e-03 4.20357367e-03 1.68525833e-02
+ 2.45622504e-04 1.20992193e-03 1.82747016e-03 7.32165004e-03
+ 5.30402650e-03 9.82065035e-03 3.20261437e-03 1.57843195e-02
+ 8.62569544e-03 3.49792806e-04 1.01592112e-03 1.92441803e-02
+ 1.92339350e-03 1.18013245e-03 2.93869435e-03 1.06417789e-02
+ 6.03475737e-03 4.61348063e-04 7.72646603e-04 1.26566507e-03
+ 9.44968457e-03 1.10388344e-02 1.32147765e-02 4.18230792e-04
+ 3.97238933e-03 1.16123557e-02 2.68581988e-03 1.19040097e-02
+ 3.87044891e-03 4.68904532e-03 6.66313789e-03 2.36211356e-02
+ 1.29781397e-04 5.12338852e-03 1.02547467e-02 1.57350657e-03
+ 1.18211502e-02 6.64817001e-03 2.10750482e-02 1.01272756e-02
+ 1.30007266e-02 2.77802329e-03 1.10124536e-03 3.60381896e-03
+ 5.59903158e-03 9.93873538e-03 1.51498034e-03 1.82772697e-02
+ 1.81144978e-03 2.50525964e-03 1.48061357e-03 6.99013108e-03
+ 8.20338325e-03 8.94486398e-03 5.16903217e-04 8.90986101e-03
+ 5.20730784e-04 1.46883302e-03 4.05830577e-04 4.71958730e-03
+ 1.11860311e-02 5.77377379e-03 8.07228336e-03 3.02592623e-02
+ 4.21363534e-03 3.97063059e-02 1.44905814e-02 3.89780496e-03
+ 9.25931118e-03 5.77619782e-04 4.45871654e-05 1.41700000e-03
+ 1.28445790e-02]
+[[10, 0.15523978033867902], [18, 0.0805264202142749], [93, 0.03970630594293682], [3, 0.03104614234130875], [91, 0.030259262328752288], [59, 0.023621135608350934], [0, 0.023397955450478326], [2, 0.02135294777383465]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 32.29007959365845
+Time for finding non-repetitive 8.58306884765625e-06
+gcc -O2 -fbranch-count-reg -fcombine-stack-adjustments -fcompare-elim -fdce -fmerge-constants -ftree-copy-prop -ftree-slsr -ftree-sra -fcrossjumping -fdevirtualize -fipa-vrp -foptimize-strlen -fstrict-aliasing -fcode-hoisting -fpredictive-commoning -ftree-loop-vectorize -ftree-partial-pre -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.416475772857666selected flags:4.507539510726929 val:0.979797462084902
+[0.979797462084902]
+features
+[3.16645685e-02 1.10465477e-02 3.99892665e-02 1.17590405e-02
+ 5.29927573e-03 9.14969400e-03 4.13367200e-02 2.83980413e-03
+ 5.40813192e-03 2.73066104e-03 1.64931047e-01 4.09204182e-03
+ 1.51904489e-03 2.53922548e-03 2.39021962e-02 3.67087599e-03
+ 4.42939942e-04 3.63616943e-03 7.31095414e-02 2.77379099e-03
+ 2.06858575e-03 8.42473553e-03 4.41861551e-03 4.32412022e-03
+ 9.76456788e-03 1.86412687e-03 4.99293802e-03 1.21106189e-02
+ 2.04379115e-03 3.46526401e-04 1.47466522e-02 3.25092596e-03
+ 3.73797450e-03 1.03896058e-02 2.82342894e-03 1.00968585e-02
+ 2.35751002e-03 1.41642695e-03 2.92867164e-03 5.66802550e-03
+ 1.48401063e-03 6.08123552e-03 2.17087571e-03 1.02779908e-02
+ 1.34118197e-02 3.88022694e-04 2.20599744e-03 5.14119571e-03
+ 5.10085389e-03 1.29044661e-02 1.29476941e-02 9.61829331e-04
+ 6.73231431e-03 1.46172731e-02 7.90442261e-03 3.24203104e-03
+ 4.20741617e-03 7.45080726e-04 2.81870374e-02 1.55940356e-02
+ 9.32913970e-07 2.63114336e-03 4.55268704e-03 5.33984734e-03
+ 9.40240241e-03 5.09312134e-03 1.37621422e-02 1.54440641e-02
+ 2.48546807e-03 4.59600123e-03 5.04213522e-04 4.50174137e-03
+ 4.49100015e-03 8.31991866e-03 5.56461205e-04 1.36388664e-02
+ 3.08297622e-03 1.17421298e-02 7.04160595e-03 2.92142409e-03
+ 4.94339714e-03 5.44951530e-03 1.33114218e-03 6.62961799e-03
+ 7.33898764e-04 5.21097486e-04 2.70103827e-03 5.41707393e-03
+ 4.13239991e-03 7.36139976e-03 3.46872803e-03 2.76755977e-03
+ 4.17302728e-03 9.35061257e-02 6.47581919e-03 2.31683709e-03
+ 1.16056543e-02 6.40095286e-04 7.10878660e-04 3.57991928e-03
+ 7.50573530e-03]
+[[10, 0.16493104711079654], [93, 0.09350612566022037], [18, 0.07310954138493855], [6, 0.041336719989918974], [2, 0.03998926649718628], [0, 0.03166456849661774], [58, 0.02818703742649119], [14, 0.023902196235154077]]
+Length of all flags sequences to be estimated: 65792
+The time for adding the random flags: 32.027228593826294
+Time for finding non-repetitive 7.62939453125e-06
+gcc -O2 -finline-functions-called-once -fmerge-constants -freorder-blocks -ftree-forwprop -ftree-sra -ftree-pta -ftree-ter -falign-loops -fcrossjumping -fhoist-adjacent-loads -flra-remat -ftree-switch-conversion -fcode-hoisting -fipa-ra -fgcse-after-reload -fsplit-paths -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.490650653839111selected flags:4.825098276138306 val:0.9306858424100608
+[0.9306858424100608]
+features
+[1.01064033e-02 1.10552860e-02 1.13346353e-02 7.22643843e-03
+ 3.28330372e-03 4.66635858e-05 1.43408321e-02 1.47344861e-03
+ 4.11258290e-03 4.35671460e-04 1.47026810e-01 1.63228269e-03
+ 3.59335452e-03 7.85407271e-03 6.65904027e-03 2.64098846e-03
+ 4.79888996e-04 2.60344896e-03 1.29391358e-01 2.42153019e-03
+ 3.07096556e-03 1.68055554e-02 3.47620820e-03 1.27202060e-02
+ 4.28747479e-03 9.35802507e-04 1.90730934e-03 8.39947127e-03
+ 2.37816759e-02 1.21108281e-03 9.45115849e-03 9.60564157e-03
+ 4.14481159e-03 1.53903963e-02 4.18805970e-03 2.31461866e-03
+ 2.76768327e-04 5.60457091e-04 6.06047701e-03 5.38736994e-03
+ 6.49655797e-03 1.02163832e-02 2.37704770e-03 4.61239865e-03
+ 1.25841342e-03 6.43264030e-04 4.01696318e-03 2.40448983e-03
+ 2.98158695e-03 3.99745137e-03 1.23252722e-02 2.53319796e-04
+ 5.86051521e-03 7.38650174e-03 1.35691817e-02 5.22113325e-03
+ 1.10292444e-02 5.20991699e-04 2.16485648e-02 2.23594956e-02
+ 4.13366693e-04 4.27206691e-03 1.20726349e-02 3.84198138e-03
+ 4.37121106e-04 1.77468905e-03 9.29478626e-03 4.54687770e-03
+ 9.81857122e-03 2.99332080e-03 2.18140762e-03 2.04549542e-03
+ 8.79159793e-03 1.07134885e-02 1.12961151e-03 1.27747714e-03
+ 4.18068484e-03 3.38132194e-04 2.31771346e-03 2.28626261e-03
+ 5.88101897e-03 1.40187409e-02 3.04547243e-03 4.61084053e-03
+ 8.53511427e-03 3.31558314e-04 3.37162665e-03 5.16575125e-03
+ 7.22156291e-03 7.17105428e-02 4.27965558e-03 5.32757265e-05
+ 1.24823130e-02 6.92250139e-02 2.54196393e-02 7.50225231e-03
+ 1.19742655e-02 4.06743123e-04 8.27846795e-05 4.86396858e-03
+ 1.42182440e-02]
+[[10, 0.14702681049551053], [18, 0.12939135805280938], [89, 0.07171054282011229], [93, 0.0692250139284582], [94, 0.02541963926261432], [28, 0.023781675896612578], [59, 0.022359495592959803], [58, 0.021648564815575158]]
+Length of all flags sequences to be estimated: 65536
+The time for adding the random flags: 31.286622762680054
+Time for finding non-repetitive 6.198883056640625e-06
+gcc -O2 -fauto-inc-dec -fdelayed-branch -fdse -fif-conversion -finline-functions-called-once -fmerge-constants -fshrink-wrap-separate -fssa-backprop -ftree-ccp -ftree-ch -ftree-copy-prop -ftree-forwprop -ftree-phiprop -ftree-slsr -ftree-pta -ftree-ter -falign-functions -fdelete-null-pointer-checks -fexpensive-optimizations -finline-small-functions -findirect-inlining -fipa-vrp -fisolate-erroneous-paths-dereference -foptimize-sibling-calls -foptimize-strlen -fschedule-insns -fschedule-insns2 -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -fcode-hoisting -ftree-loop-vectorize -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.700029134750366selected flags:4.886384010314941 val:0.9618624170406607
+[0.9618624170406607]
+features
+[1.94927268e-02 7.12090658e-03 2.02856845e-02 6.40315882e-03
+ 8.75889004e-03 3.86676708e-03 1.33693857e-02 1.58134609e-03
+ 3.80373602e-03 1.62821881e-03 7.89971948e-02 1.57921616e-03
+ 3.19211973e-03 8.19361423e-03 4.95316646e-03 1.66331345e-03
+ 1.03860484e-02 6.63319568e-03 1.03462140e-01 4.57146080e-03
+ 5.56231143e-03 1.13107721e-02 9.01708807e-03 4.59047168e-03
+ 2.01216349e-03 4.46841855e-03 1.79670886e-03 1.03882992e-02
+ 2.08404175e-02 2.10093895e-03 2.91236825e-03 5.24456782e-03
+ 2.88972338e-03 5.94006976e-03 1.05146238e-02 1.27546501e-02
+ 1.08139449e-02 2.37482425e-03 2.17430332e-03 9.58332248e-03
+ 9.62805906e-03 8.92464336e-03 4.19505877e-03 1.00059290e-02
+ 5.33332033e-03 3.21384706e-03 2.46004295e-03 6.71805028e-03
+ 1.66153782e-03 5.22878242e-04 9.08488191e-03 8.09092108e-04
+ 7.26176579e-04 5.28909913e-03 8.67226365e-03 2.75828733e-02
+ 5.48833024e-03 1.90368968e-03 2.35444910e-02 9.05809268e-03
+ 9.09598667e-03 4.33099364e-03 8.06165719e-03 1.20375940e-03
+ 2.29941773e-04 5.76131434e-03 1.85396934e-02 2.17247887e-02
+ 1.14285570e-02 8.59071178e-03 4.42170304e-03 3.30414527e-03
+ 6.95502241e-03 8.07769111e-03 1.09573487e-03 5.22038875e-03
+ 4.77824743e-03 4.06052007e-04 1.97545854e-03 1.37745031e-02
+ 2.73805592e-03 6.83860854e-03 2.11595971e-04 4.57596620e-03
+ 9.84611240e-03 8.64696540e-05 3.75250138e-03 1.11461080e-02
+ 4.17479910e-03 4.64900079e-02 3.06026646e-03 1.10005510e-02
+ 9.97373221e-03 1.15140009e-01 7.81085452e-03 1.75536837e-03
+ 6.10463121e-03 4.47150031e-03 2.06287910e-03 1.03930980e-02
+ 7.33589931e-03]
+[[93, 0.11514000931278352], [18, 0.10346213972957378], [10, 0.07899719483819248], [89, 0.04649000794833804], [55, 0.027582873341621475], [58, 0.023544491012982064], [67, 0.021724788746914667], [28, 0.020840417471640234]]
+Length of all flags sequences to be estimated: 65536
+The time for adding the random flags: 30.266140699386597
+Time for finding non-repetitive 8.344650268554688e-06
+gcc -O2 -fauto-inc-dec -fcprop-registers -fdefer-pop -fdelayed-branch -fdse -fguess-branch-probability -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-reference -fmerge-constants -fshrink-wrap -fssa-backprop -ftree-ccp -ftree-ch -ftree-copy-prop -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-phiprop -ftree-sra -ftree-pta -funit-at-a-time -fthread-jumps -fdelete-null-pointer-checks -fhoist-adjacent-loads -finline-small-functions -fipa-bit-cp -fipa-vrp -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -fpartial-inlining -fpeephole2 -freorder-blocks-algorithm=stc -freorder-functions -fsched-interblock -fsched-spec -fstore-merging -fstrict-aliasing -ftree-switch-conversion -ftree-tail-merge -fcode-hoisting -ftree-vrp -funswitch-loops -ftree-slp-vectorize -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.70170259475708selected flags:4.595513105392456 val:1.0231072106485823
+[1.0231072106485823]
+features
+[0.01020412 0.00465972 0.0191137  0.00178371 0.00328136 0.00522663
+ 0.0109997  0.00318918 0.00214862 0.001606   0.15670858 0.00552174
+ 0.01174837 0.00638793 0.0041739  0.00173174 0.00044636 0.00875942
+ 0.05965453 0.00911378 0.00047524 0.00807231 0.01549558 0.01067101
+ 0.018492   0.00201428 0.00156774 0.01658065 0.01950023 0.00128338
+ 0.0052976  0.00302264 0.00528475 0.0018781  0.00150604 0.01192267
+ 0.00098577 0.00687673 0.00932016 0.01118972 0.01044556 0.01991388
+ 0.00291555 0.00141532 0.01252508 0.00188412 0.00222155 0.004289
+ 0.00713326 0.00298259 0.0108041  0.00040569 0.00260264 0.00615631
+ 0.01311519 0.01790247 0.00981744 0.00235343 0.02918076 0.00796285
+ 0.00060645 0.00302409 0.00646741 0.01398197 0.0068074  0.00368682
+ 0.00817659 0.02397422 0.0078777  0.00495173 0.00214343 0.00182867
+ 0.01315378 0.00354599 0.00417012 0.0042248  0.00358702 0.00088987
+ 0.00438973 0.00637662 0.00513412 0.00586965 0.00025065 0.00503697
+ 0.00203465 0.00209238 0.00064012 0.00533657 0.00371743 0.05163101
+ 0.00611142 0.00334136 0.0097198  0.08910042 0.00340077 0.00467487
+ 0.01755775 0.00580047 0.00324793 0.00496611 0.00254866]
+[[10, 0.1567085774269386], [93, 0.0891004171756419], [18, 0.05965453010132719], [89, 0.05163100946889082], [58, 0.029180759909627117], [67, 0.02397422473853639], [41, 0.01991388157074971], [28, 0.0195002343141611]]
+Length of all flags sequences to be estimated: 65536
+The time for adding the random flags: 31.37725806236267
+Time for finding non-repetitive 1.5497207641601562e-05
+gcc -O2 -fcprop-registers -fif-conversion -finline-functions-called-once -fipa-pure-const -fmerge-constants -freorder-blocks -ftree-fre -ftree-phiprop -ftree-sink -ftree-pta -ftree-ter -funit-at-a-time -falign-jumps -falign-labels -fdevirtualize -fdevirtualize-speculatively -fgcse-lm -fhoist-adjacent-loads -findirect-inlining -fipa-vrp -fipa-sra -fipa-icf -flra-remat -frerun-cse-after-loop -fschedule-insns2 -ftree-switch-conversion -fcode-hoisting -fsplit-paths -fcompare-elim -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.794635772705078selected flags:4.969947576522827 val:0.9647256231341571
+[0.9647256231341571]
+features
+[0.03142357 0.00480646 0.02133597 0.00788843 0.00098656 0.00112844
+ 0.01441347 0.00318951 0.00362048 0.00114145 0.09687496 0.00322487
+ 0.01973741 0.00491394 0.00405648 0.00669    0.00029966 0.01069318
+ 0.06283629 0.00495522 0.00045489 0.00060587 0.01055274 0.0083811
+ 0.00343694 0.00251848 0.00255431 0.00831355 0.02069622 0.00083464
+ 0.00657775 0.00438273 0.00800006 0.00515322 0.00254248 0.00704635
+ 0.00515866 0.00148334 0.00204524 0.01522092 0.01432445 0.01006194
+ 0.0009002  0.00557656 0.01527939 0.00271582 0.00343339 0.00497484
+ 0.00455404 0.0012484  0.01568624 0.00175806 0.00111821 0.00821255
+ 0.00766992 0.03186313 0.00797628 0.00273469 0.01394003 0.00019729
+ 0.01014048 0.00167353 0.00198319 0.00826051 0.00734376 0.00448046
+ 0.00892548 0.00773423 0.00279478 0.01308522 0.00528177 0.00422429
+ 0.01663553 0.00371873 0.00289459 0.02596297 0.00444151 0.00165719
+ 0.00325952 0.01520592 0.0046451  0.011161   0.00033302 0.00295184
+ 0.00334526 0.00227006 0.00257261 0.00019787 0.0060477  0.03814467
+ 0.00632377 0.00499484 0.0061607  0.14454107 0.00073024 0.00618405
+ 0.00918756 0.00815442 0.00027114 0.01111408 0.00656408]
+[[93, 0.14454107267215807], [10, 0.09687496298584106], [18, 0.06283629061479344], [89, 0.03814467213648368], [55, 0.031863128397711264], [0, 0.03142357148431781], [75, 0.025962966833383155], [2, 0.021335971248646966]]
+Length of all flags sequences to be estimated: 65536
+The time for adding the random flags: 31.65782618522644
+Time for finding non-repetitive 8.344650268554688e-06
+gcc -O2 -fauto-inc-dec -fcompare-elim -fdelayed-branch -fdse -fif-conversion -fipa-profile -fipa-reference -freorder-blocks -fshrink-wrap -fssa-backprop -ftree-bit-ccp -ftree-ch -ftree-copy-prop -ftree-dce -ftree-dse -ftree-sink -ftree-slsr -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -falign-loops -fcaller-saves -fcse-follow-jumps -fdevirtualize -fdevirtualize-speculatively -fgcse -finline-small-functions -fipa-bit-cp -fipa-vrp -fpartial-inlining -freorder-blocks-algorithm=stc -fsched-interblock -fsched-spec -fstore-merging -fstrict-aliasing -ftree-pre -fipa-ra -finline-functions -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.668291091918945selected flags:4.529352426528931 val:1.0306751721451912
+[1.0306751721451912]
+features
+[1.96377225e-02 6.01325586e-03 2.20471096e-02 1.61468535e-02
+ 4.62430572e-03 6.90514875e-04 1.52375833e-02 2.49758018e-03
+ 6.47838329e-03 4.74545198e-03 1.71938211e-01 5.79138444e-04
+ 4.48286184e-03 4.00943101e-03 1.80817417e-03 5.65900387e-03
+ 2.33532678e-03 8.98053871e-03 1.17155434e-01 4.15347539e-04
+ 3.25232060e-03 2.10305709e-03 1.85501500e-03 1.82236342e-02
+ 1.31806223e-02 4.15029165e-03 1.66639349e-03 7.57835520e-03
+ 3.35957654e-02 1.26504781e-03 1.57725526e-03 4.80521687e-03
+ 1.74437430e-03 5.38572942e-03 1.49524066e-02 1.17171046e-02
+ 3.77874985e-03 4.38637084e-03 1.60127362e-03 1.03913377e-02
+ 4.24923397e-03 3.27623177e-03 1.15911316e-03 4.23223885e-03
+ 8.80985724e-03 9.78438119e-04 7.39933634e-03 8.31348167e-03
+ 5.52538160e-03 1.25649747e-03 7.50352585e-03 4.15125480e-03
+ 2.11490068e-03 5.31840301e-03 2.24115714e-03 1.90119531e-02
+ 3.74774142e-03 3.61223779e-03 1.56407917e-02 1.62844806e-03
+ 1.20628083e-02 4.36634515e-03 7.66670940e-03 2.39638563e-03
+ 1.14770991e-03 2.98291105e-03 1.66062705e-02 9.06908148e-03
+ 1.66209566e-02 6.53038679e-03 3.20466408e-03 1.04645452e-03
+ 1.29529916e-02 3.38986382e-03 5.12534361e-03 2.84209741e-02
+ 4.14206897e-03 1.97167244e-03 1.01052612e-02 1.91687373e-02
+ 2.18079190e-03 1.46878611e-02 1.23550319e-03 2.75398789e-03
+ 4.30739669e-03 8.33988577e-04 4.31483984e-04 1.55882568e-03
+ 5.54332432e-03 1.44735034e-02 1.79596695e-03 2.66451633e-03
+ 3.90270791e-03 7.91453778e-02 2.11535304e-03 4.66473500e-04
+ 5.31435828e-03 3.36643333e-03 9.14262768e-05 7.70179208e-03
+ 3.58855831e-03]
+[[10, 0.1719382106214195], [18, 0.11715543369837217], [93, 0.07914537779578759], [28, 0.03359576537869391], [75, 0.028420974051191993], [2, 0.0220471096073052], [0, 0.019637722488346214], [79, 0.019168737317130254]]
+Length of all flags sequences to be estimated: 65536
+The time for adding the random flags: 31.025536060333252
+Time for finding non-repetitive 1.3113021850585938e-05
+gcc -O2 -fbranch-count-reg -fdelayed-branch -fif-conversion2 -fipa-reference -fmove-loop-invariants -fssa-phiopt -ftree-ch -ftree-coalesce-vars -ftree-sink -ftree-ter -funit-at-a-time -fcse-follow-jumps -fdevirtualize -fipa-icf -flra-remat -fpartial-inlining -fpeephole2 -freorder-blocks-and-partition -fstrict-aliasing -ftree-pre -finline-functions -funswitch-loops -fgcse-after-reload -ftree-loop-vectorize -fsplit-paths -fvect-cost-model -ftree-partial-pre -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.589924097061157selected flags:4.341648101806641 val:1.0571847347902756
+[1.0571847347902756]
+features
+[0.0208053  0.00300359 0.00333428 0.00638191 0.00892539 0.00437854
+ 0.02044306 0.0077378  0.00521691 0.0038443  0.13756463 0.00195797
+ 0.00737849 0.00600798 0.00498293 0.00809892 0.00028759 0.00979218
+ 0.13340163 0.01378678 0.00453619 0.00321751 0.01655235 0.00645857
+ 0.0050161  0.00127168 0.00416121 0.01841274 0.04130761 0.00162326
+ 0.00307147 0.00431727 0.00411792 0.00353224 0.00894871 0.00481472
+ 0.00101637 0.00190472 0.00304184 0.01771163 0.00060919 0.0092575
+ 0.00583193 0.00137966 0.01296478 0.00075988 0.0025363  0.00433964
+ 0.00098194 0.00498944 0.00192744 0.00123102 0.00432474 0.00152207
+ 0.01139321 0.01858941 0.00545658 0.0026372  0.01375441 0.00222267
+ 0.00894827 0.00090517 0.00892978 0.00315582 0.00934123 0.00099957
+ 0.01030788 0.00866647 0.01367511 0.00066968 0.01255041 0.00031864
+ 0.0023656  0.00428146 0.00456835 0.00442759 0.00364086 0.00137582
+ 0.00215304 0.01431504 0.00722504 0.01646444 0.00033559 0.00865038
+ 0.00406873 0.00178368 0.00845205 0.00048424 0.00740017 0.02801693
+ 0.00296732 0.00028057 0.0061537  0.07622262 0.01208505 0.00172371
+ 0.01862184 0.00039106 0.00377275 0.00507556 0.00515549]
+[[10, 0.13756462535769834], [18, 0.1334016250682848], [93, 0.07622262137917163], [28, 0.04130760767138563], [89, 0.02801692730087425], [0, 0.020805296441935028], [6, 0.020443062634555774], [96, 0.01862183665769861]]
+Length of all flags sequences to be estimated: 65536
+The time for adding the random flags: 30.499495267868042
+Time for finding non-repetitive 9.5367431640625e-06
+gcc -O2 -fcombine-stack-adjustments -fcompare-elim -fdefer-pop -fif-conversion -finline-functions-called-once -fipa-reference -fshrink-wrap -ftree-ch -ftree-fre -ftree-sink -ftree-pta -ftree-ter -fthread-jumps -fcrossjumping -fcse-follow-jumps -findirect-inlining -flra-remat -fpartial-inlining -fpeephole2 -freorder-blocks-and-partition -fschedule-insns -fstrict-aliasing -ftree-switch-conversion -ftree-pre -fipa-ra -fgcse-after-reload -fsplit-paths -ftree-partial-pre -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.7768635749816895selected flags:4.596477270126343 val:1.0392444679380277
+[1.0392444679380277]
+features
+[2.55993689e-02 3.61607434e-03 9.97788048e-03 8.26182063e-03
+ 6.44862815e-03 9.79975180e-04 1.70714406e-02 7.83430678e-03
+ 2.67590931e-03 5.48749030e-03 1.48135470e-01 3.03462225e-03
+ 1.29963318e-02 6.82423660e-03 1.10675803e-03 6.58724181e-04
+ 3.04839585e-03 3.95525460e-03 1.99080246e-01 1.67625598e-02
+ 3.36986427e-03 1.23450535e-03 1.11975479e-02 1.05942767e-02
+ 1.88019956e-03 1.51730056e-03 3.13186459e-04 2.24072090e-03
+ 5.00103005e-02 2.56657695e-03 5.18118666e-03 2.88828218e-03
+ 1.72188180e-03 3.63107611e-03 1.81206421e-02 7.37609293e-03
+ 1.43428633e-03 8.29992197e-03 4.84393422e-03 7.24507345e-03
+ 3.90219602e-03 1.06948367e-02 5.33159758e-03 1.27644355e-03
+ 1.67431870e-02 1.50815794e-03 7.94735471e-03 5.88684143e-03
+ 1.23796310e-03 1.02608210e-03 4.53189565e-03 1.47354350e-03
+ 4.29184987e-03 3.35520324e-03 9.25190214e-04 2.06263564e-02
+ 2.92933720e-03 2.44367318e-03 1.23894559e-02 5.46522774e-04
+ 5.53545335e-03 1.78022959e-03 5.43524578e-03 1.36482610e-03
+ 1.12410444e-02 3.99696543e-03 3.73487411e-03 1.72674134e-03
+ 1.74712770e-02 6.73971842e-03 2.41688972e-02 2.45920073e-04
+ 5.48296760e-03 4.34473593e-03 2.44699548e-04 1.49952127e-02
+ 4.82209919e-03 5.93952779e-04 2.90042408e-03 1.00884388e-02
+ 4.92321669e-03 1.72896234e-02 1.14965067e-03 1.85437356e-03
+ 2.24485978e-03 1.19080547e-03 2.24084246e-03 4.81283414e-04
+ 5.03018168e-03 2.48018302e-02 2.12437196e-03 2.60573799e-03
+ 9.67312202e-03 3.47047272e-02 9.53952335e-03 6.66740967e-04
+ 4.85554653e-03 2.02518335e-03 1.25885584e-04 2.90852201e-03
+ 4.36021001e-03]
+[[18, 0.19908024565970586], [10, 0.1481354698479812], [28, 0.050010300546644466], [93, 0.034704727184178066], [0, 0.02559936885779375], [89, 0.024801830236518763], [70, 0.024168897154644736], [55, 0.020626356397370198]]
+Length of all flags sequences to be estimated: 65280
+The time for adding the random flags: 31.674317121505737
+Time for finding non-repetitive 1.049041748046875e-05
+gcc -O2 -fauto-inc-dec -fforward-propagate -fipa-reference -fssa-phiopt -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-slsr -ftree-ter -funit-at-a-time -fipa-icf -fisolate-erroneous-paths-dereference -fpartial-inlining -fpeephole2 -ftree-vrp -ftree-loop-vectorize -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.468976736068726selected flags:4.5305938720703125 val:0.9863997661804478
+[0.9863997661804478]
+features
+[2.57478666e-02 1.25967409e-02 8.14697521e-03 1.06986207e-02
+ 8.48274717e-03 8.82919871e-03 3.75055806e-03 3.78509163e-03
+ 3.65912138e-03 1.31966318e-03 7.47153557e-02 7.45481345e-03
+ 8.34149299e-03 4.80495852e-03 2.82517868e-03 1.58546442e-03
+ 1.36739344e-03 8.97902413e-03 1.88174254e-01 1.04257807e-02
+ 5.32002696e-03 3.76060861e-03 2.20281610e-03 3.18170216e-03
+ 7.10217492e-03 4.57600596e-04 1.00800445e-03 1.71542576e-02
+ 6.54919163e-02 1.27163739e-03 6.65704270e-03 8.58282607e-03
+ 2.46263132e-03 2.60640879e-03 1.32881817e-02 7.25759848e-03
+ 5.71791826e-03 2.72885492e-03 4.07415438e-03 1.44397496e-02
+ 6.13355332e-03 7.24453521e-03 2.33075706e-03 1.46673776e-03
+ 1.91518984e-02 1.67009355e-03 4.56520567e-03 4.17213978e-03
+ 3.85715881e-04 7.71335886e-03 8.85429626e-03 5.82591145e-03
+ 2.59225527e-03 7.01093257e-03 1.29245797e-03 7.51482947e-03
+ 1.87986255e-04 4.17627336e-03 1.00796178e-02 1.41261120e-02
+ 4.93625789e-03 2.76568448e-03 3.58546514e-03 1.22256327e-03
+ 5.19546189e-03 4.59584794e-03 7.99351488e-03 1.15991332e-02
+ 1.54304621e-02 1.14015916e-02 1.19128547e-02 4.44598238e-03
+ 4.11558872e-03 8.71333861e-03 1.74175035e-03 3.58270338e-03
+ 4.45871187e-03 4.39053852e-03 1.39125682e-03 9.77986344e-03
+ 8.34736206e-03 8.92711421e-03 3.59502948e-03 9.01348420e-03
+ 2.90687178e-03 2.86076267e-04 4.74561328e-03 1.68940873e-03
+ 1.10506061e-02 4.41560824e-02 2.06209720e-03 4.90897867e-03
+ 3.12680261e-03 3.73693727e-02 1.27256601e-02 5.93233236e-04
+ 1.98743632e-02 3.15442477e-03 5.96089529e-05 2.92276558e-03
+ 8.27539471e-03]
+[[18, 0.18817425371875565], [10, 0.07471535572888532], [28, 0.06549191634215444], [89, 0.04415608244498953], [93, 0.03736937271184241], [0, 0.02574786663802606], [96, 0.01987436320010744], [44, 0.019151898351349506]]
+Length of all flags sequences to be estimated: 65280
+The time for adding the random flags: 31.299332857131958
+Time for finding non-repetitive 1.0728836059570312e-05
+gcc -O2 -fcombine-stack-adjustments -fdce -fipa-pure-const -fipa-reference -fmove-loop-invariants -freorder-blocks -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-dce -ftree-fre -ftree-sink -ftree-sra -funit-at-a-time -falign-functions -fcse-follow-jumps -finline-small-functions -fipa-cp -fipa-icf -flra-remat -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -ftree-pre -fipa-ra -fgcse-after-reload -ftree-loop-vectorize -fsplit-paths -ftree-partial-pre -fpeel-loops -fbranch-count-reg -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.898504018783569selected flags:4.465392589569092 val:1.0969929117153554
+[1.0969929117153554]
+features
+[1.64175189e-02 9.04269554e-03 6.14252539e-03 1.13605823e-02
+ 3.74608257e-03 2.43548120e-03 1.48499686e-02 2.87011663e-03
+ 5.49681781e-03 5.42950100e-04 1.23204932e-01 2.11023956e-03
+ 8.64599765e-03 4.38346013e-03 3.23395646e-03 1.40977968e-03
+ 1.46739645e-03 1.88323570e-02 1.83901651e-01 1.97142839e-02
+ 2.60060061e-03 6.18899665e-04 9.71296818e-03 6.71492941e-03
+ 3.01371893e-03 2.47677497e-03 5.94943705e-04 3.33439163e-03
+ 3.48908418e-02 2.67552353e-03 9.38389870e-03 4.34049039e-03
+ 3.02439652e-03 4.47763488e-03 1.28376946e-02 1.10196882e-02
+ 3.46005677e-03 1.28264563e-02 3.67307074e-03 1.28231738e-02
+ 1.20257013e-02 5.48306715e-03 6.25482765e-03 6.38043086e-04
+ 1.04526892e-02 1.80507771e-03 3.97396668e-03 7.80442561e-03
+ 1.07510823e-03 3.03402416e-03 7.65842900e-03 3.66891971e-03
+ 3.75650850e-03 3.71883760e-03 2.43457545e-03 1.71037056e-02
+ 3.31616047e-04 1.19486530e-04 8.99959450e-03 1.64821655e-03
+ 3.85444529e-03 1.65756659e-03 5.48272668e-03 2.67289909e-03
+ 3.58291395e-02 3.87129849e-03 8.74588238e-03 3.23449132e-03
+ 7.09770975e-03 1.15687180e-02 2.57722918e-03 9.29496770e-04
+ 5.96073684e-03 6.22774801e-03 7.00667927e-03 8.24241416e-03
+ 2.61010721e-03 9.62005951e-04 2.48270582e-03 1.48664758e-02
+ 1.12548528e-02 2.31673128e-02 1.80709935e-03 2.91473642e-03
+ 5.41024011e-03 5.60560574e-04 9.43643106e-03 8.13556111e-04
+ 1.76822778e-02 3.30931494e-02 1.88034648e-03 1.07832213e-03
+ 4.36248658e-03 3.39668633e-02 3.90599802e-03 8.43460407e-04
+ 1.63943175e-02 1.10761130e-03 3.13500842e-04 2.90258238e-03
+ 4.92805258e-03]
+[[18, 0.18390165093869976], [10, 0.12320493178354043], [64, 0.035829139533494876], [28, 0.034890841797591166], [93, 0.03396686325043107], [89, 0.033093149365836544], [81, 0.023167312825290953], [19, 0.019714283890193994]]
+Length of all flags sequences to be estimated: 65280
+The time for adding the random flags: 31.49317240715027
+Time for finding non-repetitive 1.239776611328125e-05
+gcc -O2 -fcombine-stack-adjustments -fdce -fdse -fif-conversion -finline-functions-called-once -fipa-profile -fmove-loop-invariants -fssa-phiopt -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-sink -ftree-sra -ftree-pta -fthread-jumps -falign-functions -falign-loops -fcaller-saves -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdevirtualize -fexpensive-optimizations -fgcse -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fpartial-inlining -fpeephole2 -freorder-blocks-and-partition -freorder-functions -fschedule-insns2 -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -fipa-ra -funswitch-loops -fgcse-after-reload -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fbranch-count-reg -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.5530171394348145selected flags:4.640397071838379 val:0.9811697294324541
+[0.9811697294324541]
+features
+[1.31561204e-02 1.95908603e-02 4.87768280e-03 2.40244992e-03
+ 3.00561988e-03 2.04092113e-03 8.63534832e-03 1.33984908e-03
+ 6.88143196e-03 8.39079371e-05 8.80143948e-02 3.75092774e-03
+ 3.97983994e-03 5.75288662e-03 8.25587214e-03 6.92589080e-03
+ 1.38794878e-03 1.81226222e-02 2.05419798e-01 5.65884978e-03
+ 3.39638458e-03 3.48705538e-03 6.34319762e-03 8.17028914e-03
+ 2.55135744e-04 7.79930346e-03 4.29834878e-03 9.12562371e-03
+ 5.19940710e-02 3.93058467e-04 6.22749030e-03 1.03757698e-02
+ 2.56594947e-03 2.72114423e-03 1.01315308e-02 8.88912122e-03
+ 3.29407937e-03 2.45440983e-03 4.14466773e-03 1.17818018e-02
+ 4.55406149e-03 7.52856776e-03 8.03926452e-03 2.80714497e-03
+ 4.88340002e-03 9.65150690e-05 8.25963563e-03 4.60681167e-04
+ 3.41281267e-03 1.47751994e-03 1.02177591e-02 4.90220304e-03
+ 4.07295786e-03 7.75595129e-03 3.63651028e-03 1.22326546e-02
+ 3.92247438e-03 2.92917960e-05 1.14251541e-02 8.36687705e-03
+ 3.52614134e-03 8.07804734e-04 5.04649963e-03 5.03209082e-03
+ 2.63842797e-02 3.97834213e-03 1.76182272e-02 1.49036642e-02
+ 7.17640276e-03 1.94800093e-03 1.11967898e-02 5.77988269e-03
+ 4.73039710e-03 7.96196714e-03 1.39738224e-03 1.19074334e-02
+ 1.63021013e-02 2.00213344e-03 4.09966598e-03 1.28449361e-02
+ 4.99868968e-03 8.08504532e-03 2.52098021e-03 1.45405057e-02
+ 6.71943207e-04 1.29781786e-03 8.52245621e-03 7.28065651e-03
+ 8.17607122e-03 1.98383956e-02 1.40735271e-03 1.92615534e-03
+ 1.40725501e-03 3.69127430e-02 1.17240326e-02 7.08519957e-04
+ 1.97385507e-02 1.86403089e-03 8.50095255e-05 3.56241835e-03
+ 4.87413643e-03]
+[[18, 0.20541979782683875], [10, 0.08801439484050036], [28, 0.05199407095076463], [93, 0.03691274296336234], [64, 0.02638427967712739], [89, 0.01983839563502491], [96, 0.019738550711907315], [1, 0.01959086030091526]]
+Length of all flags sequences to be estimated: 65024
+The time for adding the random flags: 30.53867506980896
+Time for finding non-repetitive 8.344650268554688e-06
+gcc -O2 -fcombine-stack-adjustments -fdce -fdefer-pop -fdse -fguess-branch-probability -fif-conversion2 -fipa-pure-const -fipa-profile -fipa-reference -freorder-blocks -fshrink-wrap-separate -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-forwprop -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -ftree-ter -falign-functions -falign-jumps -falign-loops -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fgcse-lm -fhoist-adjacent-loads -findirect-inlining -fipa-cp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -fpartial-inlining -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -fcode-hoisting -ftree-pre -funswitch-loops -fpredictive-commoning -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -ftree-partial-pre -fpeel-loops -fbranch-count-reg -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.666652679443359selected flags:4.4850218296051025 val:1.0404972053066348
+[1.0404972053066348]
+features
+[8.14141793e-03 5.18678076e-03 5.02223583e-03 3.26047404e-03
+ 6.40456722e-03 1.19475110e-03 3.99813273e-03 2.11423389e-03
+ 3.38825914e-03 3.44806646e-03 1.09450705e-01 9.61834534e-03
+ 4.56214223e-03 5.06050421e-03 4.65729744e-03 5.54659972e-04
+ 2.22447357e-03 1.07895225e-02 2.02220609e-01 1.77342702e-02
+ 1.49264169e-03 2.09916049e-03 2.46874851e-03 8.92135621e-03
+ 1.11383097e-02 2.87847034e-03 7.57994869e-04 4.55741338e-03
+ 6.97149515e-02 3.61188335e-03 2.77970422e-03 5.39982775e-03
+ 1.41415407e-03 1.46268897e-03 1.90908484e-02 5.72377568e-03
+ 2.96268615e-03 6.66909733e-03 8.53286515e-03 1.14641776e-02
+ 4.86612732e-03 3.44365347e-03 3.78231117e-03 7.94725546e-04
+ 8.82195970e-03 1.38493974e-04 3.98985569e-03 7.49670169e-03
+ 6.31728180e-03 3.18053970e-03 8.62559821e-03 4.03108786e-03
+ 3.95015474e-03 3.50768891e-03 6.11689084e-03 2.39814190e-02
+ 4.99843440e-03 3.67975416e-03 5.04617459e-03 3.22296663e-03
+ 2.29008910e-03 1.31762276e-03 3.77851904e-03 1.93078022e-03
+ 2.44006014e-03 5.28369464e-03 5.51240284e-03 2.87986986e-02
+ 8.14950993e-03 7.73008175e-03 1.12693427e-02 3.55637607e-03
+ 2.97331228e-03 5.75904083e-03 1.75735624e-02 7.71463199e-03
+ 4.68180010e-03 5.09642225e-03 1.12095101e-02 7.03112189e-03
+ 9.95942075e-03 1.55084354e-02 1.76418019e-03 3.64433961e-03
+ 1.18785583e-02 4.86308203e-04 1.05460844e-03 1.98349219e-03
+ 1.23390505e-02 2.12831392e-02 1.06130942e-03 1.49515033e-03
+ 5.27889097e-03 2.51558076e-02 9.90509634e-03 1.19797358e-03
+ 2.41192902e-02 2.03565717e-03 6.90598685e-04 4.59973448e-03
+ 8.29835560e-03]
+[[18, 0.20222060852682944], [10, 0.10945070537680043], [28, 0.0697149514925684], [67, 0.028798698641476286], [93, 0.02515580762900619], [96, 0.024119290233235214], [55, 0.023981419039004657], [89, 0.02128313922881247]]
+Length of all flags sequences to be estimated: 65024
+The time for adding the random flags: 31.478036403656006
+Time for finding non-repetitive 8.344650268554688e-06
+gcc -O2 -fauto-inc-dec -fbranch-count-reg -fcombine-stack-adjustments -fcprop-registers -fdce -fdefer-pop -fdse -fguess-branch-probability -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-profile -fipa-reference -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-coalesce-vars -ftree-copy-prop -ftree-dce -ftree-forwprop -ftree-fre -ftree-slsr -ftree-pta -ftree-ter -funit-at-a-time -fthread-jumps -fcaller-saves -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize-speculatively -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -fipa-cp -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fschedule-insns -fstore-merging -fstrict-aliasing -ftree-builtin-call-dce -ftree-tail-merge -fcode-hoisting -ftree-pre -fipa-ra -finline-functions -funswitch-loops -fgcse-after-reload -ftree-loop-vectorize -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.67333197593689selected flags:5.084674835205078 val:0.9191014425504364
+[0.9191014425504364]
+features
+[1.58037194e-03 2.50443627e-02 6.16424166e-03 1.31442284e-02
+ 8.66488476e-03 1.92567357e-02 1.26055120e-02 1.08545702e-03
+ 3.34166666e-03 1.71346263e-03 8.73782256e-02 4.32191585e-03
+ 2.11983578e-03 4.61967746e-03 3.17305911e-03 1.15593370e-03
+ 1.01673957e-03 1.42557591e-02 7.76800690e-02 5.39325050e-03
+ 2.45244406e-03 3.42197860e-03 7.91405510e-03 5.72234772e-03
+ 2.73579513e-03 3.42111223e-03 1.30283998e-03 1.09698039e-02
+ 1.13653072e-01 1.07172360e-02 3.92836184e-03 7.72275531e-03
+ 5.42539783e-03 1.68368785e-03 2.45705743e-02 7.58846068e-03
+ 4.26140999e-03 8.75158386e-03 2.50874268e-03 1.09885614e-02
+ 7.09022173e-03 1.66589840e-02 1.51134785e-03 7.12419730e-03
+ 1.18068499e-03 3.46409760e-03 3.58013219e-03 6.48514367e-03
+ 1.58551586e-02 4.14289235e-03 5.17843537e-03 5.34603121e-03
+ 1.71392763e-03 1.06714720e-02 2.16928378e-03 2.24128387e-02
+ 4.70748269e-03 1.07835011e-02 8.89171078e-03 1.25927818e-02
+ 1.63054980e-03 9.29520799e-04 2.41304528e-03 6.99747854e-03
+ 3.82040065e-03 4.16538757e-03 1.37882062e-02 1.08665335e-02
+ 8.11938458e-03 1.19285666e-02 5.03813859e-03 2.19314044e-03
+ 2.62587865e-03 4.56208060e-03 5.24813614e-03 1.42848189e-02
+ 5.33341864e-03 8.04751177e-04 7.27259171e-03 9.08671379e-03
+ 2.24757741e-03 2.17644922e-02 4.24999001e-04 5.00507377e-03
+ 3.48875313e-03 3.87849700e-03 8.07594609e-03 3.21472888e-03
+ 1.22451760e-02 3.03753672e-02 6.80704419e-04 1.09960814e-02
+ 2.34578647e-03 3.03362446e-02 6.89920857e-03 1.77326568e-03
+ 3.05526359e-02 1.05976306e-04 5.22545495e-04 7.21568450e-03
+ 1.17265785e-02]
+[[28, 0.1136530724583273], [10, 0.08737822560925484], [18, 0.0776800690403998], [96, 0.030552635895486274], [89, 0.030375367246073877], [93, 0.03033624460241771], [1, 0.025044362732051573], [34, 0.024570574294814917]]
+Length of all flags sequences to be estimated: 64768
+The time for adding the random flags: 30.013575077056885
+Time for finding non-repetitive 1.3589859008789062e-05
+gcc -O2 -fbranch-count-reg -fforward-propagate -fif-conversion2 -fipa-pure-const -fmove-loop-invariants -fssa-phiopt -ftree-ch -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -ftree-ter -falign-functions -falign-loops -finline-small-functions -findirect-inlining -fipa-icf -foptimize-sibling-calls -freorder-functions -frerun-cse-after-loop -fsched-interblock -fstrict-aliasing -ftree-pre -fipa-ra -finline-functions -fsplit-paths -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.660230398178101selected flags:4.79615330696106 val:0.9716600158327544
+[0.9716600158327544]
+features
+[0.0065647  0.03641628 0.00442409 0.01305985 0.00899836 0.00141062
+ 0.01547981 0.00353077 0.0064909  0.00319821 0.07796847 0.00421969
+ 0.00158854 0.00194574 0.00427877 0.00503459 0.0025134  0.01730644
+ 0.10890793 0.00302748 0.00341872 0.00386856 0.00075723 0.00843243
+ 0.00441234 0.00339016 0.00103467 0.00919316 0.07970519 0.00691905
+ 0.0091372  0.00162298 0.00787896 0.0009418  0.02537347 0.00842615
+ 0.00643621 0.01848552 0.00463661 0.00588326 0.0205843  0.01469512
+ 0.00144053 0.00197515 0.00676651 0.00278959 0.00464813 0.00444296
+ 0.00698178 0.00729911 0.00249197 0.00090958 0.00096538 0.00678823
+ 0.00226609 0.03038967 0.00738535 0.00576821 0.019305   0.00822047
+ 0.00755509 0.00207296 0.00510151 0.00372932 0.00973184 0.00474253
+ 0.00407463 0.02285329 0.00997651 0.00676917 0.00914737 0.00284752
+ 0.00636314 0.00379164 0.01003931 0.00992871 0.0031399  0.00236405
+ 0.00051808 0.00292516 0.0054626  0.01344179 0.00343301 0.00279649
+ 0.00577069 0.00206945 0.00206231 0.00265747 0.00754966 0.03313849
+ 0.00165971 0.00305062 0.00582149 0.04392127 0.00776484 0.00250007
+ 0.01833799 0.00237024 0.00049356 0.00516188 0.01043312]
+[[18, 0.10890792741911991], [28, 0.07970518615515075], [10, 0.0779684738690091], [93, 0.04392126634162885], [1, 0.036416279076178094], [89, 0.03313849029717055], [55, 0.03038967391685848], [34, 0.02537347476839937]]
+Length of all flags sequences to be estimated: 64512
+The time for adding the random flags: 30.309022903442383
+Time for finding non-repetitive 9.298324584960938e-06
+gcc -O2 -fcprop-registers -fif-conversion -finline-functions-called-once -fipa-reference -fmove-loop-invariants -fssa-backprop -fssa-phiopt -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-dominator-opts -ftree-sink -ftree-sra -ftree-ter -funit-at-a-time -falign-labels -fcse-follow-jumps -fcse-skip-blocks -fdevirtualize-speculatively -fgcse -finline-small-functions -fipa-vrp -fipa-sra -fisolate-erroneous-paths-dereference -flra-remat -freorder-blocks-and-partition -freorder-functions -ftree-tail-merge -ftree-vrp -fipa-ra -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -ftree-partial-pre -fcompare-elim -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.79369854927063selected flags:4.59428071975708 val:1.0434056692826759
+[1.0434056692826759]
+features
+[0.00754748 0.02628627 0.00381553 0.00963066 0.00155469 0.0012188
+ 0.00276268 0.00089257 0.00760755 0.00031434 0.12486234 0.00369041
+ 0.0060043  0.00741941 0.00466159 0.00229293 0.00144121 0.01219744
+ 0.1352498  0.0069028  0.00358628 0.00695496 0.00064108 0.00396081
+ 0.00255789 0.00373386 0.0009335  0.01770881 0.11040351 0.00648973
+ 0.00801693 0.00296145 0.00180992 0.00198506 0.00404851 0.00436586
+ 0.00091426 0.00386271 0.00067668 0.01212408 0.01806481 0.01426668
+ 0.00269495 0.00299455 0.00346286 0.0008271  0.00377623 0.00124932
+ 0.01856358 0.0046917  0.00789014 0.00261115 0.0009777  0.00631178
+ 0.00509698 0.01903011 0.00152993 0.00879454 0.00641297 0.00327258
+ 0.00256636 0.0007212  0.00541986 0.00517417 0.00106808 0.00408144
+ 0.00877347 0.03023844 0.00593667 0.01421819 0.00430299 0.00701156
+ 0.0047465  0.00596217 0.00610496 0.01269865 0.00460864 0.00691836
+ 0.00579863 0.00823073 0.00794866 0.00829499 0.00016032 0.0099622
+ 0.00552913 0.00148716 0.00553196 0.00191447 0.00220195 0.02622335
+ 0.00620612 0.00395174 0.00363576 0.02571209 0.01005913 0.00636565
+ 0.01490089 0.00220053 0.00099525 0.01254428 0.00298497]
+[[18, 0.135249803285976], [10, 0.12486234475846118], [28, 0.1104035125666852], [67, 0.03023843611064962], [1, 0.02628626829226997], [89, 0.026223346128685175], [93, 0.025712085915333374], [55, 0.01903011050759202]]
+Length of all flags sequences to be estimated: 64512
+The time for adding the random flags: 30.417917728424072
+Time for finding non-repetitive 1.4781951904296875e-05
+gcc -O2 -fbranch-count-reg -fcombine-stack-adjustments -fcprop-registers -fdce -fdse -finline-functions-called-once -fipa-pure-const -fipa-profile -fipa-reference -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fsplit-wide-types -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-phiprop -ftree-slsr -ftree-sra -funit-at-a-time -fthread-jumps -falign-functions -falign-jumps -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -fpeephole2 -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-switch-conversion -ftree-tail-merge -fcode-hoisting -ftree-pre -ftree-vrp -finline-functions -funswitch-loops -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.536536455154419selected flags:4.742205858230591 val:0.956630013705708
+[0.956630013705708]
+features
+[0.0108603  0.02348453 0.01273816 0.01270781 0.00581207 0.0067063
+ 0.01525383 0.00859736 0.0074622  0.00273777 0.08532599 0.00236799
+ 0.00272038 0.00370785 0.00133626 0.00456693 0.00199958 0.01066789
+ 0.11225148 0.00454751 0.00177113 0.00414242 0.00239332 0.01074472
+ 0.0026031  0.00130977 0.00047301 0.01492536 0.0969679  0.00149743
+ 0.0073218  0.00127211 0.00225447 0.00149906 0.00515855 0.00657393
+ 0.0004471  0.01582882 0.01432059 0.00504984 0.01351405 0.01080851
+ 0.00075443 0.01123382 0.01842524 0.00145442 0.0043316  0.00041864
+ 0.00963295 0.00473075 0.00575128 0.00320973 0.00182926 0.00822796
+ 0.00381548 0.05426144 0.00439126 0.00747365 0.00976661 0.0031781
+ 0.00739997 0.00173445 0.00401716 0.00304086 0.00628416 0.00328907
+ 0.00816453 0.02585847 0.01039855 0.01148615 0.00958935 0.00399631
+ 0.00255413 0.00626216 0.01176505 0.01780266 0.0019374  0.00211826
+ 0.00517168 0.00941137 0.00388317 0.00890423 0.0017809  0.00392339
+ 0.00263559 0.0026279  0.01042754 0.00196099 0.00390992 0.02605072
+ 0.00306338 0.00423747 0.00562617 0.01864615 0.00331362 0.00308269
+ 0.01806823 0.0039462  0.00527749 0.00529328 0.00144343]
+[[18, 0.11225147896098889], [28, 0.09696790147266439], [10, 0.08532599140750813], [55, 0.05426143764116769], [89, 0.02605072024333647], [67, 0.0258584690776323], [1, 0.023484527391599414], [93, 0.018646151831051463]]
+Length of all flags sequences to be estimated: 64256
+The time for adding the random flags: 30.35948634147644
+Time for finding non-repetitive 4.839897155761719e-05
+gcc -O2 -fbranch-count-reg -fcompare-elim -fdce -fdse -fif-conversion -finline-functions-called-once -fipa-reference -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-dce -ftree-dominator-opts -ftree-sink -ftree-slsr -ftree-sra -funit-at-a-time -falign-labels -fcrossjumping -fcse-skip-blocks -fgcse-lm -finline-small-functions -findirect-inlining -fipa-bit-cp -flra-remat -foptimize-sibling-calls -fpartial-inlining -fpeephole2 -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fschedule-insns2 -fstore-merging -ftree-tail-merge -ftree-pre -fgcse-after-reload -ftree-loop-distribute-patterns -fsplit-paths -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.749542474746704selected flags:4.725442171096802 val:1.0051001160901538
+[1.0051001160901538]
+features
+[0.00831128 0.01409722 0.00390749 0.00538635 0.00601111 0.0147163
+ 0.01194005 0.01162504 0.00482641 0.00132156 0.08981437 0.00488101
+ 0.00234982 0.00588672 0.00445976 0.00135982 0.00817864 0.01329566
+ 0.13606232 0.01182386 0.00281437 0.00459466 0.00034014 0.01671023
+ 0.00490387 0.00145656 0.00183498 0.01698757 0.06817409 0.00391186
+ 0.00379164 0.00546669 0.00541355 0.002164   0.01297553 0.00774382
+ 0.00294263 0.00885163 0.01018229 0.00577617 0.01760703 0.00633094
+ 0.00172523 0.00704333 0.01682508 0.00068398 0.00980097 0.0014867
+ 0.01663129 0.00459348 0.01098269 0.00105161 0.00228904 0.00609969
+ 0.01156764 0.0502651  0.0007517  0.00866155 0.01134216 0.00260187
+ 0.00582961 0.00286243 0.00472278 0.00363499 0.00344212 0.00213053
+ 0.00098256 0.01998023 0.01013845 0.0034031  0.0141727  0.00575262
+ 0.00485651 0.00660632 0.00520445 0.01414251 0.00424511 0.00053098
+ 0.00586352 0.00716682 0.00651839 0.00917938 0.00078693 0.00118133
+ 0.00346945 0.00027536 0.005966   0.00017077 0.009006   0.023236
+ 0.00623843 0.00248308 0.00144403 0.02258746 0.01515529 0.00435547
+ 0.01004608 0.00671881 0.00021471 0.00721633 0.0024502 ]
+[[18, 0.13606231906780664], [10, 0.0898143687683728], [28, 0.0681740867625946], [55, 0.05026510346834974], [89, 0.023235998653825685], [93, 0.022587456563294007], [67, 0.019980231610476965], [40, 0.017607034916123247]]
+Length of all flags sequences to be estimated: 64000
+The time for adding the random flags: 32.109454870224
+Time for finding non-repetitive 1.9550323486328125e-05
+gcc -O2 -fcombine-stack-adjustments -fcompare-elim -fdce -fdefer-pop -fdelayed-branch -fdse -fguess-branch-probability -fif-conversion2 -finline-functions-called-once -fipa-pure-const -fipa-profile -fipa-reference -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-coalesce-vars -ftree-copy-prop -ftree-dce -ftree-dse -ftree-fre -ftree-phiprop -ftree-sink -ftree-pta -funit-at-a-time -falign-jumps -falign-loops -falign-labels -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdevirtualize -fgcse -finline-small-functions -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-strlen -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -fstrict-overflow -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -ftree-vrp -fipa-ra -funswitch-loops -fpredictive-commoning -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -fpeel-loops -fbranch-count-reg -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:5.2214884757995605selected flags:4.947988986968994 val:1.0552748782486892
+[1.0552748782486892]
+features
+[0.00528975 0.03284261 0.00289031 0.00953641 0.00748419 0.01086901
+ 0.00607937 0.00265353 0.01912674 0.0028925  0.10892443 0.00222738
+ 0.00799065 0.0048646  0.00239314 0.00660291 0.00183481 0.01928277
+ 0.0808387  0.01116988 0.00912055 0.00244935 0.00116417 0.02815523
+ 0.0006457  0.00124993 0.00105407 0.00287707 0.06458307 0.00113586
+ 0.00296921 0.00274716 0.00539087 0.00235713 0.03478468 0.00882965
+ 0.00463792 0.0180897  0.00981412 0.00657304 0.008841   0.00560752
+ 0.00431854 0.00708418 0.01148462 0.00056654 0.00521035 0.00188299
+ 0.0211744  0.00315237 0.0077625  0.00090577 0.00593198 0.0116517
+ 0.00171887 0.04622214 0.01074346 0.00525277 0.02002076 0.00585365
+ 0.00406392 0.00024955 0.00382952 0.00396193 0.00706311 0.01086649
+ 0.00675606 0.01115137 0.00496306 0.00434329 0.00921815 0.00158185
+ 0.00712328 0.00535582 0.00372849 0.01384214 0.00214931 0.0014028
+ 0.00477487 0.00829511 0.00678219 0.00690907 0.00564793 0.00276101
+ 0.00432003 0.00130369 0.0135782  0.00025955 0.00522402 0.02656335
+ 0.00317475 0.00246897 0.00755757 0.01967781 0.00589394 0.00121247
+ 0.01181726 0.00517469 0.00058845 0.00545811 0.00909857]
+[[10, 0.10892442617658475], [18, 0.0808386966526648], [28, 0.06458307432817013], [55, 0.046222135556068494], [34, 0.03478467512344114], [1, 0.03284260916996566], [23, 0.02815522732344822], [89, 0.026563352932219963]]
+Length of all flags sequences to be estimated: 63744
+The time for adding the random flags: 31.01482629776001
+Time for finding non-repetitive 1.52587890625e-05
+gcc -O2 -fbranch-count-reg -fcombine-stack-adjustments -fdce -fdelayed-branch -fdse -fif-conversion2 -fif-conversion -fipa-pure-const -fipa-profile -fipa-reference -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fssa-backprop -fssa-phiopt -ftree-ccp -ftree-ch -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-phiprop -ftree-slsr -ftree-pta -ftree-ter -funit-at-a-time -fthread-jumps -falign-functions -falign-jumps -falign-loops -fcaller-saves -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize-speculatively -finline-small-functions -findirect-inlining -fipa-cp -fipa-bit-cp -fipa-vrp -fipa-icf -flra-remat -foptimize-sibling-calls -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -fsched-interblock -fschedule-insns -fstore-merging -fstrict-aliasing -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -fcode-hoisting -ftree-vrp -fipa-ra -finline-functions -funswitch-loops -fpredictive-commoning -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.489155530929565selected flags:4.967758893966675 val:0.9036580934677866
+[0.9036580934677866]
+features
+[0.00430431 0.04287973 0.0044275  0.01293131 0.00741251 0.00111736
+ 0.00533878 0.00503235 0.00832004 0.00748485 0.07722579 0.00230751
+ 0.0016622  0.009927   0.00404215 0.00824453 0.0014312  0.0197608
+ 0.0734221  0.00826402 0.00310549 0.00208482 0.00435475 0.01275642
+ 0.00116345 0.00159036 0.00336054 0.0071528  0.04352446 0.0009125
+ 0.00047135 0.00980222 0.00858637 0.00052494 0.02223758 0.01053532
+ 0.00644029 0.03488739 0.01839091 0.00352849 0.0145636  0.02066871
+ 0.00541685 0.01690889 0.01510534 0.0015527  0.00390784 0.00308132
+ 0.02626198 0.00494974 0.00842766 0.00063852 0.0019155  0.00838854
+ 0.00602565 0.02048549 0.00788611 0.00883324 0.00745382 0.00452279
+ 0.00635336 0.00289459 0.00890322 0.00088916 0.00654405 0.00608944
+ 0.00249939 0.02293413 0.00418213 0.00210649 0.00863011 0.00498297
+ 0.00484405 0.00483611 0.00325844 0.00602313 0.00219976 0.00146386
+ 0.00711036 0.00566749 0.00316848 0.00974761 0.00830924 0.00219202
+ 0.00353452 0.0039056  0.03747586 0.00430417 0.0070039  0.01225374
+ 0.01265875 0.00379175 0.00234197 0.04889464 0.00287504 0.00216145
+ 0.01846464 0.00219327 0.00555561 0.0040074  0.00480733]
+[[10, 0.07722578630306845], [18, 0.07342210220838558], [93, 0.0488946372747588], [28, 0.04352446202274443], [1, 0.04287972756312079], [86, 0.03747586104595403], [37, 0.034887393771846374], [48, 0.0262619755998109]]
+Length of all flags sequences to be estimated: 63744
+The time for adding the random flags: 30.174383640289307
+Time for finding non-repetitive 9.059906005859375e-06
+gcc -O2 -fbranch-count-reg -fcprop-registers -finline-functions-called-once -fipa-pure-const -fipa-reference -freorder-blocks -ftree-ch -ftree-coalesce-vars -ftree-fre -ftree-sink -funit-at-a-time -fthread-jumps -falign-functions -fcrossjumping -fhoist-adjacent-loads -fipa-cp -fipa-bit-cp -fipa-vrp -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -fsched-interblock -fstore-merging -fstrict-aliasing -fcode-hoisting -fipa-ra -finline-functions -fgcse-after-reload -ftree-loop-vectorize -fsplit-paths -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.559452772140503selected flags:4.647083520889282 val:0.9811428504878669
+[0.9811428504878669]
+features
+[0.00273996 0.02614963 0.00567231 0.0073519  0.01047975 0.00788642
+ 0.00603292 0.01628573 0.00628546 0.00049544 0.08158837 0.0032215
+ 0.00604225 0.00922434 0.00331986 0.00937763 0.00111999 0.00907707
+ 0.05634304 0.01091615 0.00317005 0.00998874 0.00450131 0.00651814
+ 0.00497668 0.00200634 0.00068229 0.00901768 0.04496176 0.00510726
+ 0.00687193 0.00196385 0.003942   0.00256339 0.01129587 0.00793747
+ 0.00074616 0.01563954 0.00865526 0.00655803 0.01637784 0.01922728
+ 0.0068877  0.01652375 0.03543778 0.00162273 0.00717965 0.00084257
+ 0.02342138 0.00485717 0.02095026 0.00359867 0.00434856 0.00581711
+ 0.00545479 0.03261525 0.00668978 0.00497692 0.0096881  0.00035579
+ 0.00380671 0.00675294 0.00697091 0.00728646 0.00519129 0.00563095
+ 0.00543895 0.01678651 0.00571019 0.00284307 0.02062455 0.00551966
+ 0.00332047 0.00496797 0.0066756  0.00702706 0.00532946 0.00092538
+ 0.01056776 0.00504312 0.00447643 0.00768753 0.00321003 0.00117704
+ 0.00873076 0.00171339 0.0493432  0.00298234 0.00709235 0.02147676
+ 0.02437606 0.00867229 0.00323892 0.02530908 0.00430288 0.0018606
+ 0.01156417 0.00161873 0.00206494 0.00567737 0.0034196 ]
+[[10, 0.0815883652600707], [18, 0.0563430436632418], [86, 0.04934320036360543], [28, 0.044961764701459926], [44, 0.035437779848044214], [55, 0.03261525164104838], [1, 0.0261496348152288], [93, 0.025309076420892765]]
+Length of all flags sequences to be estimated: 63488
+The time for adding the random flags: 30.491924285888672
+Time for finding non-repetitive 1.0013580322265625e-05
+gcc -O2 -fcombine-stack-adjustments -fdelayed-branch -fforward-propagate -fif-conversion -finline-functions-called-once -fipa-profile -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -ftree-ch -ftree-copy-prop -ftree-dse -ftree-phiprop -ftree-sink -ftree-sra -falign-functions -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize-speculatively -fgcse-lm -fipa-vrp -fipa-sra -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -finline-functions -ftree-loop-vectorize -fsplit-paths -fvect-cost-model -ftree-partial-pre -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.988764047622681selected flags:4.55498194694519 val:1.0952324522314314
+[1.0952324522314314]
+features
+[0.00636477 0.01932992 0.00367327 0.00802131 0.00515492 0.00944504
+ 0.00874297 0.00750454 0.0244215  0.00032302 0.03815428 0.00775312
+ 0.00614421 0.00550169 0.00426612 0.00330276 0.00167651 0.00522265
+ 0.08158017 0.01312481 0.00571861 0.00110062 0.00152508 0.01366015
+ 0.00438658 0.00407518 0.00200356 0.00495149 0.04051415 0.00194002
+ 0.0018717  0.00647425 0.00461355 0.00277477 0.0078315  0.00519395
+ 0.00239816 0.02351796 0.01712252 0.00755159 0.02119103 0.0150647
+ 0.00240873 0.03995737 0.02013401 0.00050251 0.00888549 0.00103729
+ 0.02516044 0.0054886  0.02545545 0.00247712 0.00378591 0.00288338
+ 0.00462974 0.03581377 0.01036649 0.00043002 0.00818094 0.01024619
+ 0.00678144 0.00256321 0.00788814 0.00303576 0.00612553 0.00899102
+ 0.00636805 0.01395291 0.01270503 0.00481315 0.01935243 0.00158112
+ 0.00393535 0.00779237 0.00383994 0.00615079 0.00458016 0.00783489
+ 0.01123828 0.00240821 0.00338301 0.00667116 0.00597285 0.00487669
+ 0.00252188 0.00113009 0.04258713 0.00346948 0.00401314 0.03703849
+ 0.01291429 0.00408544 0.00294948 0.02066571 0.00297157 0.00189951
+ 0.01097938 0.00335415 0.00414454 0.00705719 0.01234489]
+[[18, 0.08158016688769446], [86, 0.04258712525905325], [28, 0.04051415054986371], [43, 0.039957368709825906], [10, 0.03815427541883015], [89, 0.03703848806180562], [55, 0.03581377363605008], [50, 0.025455449974293054]]
+Length of all flags sequences to be estimated: 63232
+The time for adding the random flags: 29.63939356803894
+Time for finding non-repetitive 2.47955322265625e-05
+gcc -O2 -fauto-inc-dec -fbranch-count-reg -fcombine-stack-adjustments -fcompare-elim -fdefer-pop -fdelayed-branch -fforward-propagate -fmove-loop-invariants -fshrink-wrap -fshrink-wrap-separate -ftree-ccp -ftree-ch -ftree-dce -ftree-dominator-opts -ftree-phiprop -ftree-sink -ftree-sra -falign-functions -falign-loops -falign-labels -fcaller-saves -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fgcse -fgcse-lm -finline-small-functions -fipa-bit-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -foptimize-strlen -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-spec -fschedule-insns2 -fstore-merging -fstrict-aliasing -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -finline-functions -funswitch-loops -fpredictive-commoning -ftree-loop-vectorize -fsplit-paths -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.377260684967041selected flags:4.796603679656982 val:0.9125750170962781
+[0.9125750170962781]
+features
+[0.00797759 0.03867972 0.0100319  0.01356974 0.01050186 0.00822554
+ 0.01195338 0.00728494 0.01783425 0.00368196 0.04645592 0.00151042
+ 0.00437059 0.00714789 0.00384425 0.00771118 0.00686196 0.00915128
+ 0.06469032 0.01231238 0.0019745  0.00842683 0.00416018 0.0085222
+ 0.00293851 0.00234503 0.00111045 0.01485847 0.03422081 0.00175274
+ 0.00680456 0.00531923 0.00206842 0.00360382 0.00990302 0.00648092
+ 0.00089726 0.02905887 0.02081767 0.0059356  0.00888531 0.01340739
+ 0.00557953 0.03329273 0.02273961 0.00122062 0.00465529 0.00122852
+ 0.03540564 0.00903165 0.01794664 0.0020452  0.00350396 0.00538836
+ 0.00379972 0.02138004 0.00241467 0.0009558  0.00612702 0.00763683
+ 0.00530319 0.00081356 0.00444743 0.00285728 0.00290602 0.01399596
+ 0.00208776 0.0075614  0.0081213  0.01227567 0.01077597 0.00398842
+ 0.00228698 0.00904028 0.01107671 0.00857854 0.01179315 0.00465242
+ 0.01913438 0.00920278 0.00026337 0.00662956 0.00810922 0.00665162
+ 0.00478363 0.0030007  0.02149261 0.00191349 0.0056979  0.01599096
+ 0.03057329 0.01594597 0.00258608 0.01324758 0.00408054 0.00406188
+ 0.00581708 0.00672318 0.00025282 0.01840928 0.00122935]
+[[18, 0.0646903242489863], [10, 0.046455920411831234], [1, 0.038679718013938595], [48, 0.03540563872835592], [28, 0.03422081383555107], [43, 0.0332927273765363], [90, 0.030573287195123644], [37, 0.029058871886926546]]
+Length of all flags sequences to be estimated: 62976
+The time for adding the random flags: 29.644490718841553
+Time for finding non-repetitive 1.0013580322265625e-05
+gcc -O2 -fdce -fdse -fforward-propagate -fipa-pure-const -fipa-profile -fmove-loop-invariants -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre -ftree-sink -ftree-pta -funit-at-a-time -falign-functions -falign-loops -falign-labels -fcse-follow-jumps -fcse-skip-blocks -fdevirtualize-speculatively -fgcse -fgcse-lm -fipa-bit-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -fpeephole2 -freorder-blocks-and-partition -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -ftree-builtin-call-dce -ftree-tail-merge -ftree-pre -ftree-vrp -fgcse-after-reload -ftree-loop-vectorize -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.730753421783447selected flags:5.013797760009766 val:0.9435469175713687
+[0.9435469175713687]
+features
+[0.01024387 0.02595789 0.00767559 0.0187175  0.01095252 0.00957368
+ 0.00997769 0.00553153 0.01878238 0.00383534 0.0851952  0.00421832
+ 0.01090702 0.00420414 0.00421216 0.00170433 0.00233757 0.00543967
+ 0.05929627 0.01322431 0.00122765 0.00778657 0.00159122 0.02248363
+ 0.00290838 0.0018608  0.00133181 0.02783003 0.04007743 0.00407189
+ 0.00474558 0.00328657 0.01056927 0.00284441 0.01590137 0.00591364
+ 0.00628686 0.02376987 0.01287489 0.00702584 0.01813285 0.01070608
+ 0.00419482 0.00891751 0.02163743 0.0015692  0.01766765 0.00180224
+ 0.02910106 0.00657618 0.01786974 0.00231239 0.00242667 0.00635002
+ 0.00545855 0.03575636 0.00560215 0.00324647 0.0058956  0.00804401
+ 0.00823657 0.00362213 0.00795898 0.00531375 0.01025007 0.00424515
+ 0.00875574 0.00792446 0.0038278  0.00474505 0.01406328 0.00218032
+ 0.00295196 0.00720827 0.00963795 0.00586102 0.00130531 0.00659038
+ 0.01327821 0.00489694 0.00484434 0.00703674 0.00451537 0.00715109
+ 0.0053901  0.00259577 0.01018995 0.00071932 0.00568665 0.01009769
+ 0.01249088 0.00946934 0.00323231 0.01345348 0.00784533 0.00371983
+ 0.00894469 0.00426418 0.00089217 0.00752173 0.007444  ]
+[[10, 0.08519520172298398], [18, 0.0592962688043858], [28, 0.04007743186227618], [55, 0.035756361450232865], [48, 0.029101064711225193], [27, 0.027830033564240655], [1, 0.025957886693202682], [37, 0.023769872570370863]]
+Length of all flags sequences to be estimated: 62720
+The time for adding the random flags: 29.622766733169556
+Time for finding non-repetitive 1.621246337890625e-05
+gcc -O2 -fdelayed-branch -fguess-branch-probability -fipa-profile -fmove-loop-invariants -fshrink-wrap-separate -ftree-bit-ccp -ftree-ccp -ftree-dse -ftree-fre -ftree-sink -ftree-slsr -ftree-pta -funit-at-a-time -falign-functions -fcse-follow-jumps -fgcse -findirect-inlining -fipa-vrp -fipa-sra -fisolate-erroneous-paths-dereference -foptimize-strlen -freorder-functions -fsched-interblock -fsched-spec -fstrict-overflow -fpredictive-commoning -ftree-loop-vectorize -fsplit-paths -fbranch-count-reg -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.656604766845703selected flags:4.637369632720947 val:1.0041478544192455
+[1.0041478544192455]
+features
+[0.004963   0.04157352 0.00559235 0.01783749 0.00723577 0.00947299
+ 0.00430384 0.00301096 0.01241621 0.00219311 0.1085727  0.00163979
+ 0.0049458  0.00541875 0.00621674 0.00692363 0.00240728 0.0120259
+ 0.06894467 0.00769944 0.00642238 0.00234754 0.00068402 0.01951977
+ 0.00237427 0.00187826 0.00271301 0.00837783 0.02284132 0.00147713
+ 0.00323857 0.00342364 0.00762362 0.00586334 0.02244999 0.00468865
+ 0.00456395 0.01664671 0.01007334 0.00996658 0.01794413 0.01492934
+ 0.0044309  0.01323621 0.01875383 0.00483698 0.00740243 0.00209437
+ 0.04422341 0.00547199 0.01469758 0.00987584 0.00285825 0.00954028
+ 0.00812461 0.0186787  0.00217964 0.00595916 0.01008365 0.00820149
+ 0.00281251 0.00346022 0.00574586 0.0073153  0.00059754 0.01626702
+ 0.01314714 0.01003394 0.00715685 0.00590987 0.01535646 0.00418183
+ 0.00148897 0.01913347 0.00524655 0.00638785 0.0017278  0.00297304
+ 0.01216998 0.0080037  0.00523835 0.0059589  0.00516549 0.01115418
+ 0.00462212 0.00255503 0.01434288 0.00033774 0.00315772 0.01126659
+ 0.01470341 0.00674894 0.00355288 0.01541079 0.00718737 0.00460997
+ 0.00722828 0.00193989 0.00356717 0.00471459 0.00333116]
+[[10, 0.10857269665122221], [18, 0.06894467054144084], [48, 0.044223412357592355], [1, 0.04157352221414522], [28, 0.02284132439592003], [34, 0.022449989961991806], [23, 0.019519768493691882], [73, 0.019133471274636254]]
+Length of all flags sequences to be estimated: 62464
+The time for adding the random flags: 30.10697317123413
+Time for finding non-repetitive 2.86102294921875e-05
+gcc -O2 -fdce -fforward-propagate -fif-conversion2 -finline-functions-called-once -fmove-loop-invariants -freorder-blocks -ftree-coalesce-vars -ftree-sink -funit-at-a-time -falign-functions -fcse-follow-jumps -fdevirtualize-speculatively -fipa-cp -flra-remat -fpeephole2 -freorder-blocks-and-partition -frerun-cse-after-loop -fschedule-insns -fstore-merging -finline-functions -fgcse-after-reload -fsplit-paths -fpeel-loops -fcombine-stack-adjustments -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.624658823013306selected flags:4.899046421051025 val:0.9439916313389711
+[0.9439916313389711]
+features
+[0.0018505  0.0103723  0.00385976 0.01460286 0.00496106 0.00195277
+ 0.00856072 0.00602899 0.01091533 0.00532681 0.11168574 0.0034509
+ 0.00798198 0.00976644 0.00406178 0.00763714 0.00470935 0.01305877
+ 0.04891604 0.00812071 0.00624336 0.01139346 0.00137703 0.01555489
+ 0.00311696 0.00299404 0.00185966 0.01252549 0.04216533 0.00276538
+ 0.00229921 0.00632155 0.00209383 0.00519296 0.03118013 0.00306366
+ 0.00415185 0.01965193 0.00593633 0.00360809 0.01643476 0.01888687
+ 0.00699617 0.00966301 0.01899567 0.00373543 0.00862459 0.00240562
+ 0.04901313 0.00533189 0.01350759 0.00057931 0.00374551 0.01055387
+ 0.01142793 0.02311939 0.00376765 0.00594779 0.00555303 0.00587333
+ 0.00224082 0.00291597 0.00466226 0.00327453 0.00137318 0.01094013
+ 0.01015813 0.00457948 0.00439717 0.00644231 0.01008169 0.00559605
+ 0.00427948 0.01245961 0.00497637 0.01435551 0.00377275 0.00181043
+ 0.00826741 0.01034351 0.00268848 0.00938634 0.01503862 0.01230392
+ 0.00379636 0.00372401 0.00907464 0.00186052 0.00526372 0.00909485
+ 0.01537826 0.01283917 0.00610713 0.01232951 0.01154537 0.00716894
+ 0.01443942 0.00308683 0.003712   0.0167263  0.00203119]
+[[10, 0.11168573788871489], [48, 0.049013126020564644], [18, 0.04891604259578038], [28, 0.04216532601136154], [34, 0.03118012512289121], [55, 0.02311939111828367], [37, 0.019651928221407947], [44, 0.018995674808756736]]
+Length of all flags sequences to be estimated: 62208
+The time for adding the random flags: 30.179256439208984
+Time for finding non-repetitive 1.5974044799804688e-05
+gcc -O2 -fcombine-stack-adjustments -fcompare-elim -fdse -fguess-branch-probability -fif-conversion -fmove-loop-invariants -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ch -ftree-copy-prop -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-phiprop -ftree-sink -ftree-sra -fthread-jumps -falign-functions -falign-jumps -fcse-follow-jumps -fcse-skip-blocks -fdevirtualize-speculatively -fgcse -fgcse-lm -fipa-cp -fipa-bit-cp -fipa-sra -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -freorder-blocks-and-partition -frerun-cse-after-loop -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -fcode-hoisting -ftree-pre -ftree-vrp -funswitch-loops -fgcse-after-reload -ftree-loop-vectorize -fsplit-paths -ftree-partial-pre -fbranch-count-reg -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.661282539367676selected flags:4.292925596237183 val:1.0858055735821193
+[1.0858055735821193]
+features
+[0.00493671 0.02822595 0.0025813  0.02787718 0.00809614 0.0003831
+ 0.01041174 0.00309891 0.00964556 0.00235166 0.09401161 0.00224157
+ 0.00341995 0.0104575  0.00520848 0.0062093  0.00206829 0.00742857
+ 0.06142366 0.00964936 0.00238944 0.00465829 0.00232679 0.01954793
+ 0.00199655 0.00321603 0.00249001 0.01905285 0.04053728 0.01095397
+ 0.00397776 0.00838349 0.0033619  0.00956795 0.02289509 0.00716583
+ 0.00597768 0.01394549 0.00902991 0.00993493 0.01087355 0.00888014
+ 0.00465317 0.00381367 0.01073175 0.00149284 0.01409658 0.00223339
+ 0.03477734 0.0049679  0.01483177 0.00379652 0.00208591 0.00860335
+ 0.00808506 0.02377801 0.00566565 0.0025298  0.00462487 0.02316148
+ 0.00718172 0.00228448 0.00623369 0.00291602 0.00104252 0.0048027
+ 0.00458865 0.00727869 0.0043615  0.00444705 0.01153065 0.00545268
+ 0.00510041 0.01206813 0.00489189 0.00909218 0.00709987 0.00249848
+ 0.01246993 0.01033791 0.00436671 0.00692411 0.01081631 0.01543034
+ 0.00778081 0.00210212 0.01342884 0.00310518 0.00374765 0.00867329
+ 0.02041017 0.00401115 0.00600457 0.02148747 0.00276805 0.00486358
+ 0.01563891 0.00322247 0.00696517 0.01475844 0.00299705]
+[[10, 0.094011610513416], [18, 0.06142365953601061], [28, 0.04053727798941781], [48, 0.034777337278671855], [1, 0.028225948300279434], [3, 0.02787717958800073], [55, 0.02377800523077403], [59, 0.02316148052173947]]
+Length of all flags sequences to be estimated: 61952
+The time for adding the random flags: 29.995020866394043
+Time for finding non-repetitive 2.193450927734375e-05
+gcc -O2 -fbranch-count-reg -fcombine-stack-adjustments -fdefer-pop -fdse -fguess-branch-probability -fif-conversion -finline-functions-called-once -fipa-pure-const -fipa-reference -fmove-loop-invariants -fshrink-wrap -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-phiprop -ftree-sink -ftree-slsr -funit-at-a-time -falign-functions -falign-jumps -fdevirtualize-speculatively -fgcse-lm -fhoist-adjacent-loads -fipa-cp -fipa-bit-cp -fipa-icf -flra-remat -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -ftree-pre -fipa-ra -funswitch-loops -fgcse-after-reload -ftree-slp-vectorize -ftree-partial-pre -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.758311033248901selected flags:4.748133897781372 val:1.0021433968979445
+[1.0021433968979445]
+features
+[0.00438642 0.02064094 0.00855185 0.01582214 0.01132748 0.00894618
+ 0.00943357 0.00344691 0.01113295 0.00722443 0.1069828  0.00638216
+ 0.00412671 0.01179666 0.00551966 0.01225924 0.00508911 0.00286283
+ 0.0437121  0.01052854 0.00649645 0.0042367  0.00815409 0.01344029
+ 0.00637678 0.00349414 0.00214271 0.00886988 0.04481968 0.00423749
+ 0.00504215 0.00254662 0.01222875 0.00505645 0.01471568 0.00492498
+ 0.00301504 0.02168607 0.00949064 0.01365259 0.00889172 0.0180541
+ 0.00168963 0.00480642 0.00919988 0.00498379 0.01360551 0.00298542
+ 0.0329109  0.01145597 0.01422781 0.00671943 0.00523101 0.00631976
+ 0.00276495 0.02114068 0.00192734 0.00322953 0.00420601 0.00899643
+ 0.00451888 0.00184713 0.00173734 0.00384434 0.00196622 0.00508288
+ 0.00499491 0.006904   0.00885295 0.00784898 0.02089814 0.00426778
+ 0.00372728 0.00675956 0.00288721 0.00878834 0.00423732 0.00610181
+ 0.00972871 0.00477401 0.00316172 0.00726641 0.00972507 0.02932861
+ 0.0096075  0.00652944 0.01217358 0.00153873 0.00288943 0.0104615
+ 0.02223189 0.00109623 0.00154707 0.01406196 0.01179762 0.00427777
+ 0.0170418  0.00570884 0.00267196 0.01265697 0.00631197]
+[[10, 0.106982800315775], [28, 0.04481968473780217], [18, 0.043712095420223286], [48, 0.03291090285404042], [83, 0.029328608152271472], [90, 0.022231887764896728], [37, 0.02168607130612651], [55, 0.021140684434896344]]
+Length of all flags sequences to be estimated: 61440
+The time for adding the random flags: 29.549456119537354
+Time for finding non-repetitive 1.239776611328125e-05
+gcc -O2 -fcombine-stack-adjustments -fcprop-registers -fdce -fdefer-pop -fdelayed-branch -fguess-branch-probability -finline-functions-called-once -fipa-reference -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-copy-prop -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-sink -falign-functions -falign-jumps -falign-loops -falign-labels -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fgcse-lm -finline-small-functions -findirect-inlining -fipa-cp -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -fpartial-inlining -freorder-functions -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstrict-aliasing -ftree-builtin-call-dce -ftree-switch-conversion -fcode-hoisting -ftree-vrp -funswitch-loops -fpredictive-commoning -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -ftree-partial-pre -fpeel-loops -fbranch-count-reg -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.80294942855835selected flags:5.101938962936401 val:0.9413968813523458
+[0.9413968813523458]
+features
+[0.00554208 0.02005747 0.00486569 0.01085731 0.01799989 0.01794469
+ 0.02201383 0.0051974  0.00424401 0.00285684 0.12585575 0.00531568
+ 0.00638553 0.00971627 0.01052229 0.00601067 0.00428406 0.00784668
+ 0.0393446  0.00682001 0.00755859 0.00564593 0.00117461 0.01207285
+ 0.00924077 0.00268817 0.00194654 0.01060641 0.01580366 0.00590321
+ 0.00502891 0.00232839 0.0121142  0.00506062 0.03199864 0.0080674
+ 0.00683469 0.02953397 0.0091318  0.01824345 0.01316666 0.00592537
+ 0.00498647 0.00494699 0.01831795 0.00164678 0.01444439 0.00249008
+ 0.0305247  0.00669864 0.01680426 0.00615741 0.01416053 0.00403617
+ 0.00570739 0.01135175 0.00176696 0.00513945 0.00390115 0.01906337
+ 0.00435004 0.00051018 0.00276146 0.00710579 0.0008663  0.0071811
+ 0.00745281 0.00588064 0.00826653 0.00212842 0.012058   0.00447809
+ 0.00580918 0.01425897 0.00405293 0.0075151  0.00565282 0.00357505
+ 0.00827594 0.00701388 0.00552005 0.00311797 0.00970433 0.01228545
+ 0.00904672 0.00192672 0.00961598 0.01250734 0.00179626 0.00956195
+ 0.01431494 0.00119586 0.00275857 0.01984416 0.00486387 0.00423965
+ 0.01352661 0.00205737 0.0054604  0.00863755 0.00292499]
+[[10, 0.1258557528590263], [18, 0.039344599370872826], [34, 0.03199863971681219], [48, 0.030524699560268896], [37, 0.029533971420029215], [6, 0.02201383470133401], [1, 0.020057466104229725], [93, 0.019844159480157254]]
+Length of all flags sequences to be estimated: 61184
+The time for adding the random flags: 29.287782430648804
+Time for finding non-repetitive 1.5497207641601562e-05
+gcc -O2 -fcombine-stack-adjustments -fdce -fdelayed-branch -fdse -fif-conversion2 -fipa-pure-const -fmove-loop-invariants -freorder-blocks -fssa-backprop -fssa-phiopt -ftree-ch -ftree-copy-prop -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-phiprop -ftree-sink -ftree-slsr -ftree-sra -funit-at-a-time -falign-functions -falign-jumps -falign-loops -fcaller-saves -fcse-follow-jumps -fipa-cp -fipa-bit-cp -fisolate-erroneous-paths-dereference -flra-remat -freorder-blocks-and-partition -fsched-spec -fstore-merging -ftree-switch-conversion -ftree-tail-merge -ftree-pre -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.837716817855835selected flags:4.689502000808716 val:1.0316056623968939
+[1.0316056623968939]
+features
+[0.00557828 0.02028693 0.00304909 0.01461638 0.01669826 0.01067567
+ 0.02002272 0.00124543 0.0098462  0.00479381 0.08687791 0.00187559
+ 0.00798651 0.01097669 0.00632436 0.00220179 0.00230092 0.0155284
+ 0.05093922 0.00449704 0.00735884 0.01258763 0.00312113 0.01675743
+ 0.00114492 0.00325512 0.00529806 0.02178746 0.01944145 0.00511225
+ 0.00883896 0.00555334 0.00387354 0.00320244 0.03310425 0.00900254
+ 0.00787787 0.02233814 0.01208891 0.01176578 0.01097417 0.0137487
+ 0.00626991 0.00582473 0.01173041 0.0006471  0.01642691 0.00770131
+ 0.00743897 0.00583028 0.01977487 0.00872935 0.01031624 0.0065482
+ 0.00583822 0.02074823 0.00574335 0.00813411 0.00493714 0.02367341
+ 0.01030987 0.00313131 0.0021879  0.00546706 0.00285003 0.00565295
+ 0.00849939 0.00547893 0.0050861  0.00538216 0.00365766 0.00503392
+ 0.00818601 0.00923749 0.00873789 0.00870812 0.00617701 0.00327142
+ 0.00849876 0.00637669 0.00136048 0.00359106 0.01391589 0.01681908
+ 0.00319312 0.00108672 0.00475981 0.00428975 0.00173957 0.01271232
+ 0.01950871 0.0011257  0.00164266 0.01344975 0.01455187 0.00497319
+ 0.02047777 0.0063853  0.00933703 0.00981754 0.00246514]
+[[10, 0.08687790604186735], [18, 0.05093922395630488], [34, 0.033104251448583824], [59, 0.023673410448996242], [37, 0.022338137986619704], [27, 0.021787462752751483], [55, 0.02074823020147129], [96, 0.020477770925007487]]
+Length of all flags sequences to be estimated: 60928
+The time for adding the random flags: 29.411397457122803
+Time for finding non-repetitive 1.3113021850585938e-05
+gcc -O2 -fcombine-stack-adjustments -fcompare-elim -fdelayed-branch -fdse -fif-conversion2 -fif-conversion -finline-functions-called-once -fipa-profile -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fssa-phiopt -ftree-ch -ftree-copy-prop -ftree-dce -ftree-dse -ftree-fre -ftree-phiprop -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -fcrossjumping -fcse-follow-jumps -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fgcse -fipa-cp -fipa-vrp -fipa-sra -flra-remat -foptimize-sibling-calls -fpartial-inlining -fpeephole2 -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-overflow -ftree-switch-conversion -ftree-tail-merge -ftree-pre -funswitch-loops -fpredictive-commoning -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -ftree-slp-vectorize -ftree-partial-pre -fpeel-loops -fbranch-count-reg -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.963521718978882selected flags:4.6762535572052 val:1.0614312629243676
+[1.0614312629243676]
+features
+[0.00816332 0.01829336 0.00585679 0.01072442 0.01073556 0.00401738
+ 0.01452019 0.00361548 0.01170697 0.00334342 0.11700836 0.00152668
+ 0.0125734  0.00334457 0.00112485 0.00442369 0.00502919 0.0040369
+ 0.05053008 0.00451286 0.00362294 0.01104577 0.00347626 0.02613066
+ 0.00470109 0.00442411 0.00266725 0.01949592 0.03854217 0.00691206
+ 0.00475613 0.00116288 0.00283236 0.00222765 0.0246943  0.0087085
+ 0.00380129 0.01065208 0.01309977 0.01193093 0.00315577 0.01049904
+ 0.00494514 0.01401671 0.0099848  0.00259734 0.00654449 0.00522685
+ 0.03357008 0.00570945 0.02076678 0.00354735 0.00895256 0.00531542
+ 0.00787374 0.01826329 0.0068075  0.00778973 0.00592392 0.02043167
+ 0.00453163 0.00200636 0.00796654 0.00252456 0.00548658 0.00769078
+ 0.00358302 0.01449909 0.00298389 0.00469331 0.00887301 0.00217647
+ 0.00361146 0.01600422 0.0024415  0.00909656 0.00570615 0.00321112
+ 0.00440588 0.0058065  0.00539916 0.00340296 0.01342226 0.02111939
+ 0.00462002 0.0007939  0.01345088 0.0104268  0.00604277 0.00367638
+ 0.01232134 0.00308905 0.00258078 0.01233472 0.02191229 0.00434484
+ 0.00965293 0.0041727  0.00506724 0.01560815 0.00736958]
+[[10, 0.1170083567875404], [18, 0.050530084304301975], [28, 0.0385421670567598], [48, 0.033570078822139665], [23, 0.026130658301407872], [34, 0.024694302064556597], [94, 0.021912290912375662], [83, 0.021119392391415373]]
+Length of all flags sequences to be estimated: 60672
+The time for adding the random flags: 29.058530807495117
+Time for finding non-repetitive 1.2874603271484375e-05
+gcc -O2 -fcprop-registers -fdefer-pop -fdelayed-branch -fif-conversion -finline-functions-called-once -fipa-profile -fipa-reference -fmove-loop-invariants -fssa-phiopt -ftree-ch -ftree-dominator-opts -ftree-dse -ftree-phiprop -ftree-sink -ftree-pta -fthread-jumps -falign-loops -falign-labels -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize-speculatively -fgcse -fgcse-lm -fhoist-adjacent-loads -finline-small-functions -fipa-vrp -fipa-icf -flra-remat -foptimize-strlen -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -fsched-interblock -fstrict-overflow -ftree-switch-conversion -ftree-pre -fipa-ra -funswitch-loops -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-partial-pre -fpeel-loops -fcombine-stack-adjustments -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:5.05979061126709selected flags:4.772470712661743 val:1.0602035959787168
+[1.0602035959787168]
+features
+[0.00256924 0.02490554 0.00727888 0.01230484 0.01051731 0.00902734
+ 0.01569354 0.00493552 0.01071931 0.00261044 0.10518422 0.00398671
+ 0.00372874 0.00548172 0.00437767 0.00377677 0.00244143 0.00681073
+ 0.04060831 0.01437704 0.00514679 0.00701941 0.00188707 0.01434088
+ 0.00279853 0.00434947 0.0025111  0.02671132 0.02849877 0.00744677
+ 0.00515159 0.00556056 0.00551184 0.00937452 0.04065545 0.01143728
+ 0.00372866 0.00779411 0.00683823 0.00998472 0.00615978 0.00860123
+ 0.0024461  0.00396642 0.01081637 0.00207893 0.00395032 0.00220922
+ 0.01253171 0.00493093 0.01635602 0.00218764 0.00275533 0.00441331
+ 0.00573126 0.01360949 0.00778157 0.00413817 0.00683534 0.01012701
+ 0.01496701 0.00266231 0.00282423 0.00389246 0.00477942 0.01166659
+ 0.00545033 0.00696555 0.00413169 0.00581733 0.00796815 0.00288771
+ 0.00568313 0.02666551 0.00416156 0.00490459 0.00726973 0.0042051
+ 0.00904889 0.01136414 0.00290343 0.00163699 0.01878534 0.03597458
+ 0.00837403 0.00262541 0.02883141 0.00567327 0.00368296 0.00690784
+ 0.02623276 0.00342979 0.0031627  0.01224094 0.01696176 0.00646038
+ 0.0160461  0.00354068 0.00263998 0.01250339 0.00436228]
+[[10, 0.1051842200293115], [34, 0.040655452029963804], [18, 0.04060831182927158], [83, 0.035974581679151206], [86, 0.02883140739380232], [28, 0.028498773453821572], [27, 0.026711320392305005], [73, 0.026665513933846748]]
+Length of all flags sequences to be estimated: 60160
+The time for adding the random flags: 29.51032781600952
+Time for finding non-repetitive 1.7642974853515625e-05
+gcc -O2 -fcombine-stack-adjustments -fcompare-elim -fdce -fdefer-pop -fdelayed-branch -fforward-propagate -fguess-branch-probability -fif-conversion -fipa-profile -fmove-loop-invariants -freorder-blocks -fshrink-wrap-separate -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-copy-prop -ftree-dce -ftree-phiprop -ftree-slsr -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -fthread-jumps -falign-functions -falign-jumps -falign-labels -fcaller-saves -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fhoist-adjacent-loads -finline-small-functions -fipa-bit-cp -flra-remat -foptimize-sibling-calls -fpartial-inlining -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -ftree-tail-merge -fcode-hoisting -ftree-pre -ftree-vrp -fipa-ra -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fsplit-paths -ftree-partial-pre -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.911206483840942selected flags:4.9495179653167725 val:0.9922595530020714
+[0.9922595530020714]
+features
+[0.00806592 0.01256769 0.0076303  0.0144002  0.0097019  0.00658542
+ 0.01558703 0.00376211 0.0137691  0.00486767 0.10942773 0.00624849
+ 0.00669564 0.00377555 0.0085539  0.00859384 0.00364701 0.00552716
+ 0.05518784 0.01041955 0.00513758 0.00810061 0.00490367 0.01199297
+ 0.00213191 0.00729246 0.00287613 0.0325933  0.03298132 0.00918871
+ 0.00372846 0.00262225 0.00191862 0.00365966 0.02382456 0.0144121
+ 0.0025033  0.01383771 0.01701179 0.00470958 0.00606616 0.00713012
+ 0.00519321 0.00601141 0.01658127 0.00249755 0.00571314 0.00193212
+ 0.01950212 0.00422101 0.01039039 0.00414634 0.0020107  0.00727783
+ 0.00723633 0.01904056 0.00862292 0.00372852 0.00439149 0.01430699
+ 0.0066727  0.00142991 0.00585173 0.00304315 0.00330382 0.01117518
+ 0.00538751 0.0066027  0.00898187 0.00534141 0.00850135 0.00180586
+ 0.00562048 0.01998843 0.00458288 0.00943575 0.00189904 0.00222631
+ 0.00206627 0.0104815  0.00343661 0.00789541 0.01349761 0.02816079
+ 0.0041377  0.00289011 0.01634138 0.00466576 0.00631588 0.01622865
+ 0.0283769  0.00177731 0.00432128 0.0086126  0.00846532 0.00408199
+ 0.00814381 0.00354441 0.00441574 0.02191012 0.00194186]
+[[10, 0.10942772590906115], [18, 0.05518784366833745], [28, 0.0329813183888279], [27, 0.0325933007587826], [90, 0.02837690391111761], [83, 0.028160792164155537], [34, 0.023824556561063935], [99, 0.021910123595800485]]
+Length of all flags sequences to be estimated: 59904
+The time for adding the random flags: 29.048449277877808
+Time for finding non-repetitive 1.3113021850585938e-05
+gcc -O2 -fcprop-registers -fdefer-pop -fdelayed-branch -fguess-branch-probability -finline-functions-called-once -fmove-loop-invariants -fshrink-wrap -fshrink-wrap-separate -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ccp -ftree-dce -ftree-fre -ftree-phiprop -ftree-sra -ftree-pta -falign-functions -fcrossjumping -fcse-follow-jumps -fcse-skip-blocks -fdevirtualize -fipa-cp -flra-remat -fpartial-inlining -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fsched-interblock -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-aliasing -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -ftree-pre -finline-functions -funswitch-loops -ftree-loop-vectorize -fsplit-paths -ftree-partial-pre -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.9622461795806885selected flags:4.532525062561035 val:1.094808326724805
+[1.094808326724805]
+features
+[0.00664292 0.02233917 0.00927521 0.00839376 0.00894786 0.00175548
+ 0.02373486 0.00251761 0.01689419 0.00188686 0.07863967 0.00716883
+ 0.00530351 0.00708038 0.00652585 0.00372919 0.00143661 0.00475176
+ 0.0522734  0.00741273 0.00757838 0.00917641 0.00320562 0.00888073
+ 0.00729034 0.00536391 0.00129617 0.01298504 0.02927993 0.0037838
+ 0.00241233 0.00665153 0.00808001 0.01078634 0.03138638 0.0058881
+ 0.00305529 0.00741292 0.01784973 0.01394958 0.00639271 0.01447254
+ 0.00698835 0.00299562 0.01451297 0.00544635 0.00591783 0.00112699
+ 0.02401176 0.00874852 0.00969438 0.00417249 0.00286628 0.00817271
+ 0.00478899 0.01368334 0.00205057 0.00383117 0.00484493 0.02580593
+ 0.01343361 0.00245947 0.0044985  0.00091708 0.00335885 0.00817441
+ 0.00939179 0.01070234 0.00811235 0.00274617 0.00511864 0.0037522
+ 0.00443195 0.0244291  0.00729448 0.00439147 0.00334762 0.00281948
+ 0.00571902 0.01107172 0.00361703 0.00337912 0.01253039 0.04265129
+ 0.00413256 0.00203909 0.02422363 0.00735833 0.00459834 0.0114524
+ 0.02426489 0.00162997 0.00081035 0.01102781 0.02288647 0.00884385
+ 0.01126316 0.00672018 0.00389325 0.00861798 0.00434288]
+[[10, 0.07863966597754779], [18, 0.052273401878262626], [83, 0.04265128552543502], [34, 0.03138637585591813], [28, 0.029279934990721186], [59, 0.025805934924094637], [73, 0.02442909903197706], [90, 0.02426489108473339]]
+Length of all flags sequences to be estimated: 59648
+The time for adding the random flags: 28.962716341018677
+Time for finding non-repetitive 1.6689300537109375e-05
+gcc -O2 -fauto-inc-dec -fbranch-count-reg -fcombine-stack-adjustments -fcompare-elim -fdelayed-branch -fguess-branch-probability -fif-conversion2 -fif-conversion -fipa-pure-const -freorder-blocks -fshrink-wrap -fssa-backprop -ftree-ccp -ftree-copy-prop -ftree-dce -ftree-dse -ftree-fre -ftree-sink -ftree-sra -ftree-ter -funit-at-a-time -falign-functions -falign-jumps -falign-loops -fcrossjumping -fdelete-null-pointer-checks -fdevirtualize-speculatively -fgcse -finline-small-functions -fipa-cp -fipa-vrp -fipa-sra -fipa-icf -fisolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -fpeephole2 -freorder-blocks-and-partition -freorder-functions -fschedule-insns2 -fstrict-overflow -ftree-switch-conversion -ftree-tail-merge -ftree-pre -ftree-vrp -fipa-ra -finline-functions -funswitch-loops -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.5067925453186035selected flags:4.952526092529297 val:0.9099987483391423
+[0.9099987483391423]
+features
+[0.01036971 0.02976868 0.01737969 0.00822398 0.00998492 0.00320536
+ 0.02234084 0.01007278 0.01706748 0.00139948 0.06271305 0.00144591
+ 0.00537512 0.00518812 0.00205938 0.01223631 0.00316203 0.0040781
+ 0.03661855 0.0068553  0.01064837 0.00510915 0.00227309 0.00825296
+ 0.00310707 0.01014461 0.00432706 0.0252256  0.06034086 0.00331796
+ 0.00587815 0.00320222 0.00242051 0.00431756 0.02362579 0.00518171
+ 0.00759995 0.00502931 0.01514841 0.01208387 0.0057792  0.01708053
+ 0.00267823 0.00174612 0.01046738 0.0042009  0.006642   0.00444427
+ 0.01742838 0.00626432 0.02177973 0.0069591  0.0057559  0.00881254
+ 0.01117528 0.02159633 0.00539297 0.00445872 0.00435653 0.02415252
+ 0.00947499 0.00105865 0.00258878 0.00287893 0.00960151 0.00406038
+ 0.00788069 0.01504176 0.00630632 0.00689917 0.00410381 0.0051105
+ 0.00661383 0.01750938 0.00445328 0.00828925 0.00577472 0.00364925
+ 0.00578155 0.00547869 0.00226136 0.00324343 0.00619165 0.02937492
+ 0.00439349 0.00239537 0.01740894 0.01048861 0.00878662 0.01332621
+ 0.0266694  0.00440089 0.00149859 0.01003141 0.00599984 0.00538087
+ 0.00634865 0.00609353 0.00416321 0.01744202 0.00359559]
+[[10, 0.06271305164519965], [28, 0.06034086351395364], [18, 0.03661854871062067], [1, 0.029768683716842426], [83, 0.0293749152720098], [90, 0.026669396701299534], [27, 0.025225601177030845], [59, 0.024152515426679354]]
+Length of all flags sequences to be estimated: 59136
+The time for adding the random flags: 28.023121118545532
+Time for finding non-repetitive 1.9311904907226562e-05
+gcc -O2 -fauto-inc-dec -fdelayed-branch -fdse -fforward-propagate -fguess-branch-probability -fif-conversion2 -finline-functions-called-once -fipa-reference -fshrink-wrap-separate -ftree-ch -ftree-coalesce-vars -ftree-dse -ftree-phiprop -ftree-sra -ftree-ter -falign-functions -falign-jumps -falign-labels -fcse-follow-jumps -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fhoist-adjacent-loads -findirect-inlining -fipa-bit-cp -fipa-icf -flra-remat -foptimize-sibling-calls -foptimize-strlen -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns2 -fstore-merging -fstrict-aliasing -ftree-builtin-call-dce -ftree-tail-merge -finline-functions -fpredictive-commoning -ftree-loop-distribute-patterns -fsplit-paths -ftree-partial-pre -fpeel-loops -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.67552924156189selected flags:4.930725336074829 val:0.9482437010543175
+[0.9482437010543175]
+features
+[0.00530947 0.02160746 0.00634121 0.01331799 0.00795023 0.00254148
+ 0.01058006 0.01043249 0.02233828 0.00846762 0.09482846 0.0051068
+ 0.00525142 0.00380812 0.00253829 0.00796969 0.00362199 0.00418477
+ 0.02362362 0.01901309 0.00714815 0.00595006 0.0004477  0.01205683
+ 0.00200697 0.0094825  0.0014876  0.02557133 0.04457323 0.00215493
+ 0.00380089 0.00437264 0.00521299 0.00496173 0.03724571 0.0101
+ 0.0061396  0.00496604 0.01669128 0.01108945 0.00313287 0.00937163
+ 0.00626547 0.0027952  0.02533537 0.0025189  0.01220071 0.00331293
+ 0.01534409 0.00495533 0.01379743 0.00316593 0.00360549 0.00656684
+ 0.00465624 0.0126187  0.00237798 0.00638612 0.01056323 0.01260073
+ 0.01631156 0.0007176  0.00746368 0.0070483  0.00498951 0.01444365
+ 0.00906714 0.00458183 0.00731766 0.00474404 0.00382085 0.00590679
+ 0.00579111 0.01501602 0.00722182 0.00673722 0.00385998 0.00198972
+ 0.01272951 0.00954037 0.00116255 0.00392648 0.01119989 0.02377827
+ 0.00180149 0.00354766 0.02302555 0.01861652 0.00511742 0.00620449
+ 0.02917784 0.00360842 0.0031782  0.00787307 0.00956146 0.00457108
+ 0.01724566 0.00247654 0.00673621 0.00893738 0.00309211]
+[[10, 0.09482845535406015], [28, 0.04457323011154176], [34, 0.037245709999415406], [90, 0.029177844872406267], [27, 0.02557133182827793], [44, 0.02533537347559507], [83, 0.02377827131971528], [18, 0.023623615672054305]]
+Length of all flags sequences to be estimated: 58880
+The time for adding the random flags: 28.453909635543823
+Time for finding non-repetitive 1.4543533325195312e-05
+gcc -O2 -fcprop-registers -fdefer-pop -fdelayed-branch -fguess-branch-probability -fif-conversion2 -fif-conversion -finline-functions-called-once -fmove-loop-invariants -fshrink-wrap -fsplit-wide-types -fssa-backprop -fssa-phiopt -ftree-bit-ccp -ftree-ch -ftree-dce -ftree-dse -ftree-fre -ftree-sink -ftree-sra -ftree-pta -ftree-ter -falign-functions -falign-jumps -fcrossjumping -fcse-skip-blocks -fdelete-null-pointer-checks -fdevirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse-lm -fipa-cp -fipa-vrp -foptimize-sibling-calls -foptimize-strlen -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -ftree-switch-conversion -fcode-hoisting -fipa-ra -finline-functions -fpredictive-commoning -fgcse-after-reload -fsplit-paths -ftree-slp-vectorize -ftree-partial-pre -fbranch-count-reg -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.804852485656738selected flags:4.769590139389038 val:1.0073931606777888
+[1.0073931606777888]
+features
+[0.00760949 0.03123943 0.00934783 0.01529284 0.00740259 0.00449245
+ 0.00956696 0.00352617 0.01133173 0.00330352 0.07474944 0.00494288
+ 0.00492085 0.00486841 0.0041849  0.00668517 0.00385009 0.00169941
+ 0.04404691 0.01030354 0.01022587 0.01686739 0.0039758  0.00749997
+ 0.00346168 0.00995109 0.00263809 0.01649325 0.02477266 0.00088019
+ 0.00292656 0.00247861 0.00604466 0.00549433 0.04474453 0.00651868
+ 0.00336037 0.0070992  0.01727778 0.00759229 0.00973658 0.0140348
+ 0.00276415 0.00143951 0.01841449 0.00551545 0.00904414 0.002746
+ 0.01991697 0.00287285 0.01911479 0.00663445 0.00739211 0.00643411
+ 0.00777973 0.016273   0.00556703 0.00183594 0.00587177 0.02221479
+ 0.0099118  0.00813567 0.00674366 0.00313776 0.00834515 0.01800004
+ 0.00434632 0.00897406 0.00480224 0.00343409 0.00897854 0.00623434
+ 0.0040395  0.01592706 0.00854142 0.0074168  0.00474406 0.00250289
+ 0.00759058 0.00479086 0.00520572 0.00321392 0.01005329 0.01741495
+ 0.0043581  0.00420572 0.02166422 0.00547631 0.00973037 0.00587884
+ 0.02960405 0.00736639 0.00578012 0.0105891  0.02204643 0.00795111
+ 0.00898135 0.00212586 0.00562187 0.00930901 0.00755616]
+[[10, 0.07474944432928417], [34, 0.04474453064376564], [18, 0.04404690843435903], [1, 0.031239427470438286], [90, 0.02960404805954185], [28, 0.024772659785145413], [59, 0.02221478922841824], [94, 0.022046425460531035]]
+Length of all flags sequences to be estimated: 58368
+The time for adding the random flags: 27.84994125366211
+Time for finding non-repetitive 1.9311904907226562e-05
+gcc -O2 -fcompare-elim -fdelayed-branch -fdse -fif-conversion -fmove-loop-invariants -fshrink-wrap-separate -fsplit-wide-types -ftree-bit-ccp -ftree-ch -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-phiprop -ftree-sink -ftree-sra -fthread-jumps -falign-functions -falign-loops -fcse-skip-blocks -fdevirtualize-speculatively -fgcse-lm -fipa-cp -flra-remat -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fschedule-insns2 -fstore-merging -fstrict-overflow -fcode-hoisting -ftree-pre -finline-functions -fpredictive-commoning -ftree-loop-vectorize -fcombine-stack-adjustments -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:5.09134578704834selected flags:4.590147495269775 val:1.1091900189035446
+[1.1091900189035446]
+features
+[0.01113588 0.03204589 0.01049697 0.01598074 0.01195376 0.00357618
+ 0.01564561 0.00289665 0.00959144 0.0040893  0.07765946 0.0038104
+ 0.00524302 0.00489982 0.00594679 0.01325055 0.00318584 0.00448661
+ 0.03438908 0.0150166  0.00452561 0.0110694  0.00201282 0.00737305
+ 0.00324505 0.00192366 0.00525037 0.02142387 0.02611949 0.00235551
+ 0.00505806 0.0048133  0.00252187 0.00356613 0.03992443 0.00920715
+ 0.01922967 0.01600373 0.01530011 0.01595313 0.00624455 0.01120855
+ 0.00179371 0.00526447 0.01864688 0.00429874 0.0088886  0.00233221
+ 0.01922521 0.00803174 0.00986537 0.00526261 0.01149253 0.00850404
+ 0.00369996 0.00810597 0.0031364  0.00589567 0.00949971 0.0205579
+ 0.01297251 0.00231787 0.00551051 0.00243718 0.00471246 0.01420769
+ 0.0102051  0.00790463 0.00769954 0.0055977  0.00278708 0.00351261
+ 0.00741751 0.01446589 0.01026789 0.00542896 0.00481106 0.00461363
+ 0.01289691 0.00511046 0.00242808 0.00276727 0.01335067 0.02018679
+ 0.00952992 0.0049363  0.00920427 0.00663783 0.00877699 0.00364771
+ 0.02472703 0.00710719 0.00197747 0.01098043 0.01823133 0.00430997
+ 0.00476376 0.00294211 0.00661552 0.00961223 0.00825813]
+[[10, 0.07765945639610163], [34, 0.0399244261503511], [18, 0.03438907953115065], [1, 0.03204588907974877], [28, 0.026119488462871057], [90, 0.024727027231983778], [27, 0.021423869624932482], [59, 0.02055789755191413]]
+Length of all flags sequences to be estimated: 58112
+The time for adding the random flags: 27.647053003311157
+Time for finding non-repetitive 1.1682510375976562e-05
+gcc -O2 -fbranch-count-reg -fcombine-stack-adjustments -fcompare-elim -fcprop-registers -fdefer-pop -fdelayed-branch -fdse -fguess-branch-probability -fif-conversion -finline-functions-called-once -fipa-reference -fmove-loop-invariants -fshrink-wrap-separate -ftree-bit-ccp -ftree-ch -ftree-coalesce-vars -ftree-dominator-opts -ftree-dse -ftree-phiprop -ftree-sra -ftree-pta -ftree-ter -funit-at-a-time -fthread-jumps -falign-functions -falign-jumps -falign-labels -fcrossjumping -fcse-follow-jumps -fdelete-null-pointer-checks -fgcse-lm -fipa-cp -fipa-icf -fisolate-erroneous-paths-dereference -foptimize-sibling-calls -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fschedule-insns -fschedule-insns2 -fstrict-aliasing -ftree-builtin-call-dce -ftree-switch-conversion -ftree-tail-merge -fcode-hoisting -finline-functions -fpredictive-commoning -fgcse-after-reload -ftree-loop-vectorize -fsplit-paths -ftree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fauto-inc-dec -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.935547828674316selected flags:4.7574708461761475 val:1.0374310191813996
+[1.0374310191813996]
+features
+[0.01228263 0.02033314 0.0030035  0.01043378 0.00745846 0.00658604
+ 0.00855408 0.00384581 0.0128689  0.00343794 0.07162569 0.00206771
+ 0.00316783 0.00335836 0.00378213 0.00926917 0.0021999  0.00492803
+ 0.04855776 0.02714228 0.00679354 0.0160106  0.00182915 0.00343675
+ 0.00166131 0.00525753 0.01006422 0.03179119 0.04272467 0.00718753
+ 0.00361254 0.00365561 0.00484657 0.00372778 0.02898853 0.00363589
+ 0.00573056 0.00807495 0.01210271 0.00893902 0.00171769 0.01230249
+ 0.00791288 0.0016301  0.01641332 0.00316387 0.01633061 0.00109718
+ 0.01210027 0.00437971 0.01224691 0.01082009 0.00832894 0.00438317
+ 0.00747191 0.01630482 0.00557068 0.00146265 0.00762781 0.01715922
+ 0.01204581 0.00150167 0.00511126 0.0048147  0.00771309 0.00935555
+ 0.01288448 0.00552126 0.00316138 0.0115746  0.00640425 0.00377977
+ 0.0105338  0.01772226 0.00739163 0.00463914 0.00366286 0.00908587
+ 0.01570571 0.01082436 0.0016835  0.00316163 0.00451917 0.01762352
+ 0.00499859 0.00285494 0.00553139 0.01120036 0.01135934 0.01095817
+ 0.02250386 0.00590469 0.0017396  0.02049743 0.02413861 0.00469335
+ 0.00829468 0.01146336 0.00162407 0.01051476 0.00790343]
+[[10, 0.07162568766928253], [18, 0.04855776248490401], [28, 0.042724673705740464], [27, 0.03179118630431583], [34, 0.02898852522227594], [19, 0.027142283661039608], [94, 0.024138607264031803], [90, 0.022503857190802237]]
+Length of all flags sequences to be estimated: 57600
+The time for adding the random flags: 27.843000173568726
+Time for finding non-repetitive 1.0728836059570312e-05
+gcc -O2 -fauto-inc-dec -fcprop-registers -fdce -fdefer-pop -fguess-branch-probability -fipa-profile -fipa-reference -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fshrink-wrap-separate -fsplit-wide-types -ftree-ccp -ftree-copy-prop -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-sink -ftree-sra -fthread-jumps -falign-functions -falign-loops -fcrossjumping -fcse-follow-jumps -fdevirtualize-speculatively -fgcse-lm -fipa-cp -fipa-sra -flra-remat -fpartial-inlining -fpeephole2 -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -fsched-spec -fschedule-insns -fschedule-insns2 -fstrict-overflow -fcode-hoisting -ftree-pre -ftree-vrp -finline-functions -funswitch-loops -fpredictive-commoning -ftree-loop-vectorize -fvect-cost-model -fipa-cp-clone -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.61910343170166selected flags:4.711748123168945 val:0.9803375118861456
+[0.9803375118861456]
+features
+[0.0131421  0.02502551 0.01010991 0.00805976 0.00711463 0.00192055
+ 0.02133398 0.00416707 0.01633556 0.00368132 0.07582278 0.00511575
+ 0.00267602 0.00840712 0.0050322  0.01660872 0.00223071 0.00813498
+ 0.03961576 0.01498828 0.00770733 0.01564586 0.00169111 0.00892073
+ 0.00269242 0.00436435 0.00613726 0.03065956 0.02764231 0.00560784
+ 0.00261557 0.00335    0.00272757 0.00843615 0.02102896 0.00586495
+ 0.01831351 0.00356189 0.01315779 0.00621654 0.00245701 0.01384087
+ 0.00545382 0.00236532 0.01824073 0.00502276 0.00824485 0.00089058
+ 0.01333595 0.00388975 0.00899501 0.01552481 0.00664532 0.0043753
+ 0.00536648 0.01277135 0.00418683 0.00210926 0.00989425 0.0252088
+ 0.00742753 0.00411286 0.00670501 0.00227535 0.00733007 0.02042343
+ 0.0097644  0.0056658  0.00595783 0.00417333 0.00720857 0.00537792
+ 0.0121673  0.01991466 0.01264006 0.00496743 0.00673849 0.00510717
+ 0.00661376 0.00599398 0.00580959 0.00413769 0.00492841 0.01472478
+ 0.00397798 0.00390053 0.00666315 0.00561694 0.01381329 0.00737959
+ 0.03255374 0.00634412 0.00253307 0.00970401 0.02232697 0.00650576
+ 0.00716306 0.00831813 0.00226206 0.0125473  0.00354143]
+[[10, 0.07582278299628736], [18, 0.03961575924112199], [90, 0.032553739728962146], [27, 0.030659563931543395], [28, 0.02764230902937456], [59, 0.025208800022487692], [1, 0.025025505833492088], [94, 0.022326973791207794]]
+Length of all flags sequences to be estimated: 57088
+The time for adding the random flags: 27.288029193878174
+Time for finding non-repetitive 1.8358230590820312e-05
+gcc -O2 -fcombine-stack-adjustments -fcprop-registers -fdce -fdelayed-branch -fdse -finline-functions-called-once -fipa-profile -fmove-loop-invariants -freorder-blocks -fshrink-wrap-separate -fsplit-wide-types -ftree-bit-ccp -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-dce -ftree-forwprop -ftree-phiprop -ftree-sink -funit-at-a-time -fcse-skip-blocks -fexpensive-optimizations -fgcse-lm -finline-small-functions -fipa-cp -fisolate-erroneous-paths-dereference -flra-remat -foptimize-strlen -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -frerun-cse-after-loop -fsched-interblock -fschedule-insns2 -fstrict-aliasing -ftree-pre -finline-functions -ftree-loop-vectorize -fbranch-count-reg -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:5.066457986831665selected flags:4.597927093505859 val:1.1019004616205337
+[1.1019004616205337]
+features
+[0.01618545 0.03518109 0.00971195 0.00835293 0.00587962 0.00099108
+ 0.01796482 0.00203506 0.01995603 0.00245452 0.10787982 0.00416498
+ 0.00399946 0.00852585 0.00663347 0.01062907 0.0045085  0.01097181
+ 0.03690568 0.01784756 0.00713659 0.00932471 0.00305095 0.006875
+ 0.00198212 0.00386542 0.01182277 0.01257559 0.02949679 0.00233074
+ 0.00661089 0.00489362 0.00232055 0.00256553 0.02074986 0.00370177
+ 0.01424277 0.00323951 0.01226449 0.00722181 0.00178653 0.01521356
+ 0.00222584 0.00330635 0.01641898 0.00313808 0.0178584  0.00194112
+ 0.01531109 0.00580821 0.0135534  0.01065874 0.00771065 0.00288376
+ 0.0063496  0.00808769 0.00721071 0.00071734 0.00838437 0.01491059
+ 0.01604238 0.00758938 0.01246703 0.01001104 0.01135384 0.01912864
+ 0.00377953 0.01026804 0.00924006 0.00559407 0.00642812 0.0053093
+ 0.01364008 0.01764204 0.00976565 0.00675236 0.00745955 0.00445235
+ 0.00889851 0.00457704 0.00342747 0.00345898 0.00859362 0.01240569
+ 0.00469353 0.00228789 0.01468381 0.00809825 0.0062075  0.00442567
+ 0.01554403 0.00597922 0.00621506 0.01049949 0.01411564 0.00394933
+ 0.00622942 0.00515224 0.00505997 0.00270983 0.00533906]
+[[10, 0.10787981978317339], [18, 0.03690568299940979], [1, 0.035181094518423564], [28, 0.02949678934886534], [34, 0.020749858666484915], [8, 0.019956031365611946], [65, 0.01912863855511101], [6, 0.017964822760104294]]
+Length of all flags sequences to be estimated: 56832
+The time for adding the random flags: 26.77477741241455
+Time for finding non-repetitive 1.1205673217773438e-05
+gcc -O2 -fcprop-registers -fdelayed-branch -fguess-branch-probability -fif-conversion2 -fif-conversion -freorder-blocks -fshrink-wrap -fssa-phiopt -ftree-ch -ftree-dce -ftree-dse -ftree-forwprop -ftree-phiprop -ftree-sra -falign-functions -falign-loops -fdelete-null-pointer-checks -fexpensive-optimizations -fgcse -fipa-icf -fisolate-erroneous-paths-dereference -freorder-blocks-algorithm=stc -freorder-blocks-and-partition -freorder-functions -fsched-interblock -fschedule-insns -fstore-merging -ftree-tail-merge -ftree-pre -finline-functions -funswitch-loops -ftree-loop-vectorize -fcompare-elim -I ../polybench/utilities -I ../polybench/datamining/correlation ../polybench/utilities/polybench.c ../polybench/datamining/correlation/correlation.c -lm -DPOLYBENCH_TIME -o correlation_time
+./correlation_time
+0
+baseline:4.785773515701294selected flags:4.671360969543457 val:1.0244923367951628
+[1.0244923367951628]
+Total running time 2354.052297592163
+best seq: ('-fauto-inc-dec', '-fcprop-registers', '-fdce', '-fdefer-pop', '-fguess-branch-probability', '-fipa-profile', '-fipa-reference', '-fmove-loop-invariants', '-freorder-blocks', '-fshrink-wrap', '-fshrink-wrap-separate', '-fsplit-wide-types', '-ftree-ccp', '-ftree-copy-prop', '-ftree-dominator-opts', '-ftree-dse', '-ftree-fre', '-ftree-sink', '-ftree-sra', '-fthread-jumps', '-falign-functions', '-falign-loops', '-fcrossjumping', '-fcse-follow-jumps', '-fdevirtualize-speculatively', '-fgcse-lm', '-fipa-cp', '-fipa-sra', '-flra-remat', '-fpartial-inlining', '-fpeephole2', '-freorder-blocks-algorithm=stc', '-freorder-blocks-and-partition', '-fsched-spec', '-fschedule-insns', '-fschedule-insns2', '-fstrict-overflow', '-fcode-hoisting', '-ftree-pre', '-ftree-vrp', '-finline-functions', '-funswitch-loops', '-fpredictive-commoning', '-ftree-loop-vectorize', '-fvect-cost-model', '-fipa-cp-clone') time: [9.96970009803772, 19.816410064697266, 50.890676975250244, 91.65620946884155, 132.32091116905212, 173.09584832191467, 213.70646333694458, 254.61111736297607, 295.81291580200195, 337.2978105545044, 379.37003540992737, 421.51744389533997, 462.60731506347656, 503.15150332450867, 543.9527535438538, 585.4847226142883, 626.7771346569061, 668.3223803043365, 710.3418869972229, 753.5278062820435, 794.8386738300323, 835.794008731842, 876.0147910118103, 917.0685648918152, 958.867702960968, 999.467148065567, 1039.2598700523376, 1080.6675972938538, 1121.328054189682, 1162.5464696884155, 1202.634657382965, 1243.6407496929169, 1283.7835295200348, 1323.9112665653229, 1364.0847473144531, 1404.1038827896118, 1446.0873260498047, 1487.6906569004059, 1527.70955824852, 1567.780425310135, 1607.3482222557068, 1646.5468871593475, 1686.2984178066254, 1726.0755722522736, 1766.1597664356232, 1805.4790725708008, 1844.9112718105316, 1884.4973859786987, 1923.8310103416443, 1962.9006156921387, 2002.6261274814606, 2041.9103815555573, 2080.7412281036377, 2118.6260602474213, 2157.085409641266, 2194.8876411914825, 2232.5967514514923, 2270.523521900177, 2307.5285351276398, 2344.3511629104614]
