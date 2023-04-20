@@ -13,7 +13,7 @@ def main(config):
 
     if flags is not None:
         command_handler = ArgsHandler(file_cmd=config.file_cmd, baseline_cmd=config.baseline_cmd,
-                                      remove_cmd=config.remove_cmd, exe_cmd=config.time_cmd,
+                                      remove_cmd=config.remove_cmd, exe_cmd=config.exe_cmd,
                                       flags=flags, evaluate_times=config.evaluate_times, total_iters=config.total_iters)
         if config.autotuning_method == 'boca':
 

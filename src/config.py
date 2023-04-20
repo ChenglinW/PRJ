@@ -10,7 +10,7 @@ def get_args():
                         help='Command for executing the baseline optimisation flags')
     parser.add_argument('--remove-cmd', default = 'rm -rf *.o *.I *.s a.out', type=str,
                         help='Command for removing the files that generated from the compilation')
-    parser.add_argument('--time-cmd', default = './2mm_time', type=str,
+    parser.add_argument('--exe-cmd', default = './2mm_time', type=str,
                         help='Command for executing the optimised code, so that the time can be measured')
     parser.add_argument('--evaluate-times', default = 6, type=int,
                         help='It is about how many times for evaluating a flag sequence')

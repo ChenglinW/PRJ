@@ -6,6 +6,7 @@ import time
 import random
 import math
 import numpy as np
+#https://numpy.org/
 from evaluation_component import EvaluationComponent
 from selection_encoding import SelectionEncoder
 

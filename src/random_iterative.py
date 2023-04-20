@@ -16,7 +16,7 @@ class RandomIter(EvaluationComponent, OrderingSelectionEncoder):
         :return: dict{tuple(str): float} A list of tuples of binary flag sequence and its evaluation score, and the list of time for each iteration
         """
         binary_flag_sequences = []
-        current_random_numbers = [] # some data to avoid the duplication for random number
+        current_random_numbers = [] # sotre data to avoid the duplication for random number
         evaluation_scores = []
         cumulative_iteration_time = []
         actual_flag_sequences = []

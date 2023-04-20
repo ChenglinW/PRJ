@@ -5,10 +5,13 @@ from scipy.stats import norm
 import time
 import random
 import math
+#https://numpy.org/
 import numpy as np
 from evaluation_component import EvaluationComponent
 from ordering_selection_encoding import OrderingSelectionEncoder
+import wandb
 
+# code is modified from https://github.com/BOCA313/BOCA
 class BOCASO(EvaluationComponent, OrderingSelectionEncoder):
     """
         the bayesian optimisation with random forest
@@ -202,6 +205,17 @@ class BOCASO(EvaluationComponent, OrderingSelectionEncoder):
         return best_estimated_flag_sequence_and_ei
 
     def tuning_flags(self):
+        wandb.login()
+        wandb.init(
+            project='Compiler Autotuning',
+            name= f'BOCASO {self.exe_cmd} Iterations: {self.total_iters} Number of flags: {len(self.flags)}',
+            config={
+                'Program_name': self.exe_cmd,
+                'Iterations': self.total_iters,
+                'Number of Flags': len(self.flags),
+                'Speed up': True,
+            },
+        )
         binary_flag_sequences = []
         cumulative_iteration_time = []
         evaluation_scores = []
@@ -220,6 +234,8 @@ class BOCASO(EvaluationComponent, OrderingSelectionEncoder):
                 evaluation_scores.append(score)
                 iter_time =time.time() - start_time
                 cumulative_iteration_time.append(iter_time)
+                wandb.log({"iter time": iter_time})
+                wandb.log({"evaluation score": score})
 
         current_step = 0
         result = 100000000
@@ -239,6 +255,8 @@ class BOCASO(EvaluationComponent, OrderingSelectionEncoder):
             actual_flag_sequences.append(actual_flag_sequence)
             best_result = self.get_evaluation_score(actual_flag_sequence)
             evaluation_scores.append(best_result)
+            wandb.log({"iter time": iter_time})
+            wandb.log({"evaluation score": best_result})
             if best_result < result:
                 result = best_result
 
